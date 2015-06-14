@@ -43,7 +43,7 @@ function make_slides(f) {
 	var description = stim.dein + " " + stim.freund + " " + stim.name + " kommt rein und sagt: ";
 	var sentence = stim.sentence;
 	var prompt = "Glaubt "+ stim.name +", dass "+stim.complement+"?";
-	var evidence = "Wie, denkst du, kommt "+stim.name+" zu "+stim.gen+" Wissen &uuml;ber "+stim.evidence_question+"?";
+	var evidence = "Wie, denkst Du, kommt "+stim.name+" zu "+stim.gen+" Wissen &uuml;ber "+stim.evidence_question+"?";
 	var evidenceorder = _.shuffle(["evidence1","evidence2","evidence3","evidence4","evidence5"]);
 	console.log(evidenceorder);	
 
@@ -109,8 +109,20 @@ function make_slides(f) {
           "name": stim.name,
           "gender" : stim.gender,
             "rt" : Date.now() - _s.trial_start,
-	    "response" : [exp.sliderPost["mainslider"],stim.evidenceexplanation]
+          "response_type" : "speakerbelief",            
+	    "response" : exp.sliderPost["mainslider"]
         });
+        exp.data_trials.push({
+          "item_type" : stim.item_type,
+          "slide_number_in_experiment" : exp.phase,
+          "sentence": stim.sentence,
+          "item": stim.item,
+          "name": stim.name,
+          "gender" : stim.gender,
+            "rt" : Date.now() - _s.trial_start,
+          "response_type" : "evidence",            
+	    "response" : stim.evidenceexplanation
+        });        
           $(".err").hide();
           _stream.apply(_s); //use exp.go() if and only if there is no "present" data.
       } else {
@@ -146,7 +158,7 @@ function make_slides(f) {
         asses : $('input[name="assess"]:checked').val(),
         age : $("#age").val(),
         gender : $("#gender").val(),
-        education : $("#education").val(),
+        eDucation : $("#eDucation").val(),
         comments : $("#comments").val(),
       };
       exp.go(); //use exp.go() if and only if there is no "present" data.
@@ -181,15 +193,14 @@ function init() {
 	  "muss" : "Es muss regnen.",
 	  "wohl" : "Es regnet wohl.",	  
 	  "vermutlich" : "Es regnet vermutlich.",	  
-	  "wahrscheinlich" : "Es regnet wahrscheinlich.",	  
 	  "item" : "regen",
 	"complement" : "es regnet",
 	"evidence_question" : "den Regen",
 	"evidence1" : "hatte aus dem Fenster gesehen und beobachtete, wie Regentropfen vom Himmel fielen",
 	"evidence2" : "konnte hören, wie Wasser auf das Dach prasselte",
-	"evidence3" : "hat gesehen, wie jemand mit nassen Haaren und durchnässten Kleidern von draußen hereinkam",	
+	"evidence3" : "hat gesehen, wie jemand mit nassen Haaren und Durchnässten Kleidern von draußen hereinkam",	
 	"evidence4" : "hat im Internet den Wetterbericht gelesen, in dem stand, dass es regne",
-	"evidence5" : "hat heute Vormittag dunkle Wolken am Himmel gesehen"
+	"evidence5" : "hat heute Vormittag Dunkle Wolken am Himmel gesehen"
     },
     {
 	  "context": "Du bist in einem fensterlosen Raum.",
@@ -197,7 +208,6 @@ function init() {
 	  "muss" : "Das Abendessen muss fertig sein.",
 	  "wohl" : "Das Abendessen ist wohl fertig.",	  
 	  "vermutlich" : "Das Abendessen ist vermutlich fertig.",	  
-	  "wahrscheinlich" : "Das Abendessen ist wahrscheinlich fertig.",	  
 	"item" : "abendessen",
 	  "complement" : "das Abendessen fertig ist",
 	"evidence_question" : "das Abendessen",
@@ -213,7 +223,6 @@ function init() {
 	  "muss" : "Der Kaffee muss kalt sein.",
 	  "wohl" : "Der Kaffee ist wohl kalt.",
 	  "vermutlich" : "Der Kaffee ist vermutlich kalt.",	  
-	  "wahrscheinlich" : "Der Kaffee ist wahrscheinlich kalt.",	  
 	"item" : "kaffee",
 	  "complement" : "der Kaffee kalt ist",
 	"evidence_question" : "den Kaffee",
@@ -230,7 +239,6 @@ function init() {
 	  "muss" : "Der Nachbarshund muss bellen.",
 	  "wohl" : "Der Nachbarshund bellt wohl.",	  
 	  "vermutlich" : "Der Nachbarshund bellt vermutlich.",	  
-	  "wahrscheinlich" : "Der Nachbarshund bellt wahrscheinlich.",	  
 	"item" : "hund",
 	  "complement" : "der Nachbarshund bellt",
 	"evidence_question" : "den Hund",
@@ -244,14 +252,6 @@ function init() {
 
   var names = _.shuffle([
     {
-      "name":"James",
-      "gender":"M"
-    },
-    {
-      "name":"John",
-      "gender":"M"
-    },
-    {
       "name":"Robert",
       "gender":"M"
     },
@@ -260,15 +260,7 @@ function init() {
       "gender":"M"
     },
     {
-      "name":"William",
-      "gender":"M"
-    },
-    {
       "name":"David",
-      "gender":"M"
-    },
-    {
-      "name":"Richard",
       "gender":"M"
     },
     {
@@ -276,31 +268,15 @@ function init() {
       "gender":"M"
     },
     {
-      "name":"Charles",
-      "gender":"M"
-    },
-    {
       "name":"Thomas",
       "gender":"M"
     },
     {
-      "name":"Christopher",
+      "name":"Christophe",
       "gender":"M"
     },
     {
       "name":"Daniel",
-      "gender":"M"
-    },
-    {
-      "name":"Matthew",
-      "gender":"M"
-    },
-    {
-      "name":"Donald",
-      "gender":"M"
-    },
-    {
-      "name":"Anthony",
       "gender":"M"
     },
     {
@@ -312,31 +288,15 @@ function init() {
       "gender":"M"
     },
     {
-      "name":"George",
+      "name":"Georg",
       "gender":"M"
     },
     {
-      "name":"Steven",
+      "name":"Stefan",
       "gender":"M"
     },
     {
-      "name":"Kenneth",
-      "gender":"M"
-    },
-    {
-      "name":"Andrew",
-      "gender":"M"
-    },
-    {
-      "name":"Edward",
-      "gender":"M"
-    },
-    {
-      "name":"Joshua",
-      "gender":"M"
-    },
-    {
-      "name":"Brian",
+      "name":"Andreas",
       "gender":"M"
     },
     {
@@ -344,39 +304,27 @@ function init() {
       "gender":"M"
     },
     {
-      "name":"Ronald",
+      "name":"Tim",
       "gender":"M"
     },
     {
-      "name":"Timothy",
+      "name":"Jan",
       "gender":"M"
     },
     {
-      "name":"Jason",
+      "name":"Jens",
       "gender":"M"
     },
     {
-      "name":"Jeffrey",
+      "name":"Nico",
       "gender":"M"
     },
     {
-      "name":"Gary",
+      "name":"Erik",
       "gender":"M"
     },
     {
-      "name":"Ryan",
-      "gender":"M"
-    },
-    {
-      "name":"Nicholas",
-      "gender":"M"
-    },
-    {
-      "name":"Eric",
-      "gender":"M"
-    },
-    {
-      "name":"Jacob",
+      "name":"Jakob",
       "gender":"M"
     },
     {
@@ -384,31 +332,11 @@ function init() {
       "gender":"M"
     },
     {
-      "name":"Larry",
-      "gender":"M"
-    },
-    {
       "name":"Frank",
       "gender":"M"
     },
     {
-      "name":"Scott",
-      "gender":"M"
-    },
-    {
-      "name":"Justin",
-      "gender":"M"
-    },
-    {
-      "name":"Brandon",
-      "gender":"M"
-    },
-    {
-      "name":"Raymond",
-      "gender":"M"
-    },
-    {
-      "name":"Gregory",
+      "name":"Christian",
       "gender":"M"
     },
     {
@@ -424,7 +352,7 @@ function init() {
       "gender":"M"
     },
     {
-      "name":"Jack",
+      "name":"Mario",
       "gender":"M"
     },
     {
@@ -432,27 +360,19 @@ function init() {
       "gender":"M"
     },
     {
-      "name":"Jerry",
+      "name":"Alex",
       "gender":"M"
     },
     {
-      "name":"Alexander",
-      "gender":"M"
-    },
-    {
-      "name":"Tyler",
-      "gender":"M"
-    },
-    {
-      "name":"Mary",
+      "name":"Maria",
       "gender":"F"
     },
     {
-      "name":"Jennifer",
+      "name":"Jenny",
       "gender":"F"
     },
     {
-      "name":"Elizabeth",
+      "name":"Elisabeth",
       "gender":"F"
     },
     {
@@ -460,23 +380,15 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Emily",
+      "name":"Emilia",
       "gender":"F"
     },
     {
-      "name":"Susan",
+      "name":"Susanne",
       "gender":"F"
     },
     {
-      "name":"Margaret",
-      "gender":"F"
-    },
-    {
-      "name":"Jessica",
-      "gender":"F"
-    },
-    {
-      "name":"Dorothy",
+      "name":"Jessika",
       "gender":"F"
     },
     {
@@ -484,15 +396,11 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Karen",
+      "name":"Karina",
       "gender":"F"
     },
     {
-      "name":"Nancy",
-      "gender":"F"
-    },
-    {
-      "name":"Betty",
+      "name":"Bettina",
       "gender":"F"
     },
     {
@@ -504,23 +412,15 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Helen",
+      "name":"Helena",
       "gender":"F"
     },
     {
-      "name":"Ashley",
+      "name":"Kim",
       "gender":"F"
     },
     {
-      "name":"Donna",
-      "gender":"F"
-    },
-    {
-      "name":"Kimberly",
-      "gender":"F"
-    },
-    {
-      "name":"Carol",
+      "name":"Caroline",
       "gender":"F"
     },
     {
@@ -528,19 +428,11 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Emily",
-      "gender":"F"
-    },
-    {
-      "name":"Amanda",
-      "gender":"F"
-    },
-    {
       "name":"Melissa",
       "gender":"F"
     },
     {
-      "name":"Deborah",
+      "name":"Melanie",
       "gender":"F"
     },
     {
@@ -548,7 +440,7 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Stephanie",
+      "name":"Steffi",
       "gender":"F"
     },
     {
@@ -556,19 +448,11 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Sharon",
-      "gender":"F"
-    },
-    {
       "name":"Cynthia",
       "gender":"F"
     },
     {
-      "name":"Kathleen",
-      "gender":"F"
-    },
-    {
-      "name":"Ruth",
+      "name":"Katharina",
       "gender":"F"
     },
     {
@@ -576,27 +460,11 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Shirley",
-      "gender":"F"
-    },
-    {
-      "name":"Amy",
-      "gender":"F"
-    },
-    {
       "name":"Angela",
       "gender":"F"
     },
     {
-      "name":"Virginia",
-      "gender":"F"
-    },
-    {
-      "name":"Brenda",
-      "gender":"F"
-    },
-    {
-      "name":"Catherine",
+      "name":"Kathrin",
       "gender":"F"
     },
     {
@@ -608,31 +476,11 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Janet",
+      "name":"Diana",
       "gender":"F"
     },
     {
-      "name":"Samantha",
-      "gender":"F"
-    },
-    {
-      "name":"Carolyn",
-      "gender":"F"
-    },
-    {
-      "name":"Rachel",
-      "gender":"F"
-    },
-    {
-      "name":"Heather",
-      "gender":"F"
-    },
-    {
-      "name":"Diane",
-      "gender":"F"
-    },
-    {
-      "name":"Joyce",
+      "name":"Eva",
       "gender":"F"
     },
     {
@@ -640,12 +488,12 @@ function init() {
       "gender":"F"
     },
     {
-      "name":"Emma",
+      "name":"Judith",
       "gender":"F"
     }
   ]);
 
-  var item_type = _.shuffle(["bare", "muss", "wohl", "vermutlich", "wahrscheinlich"]);//, "think","know"]);    
+  var item_type = _.shuffle(["bare", "muss", "wohl", "vermutlich"]);
 
   function makeStim(i) {
     //get item
