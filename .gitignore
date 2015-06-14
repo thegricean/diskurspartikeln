@@ -1,0 +1,15 @@
+*.results
+*.question
+*.input
+*.properties
+*.tsv
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+*.bbl
+.RData
+.Rhistory
+*.dvi
+.DS_Store
