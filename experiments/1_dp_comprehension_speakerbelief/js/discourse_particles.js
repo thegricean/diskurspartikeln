@@ -39,11 +39,11 @@ function make_slides(f) {
       $("#number_guess").html("?");
 	  this.stim = stim;
 	  console.log(this.stim);
-	var contextsentence = "Du bist in einem fensterlosen Raum.";
+	var contextsentence = "Sie sind in einem fensterlosen Raum.";
 	var description = stim.dein + " " + stim.freund + " " + stim.name + " kommt rein und sagt: ";
 	var sentence = stim.sentence;
 	var prompt = "Glaubt "+ stim.name +", dass "+stim.complement+"?";
-	var evidence = "Wie, denkst Du, kommt "+stim.name+" zu "+stim.gen+" Wissen &uuml;ber "+stim.evidence_question+"?";
+	var evidence = "Wie, denken Sie, kommt "+stim.name+" zu "+stim.gen+" Wissen über "+stim.evidence_question+"?";
 	var evidenceorder = _.shuffle(["evidence1","evidence2","evidence3","evidence4","evidence5"]);
 	console.log(evidenceorder);	
 
@@ -188,7 +188,7 @@ function init() {
 
   var items = _.shuffle([
     {
-	  "context": "Du bist in einem fensterlosen Raum.",
+	  "context": "Sie sind in einem fensterlosen Raum.",
 	  "bare" : "Es regnet.",
 	  "muss" : "Es muss regnen.",
 	  "wohl" : "Es regnet wohl.",	  
@@ -198,12 +198,12 @@ function init() {
 	"evidence_question" : "den Regen",
 	"evidence1" : "hatte aus dem Fenster gesehen und beobachtete, wie Regentropfen vom Himmel fielen",
 	"evidence2" : "konnte hören, wie Wasser auf das Dach prasselte",
-	"evidence3" : "hat gesehen, wie jemand mit nassen Haaren und Durchnässten Kleidern von draußen hereinkam",	
-	"evidence4" : "hat im Internet den Wetterbericht gelesen, in dem stand, dass es regne",
-	"evidence5" : "hat heute Vormittag Dunkle Wolken am Himmel gesehen"
+	"evidence3" : "hat gesehen, wie jemand mit nassen Haaren und durchnässten Kleidern von draußen hereinkam",	
+	"evidence4" : "hat im Internet den Wetterbericht gelesen, in dem stand, dass es regnet",
+	"evidence5" : "hat heute Vormittag dunkle Wolken am Himmel gesehen"
     },
     {
-	  "context": "Du bist in einem fensterlosen Raum.",
+	  "context": "Sie sind in einem fensterlosen Raum.",
 	  "bare" : "Das Abendessen ist fertig.",
 	  "muss" : "Das Abendessen muss fertig sein.",
 	  "wohl" : "Das Abendessen ist wohl fertig.",	  
@@ -218,7 +218,7 @@ function init() {
 	"evidence5" : "hat Hunger"	
     },
     {
-	  "context": "Du bist in einem fensterlosen Raum.",
+	  "context": "Sie sind in einem fensterlosen Raum.",
 	  "bare" : "Der Kaffee ist kalt.",
 	  "muss" : "Der Kaffee muss kalt sein.",
 	  "wohl" : "Der Kaffee ist wohl kalt.",
@@ -234,7 +234,7 @@ function init() {
 		
     },
     {
-	  "context": "Du bist in einem fensterlosen Raum.",
+	  "context": "Sie sind in einem fensterlosen Raum.",
 	  "bare" : "Der Nachbarshund bellt.",
 	  "muss" : "Der Nachbarshund muss bellen.",
 	  "wohl" : "Der Nachbarshund bellt wohl.",	  
@@ -510,7 +510,7 @@ function init() {
     var acc = gender == "M" ? "ihn" : "sie";
     var gen = gender == "M" ? "seinem" : "ihrem";
     var friend = gender == "M" ? "Freund" : "Freundin";
-    var your = gender == "M" ? "Dein" : "Deine";        
+    var your = gender == "M" ? "Ihr" : "Ihre";        
     //get cause and effect elements
     var item_id = item.item;
       var complement = item.complement;
