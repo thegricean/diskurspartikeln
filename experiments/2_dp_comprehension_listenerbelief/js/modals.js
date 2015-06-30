@@ -112,7 +112,7 @@ function make_slides(f) {
           "name": stim.name,
           "gender" : stim.gender,
             "rt" : Date.now() - _s.trial_start,
-          "response_type" : "listenerrbelief",            
+          "response_type" : "listenerbelief",            
 	    "response" : exp.sliderPost["mainslider"]
         });
         exp.data_trials.push({
