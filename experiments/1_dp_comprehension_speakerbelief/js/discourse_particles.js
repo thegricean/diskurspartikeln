@@ -240,7 +240,7 @@ function init() {
 	  "wohl" : "Der Nachbarshund hat wohl gebellt.",	  
 	  "vermutlich" : "Der Nachbarshund hat vermutlich gebellt.",	  
 	"item" : "hund",
-	  "complement" : "der Nachbarshund hat gebellt",
+	  "complement" : "der Nachbarshund gebellt hat",
 	"evidence_question" : "den Hund",
 	"evidence1" : "schaute aus dem Fenster und sah Struppi, den Hund der Nachbarn, wie er am Zaun stand und bellte",
 	"evidence2" : "hat einen Hund bellen gehört",
