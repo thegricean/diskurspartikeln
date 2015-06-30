@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>Language study</title>
+
+    <!--JS-->
+
+    <!-- external general utilities -->
+    <script src="../_shared/js/jquery-1.11.1.min.js "></script>
+    <script src="../_shared/full-projects/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../_shared/js/underscore-min.js"></script>
+    <!-- if you want to draw stuff: -->
+    <!-- <script src="../_shared/js/raphael-min.js"></script> -->
+
+    <!-- cocolab experiment logic -->
+    <script src="../_shared/js/exp-V2.js"></script>
+    <script src="../_shared/js/stream-V2.js"></script>
+
+    <!-- cocolab general utilities -->
+    <script src="../_shared/js/mmturkey.js "></script>
+    <script src="../_shared/js/browserCheck.js"></script>
+    <!-- if you want to draw cute creatures (depends on raphael): -->
+    <!-- <script src="../_shared/js/ecosystem.js"></script> -->
+
+    <!-- experiment specific helper functions -->
+    <script src="../_shared/js/utils.js"></script>
+    <!-- <script src="js/local-utils.js"></script> -->
+
+    <!--CSS-->
+    <link href="../_shared/full-projects/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../_shared/css/cocolab-style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/local-style.css" rel="stylesheet" type="text/css"/>
+
+    <!-- experiment file -->
+    <script src="js/modals.js"></script>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />    
+    
+</head>
+
+<body onload="init();">
+  <noscript>This task requires JavaScript.</noscript>
+
+  <div class="slide" id="i0" >
+    <p id="instruct-text">Danke, dass Sie in unserer Studie mitmachen. Wir sind in dieser Studie daran interessiert, wie Leute Sprache verstehen.</p>
+    <button id="start_button" type="button">Studie beginnen</button>
+    <p id="legal">Die in der Untersuchung erhobenen Informationen werden von uns in anonymisierter Form in unsere Datenbank aufgenommen. Anhand der erhobenen Daten werden wissenschaftliche Arbeiten veröffentlicht. Ein Rückschluss auf Ihre Person ist anhand der Veröffentlichung nicht möglich. Die Daten werden ohne Angabe Ihres Namens und Ihrer Kontaktdaten auf Rechnern gespeichert, die mit dem Internet verbunden sind. Ein legaler Zugriff auf die Daten von außerhalb ist nicht möglich. Nur autorisierte MitarbeiterInnen des Forschungsprojektes haben Zugang zu dem erhobenen Datenmaterial. Wenn Sie Fragen zu dieser von der Universität Konstanz verwalteten Studie haben, kontaktieren Sie bitte <a
+    href="mailto://andreas.trotzke@uni-konstanz.de">andreas.trotzke@uni-konstanz.de</a>.
+    Ihre Teilnahme an der Studie ist freiwillig. Durch Ihre Einwilligung gehen Sie keinerlei Verpflichtungen ein. Sie können Ihre Einwilligung jederzeit widerrufen, ohne dass Ihnen ein rechtlicher Nachteil entsteht. Sie können die Untersuchung jederzeit und ohne Angabe von Gründen abbrechen, ohne dass Ihnen ein rechtlicher Nachteil entsteht. Sie müssen mindestens 18 Jahre alt sein, um an der Studie teilzunehmen.</p>
+  </div>
+
+  <div class="slide" id="instructions">
+    <h3>Anweisungen</h3>
+    <p>In dieser Studie werden Sie vier Beschreibungen von Ereignissen lesen. In jeder Beschreibung wird jemand etwas über das Ereignis sagen. Bitte lesen Sie jede Beschreibung gründlich und beantworten Sie die Fragen.</p>
+<!--    <button type="button" id="ibutton">Continue</button>    -->
+   <button onclick="_s.button()">Weiter</button>
+  </div>
+
+  <div class="slide" id="cause_effect_prior">
+  	<p id="contextsentence">{{}}</p>
+    <p id="description">{{}}</p>
+  	<p id="sentence">{{}}</h3>    
+    <p id="prompt">{{HOW LIKELY IS IT?}}</p>
+
+    <table id="slider_table" class="slider_table">
+      <tr><td>Unmöglich</td><td colspan="2"><div class="slider" id="slider_mainslider"></div></td><td>Sicher</td></tr>
+    </table>
+    <button class="sliderbutton">Weiter</button>
+
+        <div class="slidererr">Verstellen Sie bitte den Schieberegler.</div>
+
+	  <br>
+    <p id="evidence">{{EVIDENCE?}}</p>
+
+    <table><div id="radiotable" align="center">{{}}
+	</div>
+     </table> 
+     <br> 
+
+    <button class="contbutton">Weiter</button>	
+    <div class="err">Wählen Sie bitte eine Option.</div>
+  </div>
+
+  <div class="slide"  id="subj_info">
+    <div class="long_form">
+      <div class="subj_info_title">Zusätzliche Information</div>
+      <p class="info">Das Beantworten dieser Fragen ist freiwillig, wird uns aber dabei helfen, Ihre Antworten zu verstehen.</p>
+      <p>Haben Sie die Anweisungen gelesen und glauben, dass Sie alles richtig gemacht haben?</p>
+      <label><input type="radio"  name="assess" value="No"/>Nein</label>
+      <label><input type="radio"  name="assess" value="Yes"/>Ja</label>
+      <label><input type="radio"  name="assess" value="Confused"/>Ich war verwirrt</label>
+
+      <p>Geschlecht:
+        <select id="gender">
+          <label><option value=""/></label>
+          <label><option value="Male"/>Männlich</label>
+          <label><option value="Female"/>Weiblich</label>
+          <label><option value="Other"/>Sonstig</label>
+        </select>
+      </p>
+
+      <p>Alter: <input type="text" id="age"/></p>
+
+      <p>Höchster Bildungsgrad:
+        <select id="eDucation">
+          <label><option value="-1"/></label>
+          <label><option value="0"/>Kein Schulabschluss</label>
+          <label><option value="1"/>Hauptschulabschluss, Realschulabschluss oder Abitur</label>
+          <label><option value="2"/>Hochschulabschluss</label>
+          <label><option value="3"/>Master</label>
+          <label><option value="4"/>Doktor</label>
+        </select>
+      </p>
+
+      <p>Muttersprache: <input type="text" id="language"/></p>
+      <label>(die Sprache(n), die zu Hause gesprochen wurden(n), als Sie ein Kind waren)</label>
+
+      <p>Hat Ihnen die Studie Spaß gemacht?</p>
+      <select id="enjoyment">
+        <label><option value="-1"></option></label>
+        <label><option value="0">Nein</option></label>
+        <label><option value="1" >Weder noch</option></label>
+        <label><option value="2">Ja</option></label>
+      </select>
+
+      <p>Wenn Sie Kommentare zu dieser Studie haben, bitte lassen Sie es uns hier wissen:</p>
+      <textarea id="comments" rows="3" cols="50"></textarea>
+      <br/>
+      <button onclick="_s.submit()">Weiter</button>
+    </div>
+  </div>
+
+  <div id="thanks" class="slide js" >
+    <p  class="big">Danke für Ihre Zeit!</p>
+  </div>
+
+  <div class="progress">
+    <span>Verlauf:</span>
+    <div class="bar-wrapper">
+      <div class="bar" width="0%">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
