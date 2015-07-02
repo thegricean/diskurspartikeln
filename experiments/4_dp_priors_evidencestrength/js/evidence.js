@@ -162,7 +162,7 @@ function init() {
 	"item" : "kaffee",
 	  "complement" : "der Kaffee kalt ist",
 	"evidence_question" : "den Kaffee",
-	"evidence1" : "Sie trinken einen Schluck Kaffee und stellen fest, dass er kalt war",
+	"evidence1" : "Sie trinken einen Schluck Kaffee und stellen fest, dass er kalt ist",
 	"evidence2" : "Sie berühren die Kaffeetasse und stellen fest, dass sie kalt ist",
 	"evidence3" : "Sie wissen, dass der Kaffee seit einer Stunde auf dem Tisch steht",
 	"evidence4" : "Sie sehen, dass aus dem Kaffee kein Dampf aufsteigt",
