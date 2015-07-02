@@ -189,7 +189,7 @@ function init() {
 	"item" : "hund",
 	  "complement" : "der Nachbarshund gebellt hat",
 	"evidence_question" : "den Hund",
-	"evidence1" : "Sie schauen aus dem Fenster und sehen Struppi, den Hund der Nachbarn, wie er am Zaun stand und bellt",
+	"evidence1" : "Sie schauen aus dem Fenster und sehen Struppi, den Hund der Nachbarn, wie er am Zaun steht und bellt",
 	"evidence2" : "Sie hören einen Hund bellen",
 	"evidence3" : "Sie haben Kopfhörer auf und hören Musik, sehen aber aus dem Fenster und beobachten, wie der Postbote vor der Nachbarstür einen Satz nach hinten macht",			
 	"evidence4" : "Sie haben Kopfhörer auf und hören Musik, wissen aber, dass der Hund der Nachbarn oft bellt",
