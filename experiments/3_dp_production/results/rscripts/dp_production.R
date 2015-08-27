@@ -12,13 +12,14 @@ r$trial = r$slide_number_in_experiment - 2
 r = r[,c("subject", "rt", "evidence_type", "language","age","gender","trial","enjoyment","asses","comments","time_in_minutes","response","evidence","item")]
 head(r)
 
-# add directness ratings -- todo
+# add directness ratings
 directness = read.csv("../../4_dp_priors_evidencestrength/results/data/evidence_priors.txt")
 str(directness)
 head(directness)
 row.names(directness) = paste(directness$item,directness$evidence_id)
 r$Directness = directness[paste(r$item,r$evidence_type),]$mean
-#r$EvidenceTypeCategorical = directness[paste(r$item,r$evidence_type),]$type
+r$EvidenceTypeCategorical = directness[paste(r$item,r$evidence_type),]$evidence_type
+r$item_english = directness[paste(r$item,r$evidence_type),]$item_english
 
 summary(r)
 table(r$item,r$evidence_type)

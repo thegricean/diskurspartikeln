@@ -15,13 +15,32 @@ function make_slides(f) {
       exp.startT = Date.now();
      }
   });
-
+  
+//  slides.sprachtest = slide({
+//    name : "sprachtest",
+//    start : function() {
+//    	$(".weitererr").hide();
+//        $("#weiterbutton").click(function() {
+//        	
+//        	if ($("#thirdword").val() == "bla")
+//        	{
+//			    $("#weiterbutton").unbind("click"); 
+//	        	$(".weitererr").hide();			    
+//	        exp.go();
+////	          	_stream.apply(_s);			    
+//		    } else {
+//        $(".weitererr").show();
+//      }
+//	})    	
+//    }
+//  });  
+  
   slides.instructions = slide({
     name : "instructions",
     button : function() {
       exp.go(); //use exp.go() if and only if there is no "present" data.
     }
-  });
+  });  
 
   slides.cause_effect_prior = slide({
     name : "cause_effect_prior",
@@ -176,7 +195,22 @@ function make_slides(f) {
           "subject_information" : exp.subj_data,
           "time_in_minutes" : (Date.now() - exp.startT)/60000
       };
-      setTimeout(function() {turk.submit(exp.data);}, 1000);
+//      setTimeout(function() {turk.submit(exp.data);}, 1000);
+//      setTimeout(function() {
+      try {
+        $.ajax({
+          url: "../save-1-dp-data-to-file.php",
+          data: {'data': JSON.stringify(exp.data)},
+          cache: false,
+          async: true,
+          type: 'post',
+          timeout: 5000
+        });
+      } catch (e) {
+        console.log("nope!");
+      }      	
+      	
+//      	}, 1000);
     }
   });
 
@@ -554,7 +588,10 @@ function init() {
       screenUW: exp.width
     };
   //blocks of the experiment:
-  exp.structure=["i0", "instructions", "cause_effect_prior", 'subj_info', 'thanks'];
+//  exp.structure=["i0", "sprachtest", "instructions",  "cause_effect_prior", 'subj_info', 'thanks'];
+  exp.structure=["i0", "instructions",  "cause_effect_prior", 'subj_info', 'thanks'];
+  
+  console.log(exp.structure);
   
   exp.data_trials = [];
   //make corresponding slides:

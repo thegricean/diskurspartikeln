@@ -179,7 +179,20 @@ function make_slides(f) {
           "subject_information" : exp.subj_data,
           "time_in_minutes" : (Date.now() - exp.startT)/60000
       };
-      setTimeout(function() {turk.submit(exp.data);}, 1000);
+//      setTimeout(function() {turk.submit(exp.data);}, 1000);
+      try {
+        $.ajax({
+          url: "../save-2-dp-data-to-file.php",
+          data: {'data': JSON.stringify(exp.data)},
+          cache: false,
+          async: true,
+          type: 'post',
+          timeout: 5000
+        });
+      } catch (e) {
+        console.log("nope!");
+      }      	
+
     }
   });
 
