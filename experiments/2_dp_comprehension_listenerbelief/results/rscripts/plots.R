@@ -110,3 +110,97 @@ ggplot(t, aes(x=Utterance,y=Proportion,fill=Strength)) +
 ggsave("graphs/evidence_dist.pdf")
 
 
+## diffs in evidence distributions between speakers and listeners
+r.combined$StrengthBinSize = cut(r.combined$Directness,breaks=3)
+r.combined$Strength = cut(r.combined$Directness,breaks=3,labels=c("weak","medium","strong"))
+
+head(r.combined)
+r.combined$Strength_strong = ifelse(r.combined$Strength == "strong",1,0)
+r.combined$Strength_medium = ifelse(r.combined$Strength == "medium",1,0)
+r.combined$Strength_weak = ifelse(r.combined$Strength == "weak",1,0)
+
+#library(dplyr)
+toplot = droplevels(r.combined) %>% 
+  select(Strength_strong,Strength_medium,Strength_weak,item_type,Experiment) %>%
+  gather(strength, Proportion, -item_type, -Experiment)
+
+agr = aggregate(Proportion~strength+item_type+Experiment,data=toplot,FUN="mean")
+agr$CILow = aggregate(Proportion~strength+item_type+Experiment,data=toplot,FUN="ci.low")$Proportion
+agr$CIHigh = aggregate(Proportion~strength+item_type+Experiment,data=toplot,FUN="ci.high")$Proportion
+agr$YMin = agr$Proportion - agr$CILow
+agr$YMax = agr$Proportion + agr$CIHigh
+t=agr
+t$StrengthBin = gsub("Strength_","",t$strength)
+head(t)
+dodge = position_dodge(.9) 
+
+t$Utterance = factor(x=as.character(t$item_type),levels=c("wohl","vermutlich","muss","bare"))
+t$Strength = factor(x=t$StrengthBin,levels=c("weak","medium","strong"))
+
+ggplot(t, aes(x=Utterance,y=Proportion,fill=Strength)) +
+  geom_bar(stat="identity",position=dodge,color="black") +
+  scale_fill_manual(values=rev(designer.colors(n=3, col=c("#046C9A","#ABDDDE"))),name="Evidence\nstrength") +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),position=dodge,width=.25) +
+  #scale_fill_manual(values=wes_palette("Royal1"),name="Evidence strength") + #Moonrise2, Darjeeling2, Moonrise3, Chevalier
+  ylab("Probability of evidence strength") +
+  facet_wrap(~Experiment) +
+  theme(plot.margin=unit(c(0,0,0,0),units="cm"),axis.title.y=element_text(size=14))  
+ggsave("graphs/evidence_dist_byexperiment.pdf")
+
+
+# average evidence strength by utterance (also do it by item and experiment)
+summary(r.combined)
+agr = aggregate(Directness ~ item_type, data=r.combined,FUN="mean")
+agr$CILow = aggregate(Directness ~ item_type, data=r.combined,FUN="ci.low")$Directness
+agr$CIHigh = aggregate(Directness ~ item_type, data=r.combined,FUN="ci.high")$Directness
+agr$YMin = agr$Directness - agr$CILow
+agr$YMax = agr$Directness + agr$CIHigh
+agr$Utterance = factor(x=as.character(agr$item_type),levels=c("wohl","vermutlich","muss","bare"))
+
+ggplot(agr, aes(x=Utterance,y=Directness)) +
+  geom_bar(stat="identity") +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25)
+ggsave("graphs/average_strength_by_utterance.pdf",width=5)
+
+m = lmer(Directness ~ item_type + (1+item_type|subject) + (1+item_type|item),data=r.combined) 
+summary(m)
+
+# helmert-coded utterance contrasts
+contrasts(r.combined$item_type) = cbind("bare.vs.rest"=c(3/4,-1/4,-1/4,-1/4),"wohl.vs.mussverm"=c(0,2/3,-1/3,-1/3),"muss.vs.vermutlich"=c(0,0,1/2,-1/2))
+
+m = lmer(Directness ~ item_type + (1+item_type|subject) + (1|item),data=r.combined) 
+summary(m)
+
+library(lmerTest)
+m = lmer(Directness ~ item_type + (1+item_type|subject) + (1|item),data=r.combined) 
+summary(m)
+
+# sanity check: shouldn't differ by experiment
+agr = aggregate(Directness ~ item_type+Experiment, data=r.combined,FUN="mean")
+agr$CILow = aggregate(Directness ~ item_type+Experiment, data=r.combined,FUN="ci.low")$Directness
+agr$CIHigh = aggregate(Directness ~ item_type+Experiment, data=r.combined,FUN="ci.high")$Directness
+agr$YMin = agr$Directness - agr$CILow
+agr$YMax = agr$Directness + agr$CIHigh
+agr$Utterance = factor(x=as.character(agr$item_type),levels=c("wohl","vermutlich","muss","bare"))
+dodge=position_dodge(.9)
+
+ggplot(agr, aes(x=Utterance,y=Directness,fill=Experiment)) +
+  geom_bar(stat="identity",position=dodge) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),position=dodge,width=.25)
+
+# check for item differences
+agr = aggregate(Directness ~ item_type+item, data=r.combined,FUN="mean")
+agr$CILow = aggregate(Directness ~ item_type+item, data=r.combined,FUN="ci.low")$Directness
+agr$CIHigh = aggregate(Directness ~ item_type+item, data=r.combined,FUN="ci.high")$Directness
+agr$YMin = agr$Directness - agr$CILow
+agr$YMax = agr$Directness + agr$CIHigh
+agr$Utterance = factor(x=as.character(agr$item_type),levels=c("wohl","vermutlich","muss","bare"))
+dodge=position_dodge(.9)
+
+ggplot(agr, aes(x=Utterance,y=Directness)) +
+  geom_bar(stat="identity") +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
+  ylab("Strength") +
+  facet_wrap(~item)
+ggsave("graphs/average_strength_by_item.pdf",width=7.5)
+
