@@ -1,0 +1,497 @@
+subject	rt	item_type	name	item	sentence	gender	response_type	response	slide_number_in_experiment	screenW	screenH	OS	Browser	language	enjoyment	gender	age	comments	asses	eDucation	time_in_minutes
+0	23070	bare	Jenny	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.99	3	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+0	23070	bare	Jenny	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence1	3	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+0	15894	wohl	Thomas	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.81	4	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+0	15894	wohl	Thomas	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence2	4	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+0	19617	muss	Anna	regen	Es muss geregnet haben.	F	speakerbelief	0.76	5	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+0	19617	muss	Anna	regen	Es muss geregnet haben.	F	evidence	evidence2	5	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+0	24142	vermutlich	Benjamin	hund	Der Nachbarshund hat vermutlich gebellt.	M	speakerbelief	0.64	6	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+0	24142	vermutlich	Benjamin	hund	Der Nachbarshund hat vermutlich gebellt.	M	evidence	evidence3	6	1440	900	Mac	Firefox	Deutsch	2	Female	33		Yes	3	5.4283
+1	34785	vermutlich	Jessika	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.38	3	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+1	34785	vermutlich	Jessika	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence4	3	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+1	15983	bare	Kim	regen	Es hat geregnet.	F	speakerbelief	1	4	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+1	15983	bare	Kim	regen	Es hat geregnet.	F	evidence	evidence1	4	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+1	14487	muss	Karina	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.49	5	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+1	14487	muss	Karina	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence2	5	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+1	13111	wohl	Linda	kaffee	Der Kaffee ist wohl kalt geworden.	F	speakerbelief	0.47	6	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+1	13111	wohl	Linda	kaffee	Der Kaffee ist wohl kalt geworden.	F	evidence	evidence4	6	1920	1200	Windows	Firefox		-1				Yes	-1	1.63588333333
+2	27247	vermutlich	David	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	speakerbelief	0.2	3	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+2	27247	vermutlich	David	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	evidence	evidence3	3	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+2	13414	muss	Sarah	abendessen	Das Abendessen muss fertig geworden sein.	F	speakerbelief	0.57	4	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+2	13414	muss	Sarah	abendessen	Das Abendessen muss fertig geworden sein.	F	evidence	evidence4	4	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+2	31484	wohl	Daniel	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.47	5	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+2	31484	wohl	Daniel	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence2	5	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+2	19148	bare	Georg	regen	Es hat geregnet.	M	speakerbelief	0.49	6	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+2	19148	bare	Georg	regen	Es hat geregnet.	M	evidence	evidence1	6	1366	768	Windows	Chrome	deutsch	2	Female	34		Yes	1	2.04468333333
+3	30513	wohl	Michael	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.79	3	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+3	30513	wohl	Michael	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence3	3	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+3	10322	muss	Mario	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.8	4	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+3	10322	muss	Mario	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence3	4	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+3	22663	vermutlich	Cynthia	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.8	5	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+3	22663	vermutlich	Cynthia	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence4	5	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+3	16509	bare	Joseph	regen	Es hat geregnet.	M	speakerbelief	0.99	6	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+3	16509	bare	Joseph	regen	Es hat geregnet.	M	evidence	evidence1	6	1920	1200	Windows	Firefox	Deutsch	2	Male	54		Yes	3	2.44898333333
+4	52319	bare	Karina	regen	Es hat geregnet.	F	speakerbelief	0.99	3	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+4	52319	bare	Karina	regen	Es hat geregnet.	F	evidence	evidence1	3	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+4	40542	muss	Maria	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	0.51	4	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+4	40543	muss	Maria	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence3	4	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+4	32795	wohl	Jakob	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.84	5	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+4	32795	wohl	Jakob	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence4	5	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+4	35888	vermutlich	Benjamin	hund	Der Nachbarshund hat vermutlich gebellt.	M	speakerbelief	0.29	6	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+4	35888	vermutlich	Benjamin	hund	Der Nachbarshund hat vermutlich gebellt.	M	evidence	evidence3	6	1280	768	Windows	Firefox	deutsch	2	Female	53		Yes	2	3.48976666667
+5	66457	muss	Christina	regen	Es muss geregnet haben.	F	speakerbelief	0.95	3	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+5	66458	muss	Christina	regen	Es muss geregnet haben.	F	evidence	evidence3	3	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+5	26334	vermutlich	Angela	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.67	4	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+5	26334	vermutlich	Angela	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence3	4	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+5	33481	bare	Robert	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.96	5	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+5	33481	bare	Robert	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	5	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+5	30293	wohl	Sarah	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.79	6	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+5	30293	wohl	Sarah	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence4	6	1366	768	Windows	Mozilla	deutsch	2	Female	54		Yes	3	3.38101666667
+6	55450	vermutlich	Mario	regen	Es hat vermutlich geregnet.	M	speakerbelief	0.92	3	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+6	55451	vermutlich	Mario	regen	Es hat vermutlich geregnet.	M	evidence	evidence3	3	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+6	32280	muss	Samuel	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.86	4	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+6	32280	muss	Samuel	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence4	4	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+6	37158	wohl	Karina	kaffee	Der Kaffee ist wohl kalt geworden.	F	speakerbelief	0.41	5	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+6	37158	wohl	Karina	kaffee	Der Kaffee ist wohl kalt geworden.	F	evidence	evidence3	5	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+6	30108	bare	Emilia	hund	Der Nachbarshund hat gebellt.	F	speakerbelief	0.99	6	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+6	30108	bare	Emilia	hund	Der Nachbarshund hat gebellt.	F	evidence	evidence2	6	1920	1080	Linux	Firefox	deutsch	2	Female	51		Yes	4	3.60988333333
+7	25124	wohl	Angela	kaffee	Der Kaffee ist wohl kalt geworden.	F	speakerbelief	0.84	3	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+7	25124	wohl	Angela	kaffee	Der Kaffee ist wohl kalt geworden.	F	evidence	evidence3	3	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+7	21500	vermutlich	Kathrin	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.47	4	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+7	21500	vermutlich	Kathrin	regen	Es hat vermutlich geregnet.	F	evidence	evidence3	4	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+7	13563	muss	Eva	abendessen	Das Abendessen muss fertig geworden sein.	F	speakerbelief	0.58	5	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+7	13563	muss	Eva	abendessen	Das Abendessen muss fertig geworden sein.	F	evidence	evidence3	5	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+7	10539	bare	Patrick	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.98	6	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+7	10539	bare	Patrick	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	6	1422	1138	Windows	Mozilla	Deutsch	2	Male	36		Yes	2	1.62598333333
+8	46815	bare	Lisa	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	1	3	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+8	46815	bare	Lisa	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence3	3	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+8	50852	muss	Jakob	regen	Es muss geregnet haben.	M	speakerbelief	0.79	4	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+8	50852	muss	Jakob	regen	Es muss geregnet haben.	M	evidence	evidence3	4	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+8	29822	wohl	Susanne	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.77	5	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+8	29822	wohl	Susanne	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence4	5	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+8	53824	vermutlich	Sandra	hund	Der Nachbarshund hat vermutlich gebellt.	F	speakerbelief	0.65	6	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+8	53824	vermutlich	Sandra	hund	Der Nachbarshund hat vermutlich gebellt.	F	evidence	evidence3	6	1366	768	Windows	Firefox	Deutsch	2	Female	28		Yes	3	3.6512
+9	102378	wohl	Maria	kaffee	Der Kaffee ist wohl kalt geworden.	F	speakerbelief	0.89	3	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+9	102378	wohl	Maria	kaffee	Der Kaffee ist wohl kalt geworden.	F	evidence	evidence3	3	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+9	59963	bare	Michael	abendessen	Das Abendessen ist fertig geworden.	M	speakerbelief	1	4	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+9	59963	bare	Michael	abendessen	Das Abendessen ist fertig geworden.	M	evidence	evidence2	4	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+9	73223	muss	Anna	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.77	5	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+9	73223	muss	Anna	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence5	5	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+9	77820	vermutlich	Bettina	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.73	6	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+9	77820	vermutlich	Bettina	regen	Es hat vermutlich geregnet.	F	evidence	evidence4	6	1024	768	Windows	Chrome	Deutsch	2	Male	47		Yes	1	6.30803333333
+10	70735	bare	Kevin	regen	Es hat geregnet.	M	speakerbelief	0.99	3	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+10	70735	bare	Kevin	regen	Es hat geregnet.	M	evidence	evidence1	3	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+10	33916	muss	Melanie	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.48	4	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+10	33916	muss	Melanie	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence3	4	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+10	22616	vermutlich	Angela	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.5	5	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+10	22616	vermutlich	Angela	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence4	5	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+10	19570	wohl	Christian	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.49	6	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+10	19570	wohl	Christian	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence4	6	1920	1080	Windows	Firefox	Deutsch	2	Female	46		Yes	2	3.27561666667
+11	66050	bare	Emilia	regen	Es hat geregnet.	F	speakerbelief	0.99	3	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+11	66050	bare	Emilia	regen	Es hat geregnet.	F	evidence	evidence2	3	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+11	32255	wohl	Michelle	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	0.98	4	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+11	32255	wohl	Michelle	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence2	4	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+11	42831	muss	Georg	kaffee	Der Kaffee muss kalt geworden sein.	M	speakerbelief	0.46	5	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+11	42831	muss	Georg	kaffee	Der Kaffee muss kalt geworden sein.	M	evidence	evidence3	5	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+11	40711	vermutlich	Cynthia	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.65	6	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+11	40711	vermutlich	Cynthia	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence4	6	1920	1080	Windows	Firefox	deutsch	2	Male	41		Yes	2	4.02076666667
+12	59346	bare	Eva	regen	Es hat geregnet.	F	speakerbelief	0.65	3	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+12	59346	bare	Eva	regen	Es hat geregnet.	F	evidence	evidence2	3	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+12	34453	vermutlich	Susanne	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.57	4	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+12	34453	vermutlich	Susanne	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence2	4	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+12	24470	wohl	Melanie	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.69	5	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+12	24470	wohl	Melanie	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence4	5	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+12	32686	muss	Christoph	hund	Der Nachbarshund muss gebellt haben.	M	speakerbelief	0.77	6	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+12	32686	muss	Christoph	hund	Der Nachbarshund muss gebellt haben.	M	evidence	evidence3	6	1440	900	Windows	Firefox	deutsch	2	Female	31		Confused	2	2.97471666667
+13	54627	vermutlich	Samuel	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	speakerbelief	0.57	3	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+13	54627	vermutlich	Samuel	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	evidence	evidence4	3	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+13	43724	wohl	Christoph	regen	Es hat wohl geregnet.	M	speakerbelief	0.49	4	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+13	43724	wohl	Christoph	regen	Es hat wohl geregnet.	M	evidence	evidence3	4	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+13	27359	bare	Bettina	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.9	5	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+13	27359	bare	Bettina	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence3	5	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+13	52807	muss	Kim	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.81	6	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+13	52807	muss	Kim	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence4	6	1920	1200	Windows	Firefox	deutsch	2	Female	49		Yes	2	5.026
+14	152183	vermutlich	Nico	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	speakerbelief	0.98	3	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+14	152183	vermutlich	Nico	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	evidence	evidence3	3	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+14	25646	wohl	Mark	regen	Es hat wohl geregnet.	M	speakerbelief	1	4	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+14	25646	wohl	Mark	regen	Es hat wohl geregnet.	M	evidence	evidence3	4	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+14	17445	muss	Mario	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	1	5	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+14	17445	muss	Mario	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence3	5	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+14	23711	bare	Katharina	hund	Der Nachbarshund hat gebellt.	F	speakerbelief	1	6	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+14	23711	bare	Katharina	hund	Der Nachbarshund hat gebellt.	F	evidence	evidence1	6	1920	1080	Windows	Firefox	Deutsch	1	Male	39		Yes	1	4.40333333333
+15	19229	wohl	Frank	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.47	3	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+15	19229	wohl	Frank	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence3	3	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+15	24444	vermutlich	Nicole	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.26	4	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+15	24444	vermutlich	Nicole	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence4	4	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+15	15031	muss	Jakob	regen	Es muss geregnet haben.	M	speakerbelief	0.91	5	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+15	15031	muss	Jakob	regen	Es muss geregnet haben.	M	evidence	evidence1	5	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+15	12081	bare	Christian	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.99	6	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+15	12081	bare	Christian	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	6	1440	900	Mac	Safari	Deutsch	2	Male	41		Yes	2	1.55841666667
+16	43234	bare	Jessika	regen	Es hat geregnet.	F	speakerbelief	0.54	3	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+16	43234	bare	Jessika	regen	Es hat geregnet.	F	evidence	evidence3	3	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+16	28046	wohl	Steffi	kaffee	Der Kaffee ist wohl kalt geworden.	F	speakerbelief	0.48	4	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+16	28046	wohl	Steffi	kaffee	Der Kaffee ist wohl kalt geworden.	F	evidence	evidence3	4	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+16	27171	muss	Melissa	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.48	5	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+16	27171	muss	Melissa	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence5	5	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+16	28170	vermutlich	Sarah	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.56	6	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+16	28170	vermutlich	Sarah	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence4	6	1920	1080	Windows	Chrome	deutsch	2	Female	52		Yes	1	3.0709
+17	80793	vermutlich	Melissa	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0	3	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+17	80793	vermutlich	Melissa	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence4	3	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+17	59743	bare	Mark	regen	Es hat geregnet.	M	speakerbelief	0.99	4	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+17	59743	bare	Mark	regen	Es hat geregnet.	M	evidence	evidence1	4	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+17	60833	wohl	Caroline	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	1	5	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+17	60833	wohl	Caroline	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence2	5	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+17	43302	muss	Christina	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	0.02	6	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+17	43302	muss	Christina	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence3	6	1440	900	Windows	Firefox	deutsch	2	Male	64		Yes	1	5.42648333333
+18	38032	bare	Jakob	kaffee	Der Kaffee ist kalt geworden.	M	speakerbelief	1	3	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+18	38032	bare	Jakob	kaffee	Der Kaffee ist kalt geworden.	M	evidence	evidence1	3	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+18	27444	muss	Jenny	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.82	4	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+18	27444	muss	Jenny	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence2	4	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+18	23239	wohl	Lisa	regen	Es hat wohl geregnet.	F	speakerbelief	0.65	5	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+18	23239	wohl	Lisa	regen	Es hat wohl geregnet.	F	evidence	evidence3	5	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+18	14832	vermutlich	Diana	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.65	6	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+18	14832	vermutlich	Diana	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence4	6	1920	1080	Windows	Firefox	deutsch	1	Male	29		Yes	1	2.25395
+19	46458	vermutlich	Caroline	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.41	3	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+19	46458	vermutlich	Caroline	regen	Es hat vermutlich geregnet.	F	evidence	evidence1	3	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+19	25586	muss	Julie	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	0.47	4	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+19	25586	muss	Julie	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence1	4	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+19	14484	wohl	Sarah	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	0.46	5	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+19	14484	wohl	Sarah	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence2	5	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+19	15558	bare	Jens	abendessen	Das Abendessen ist fertig geworden.	M	speakerbelief	0.99	6	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+19	15558	bare	Jens	abendessen	Das Abendessen ist fertig geworden.	M	evidence	evidence1	6	1280	800	Linux	Chrome	Deutsch	2	Female	29		Yes	1	2.30445
+20	66826	vermutlich	Paul	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	speakerbelief	0.48	3	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+20	66826	vermutlich	Paul	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	evidence	evidence4	3	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+20	40904	muss	Andreas	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.68	4	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+20	40904	muss	Andreas	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence4	4	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+20	51710	wohl	Diana	regen	Es hat wohl geregnet.	F	speakerbelief	0.67	5	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+20	51710	wohl	Diana	regen	Es hat wohl geregnet.	F	evidence	evidence1	5	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+20	32751	bare	Jessika	hund	Der Nachbarshund hat gebellt.	F	speakerbelief	0.96	6	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+20	32751	bare	Jessika	hund	Der Nachbarshund hat gebellt.	F	evidence	evidence1	6	1600	900	Windows	Mozilla	deutsch	2	Female	61		Yes	1	4.51253333333
+21	15741	vermutlich	Jakob	regen	Es hat vermutlich geregnet.	M	speakerbelief	0.71	3	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+21	15741	vermutlich	Jakob	regen	Es hat vermutlich geregnet.	M	evidence	evidence5	3	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+21	12454	muss	Jessika	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.73	4	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+21	12454	muss	Jessika	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence3	4	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+21	6823	bare	Rebecca	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.81	5	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+21	6823	bare	Rebecca	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence3	5	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+21	4984	wohl	Bettina	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.71	6	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+21	4984	wohl	Bettina	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence3	6	1920	1080	Windows	Firefox	deutsch	2	Male	20		Yes	2	1.07296666667
+22	44453	muss	Michelle	abendessen	Das Abendessen muss fertig geworden sein.	F	speakerbelief	0.98	3	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+22	44453	muss	Michelle	abendessen	Das Abendessen muss fertig geworden sein.	F	evidence	evidence3	3	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+22	24752	vermutlich	Linda	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.95	4	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+22	24752	vermutlich	Linda	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence3	4	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+22	25699	bare	Jonathan	regen	Es hat geregnet.	M	speakerbelief	0.99	5	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+22	25699	bare	Jonathan	regen	Es hat geregnet.	M	evidence	evidence1	5	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+22	27430	wohl	Christoph	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.83	6	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+22	27430	wohl	Christoph	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence2	6	1280	960	Windows	Firefox	deutsch	2	Female	55		Yes	1	2.70468333333
+23	85119	muss	Benjamin	hund	Der Nachbarshund muss gebellt haben.	M	speakerbelief	0.79	3	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+23	85119	muss	Benjamin	hund	Der Nachbarshund muss gebellt haben.	M	evidence	evidence2	3	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+23	61791	wohl	Kevin	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.99	4	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+23	61791	wohl	Kevin	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence1	4	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+23	45694	vermutlich	Jenny	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.83	5	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+23	45694	vermutlich	Jenny	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence5	5	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+23	52822	bare	Christoph	regen	Es hat geregnet.	M	speakerbelief	0.99	6	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+23	52822	bare	Christoph	regen	Es hat geregnet.	M	evidence	evidence2	6	1366	768	Windows	Chrome	Französisch	2	Female	40		Confused	2	5.65613333333
+24	41787	wohl	Bettina	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	0.51	3	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+24	41787	wohl	Bettina	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence4	3	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+24	16269	bare	Judith	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.99	4	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+24	16269	bare	Judith	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence1	4	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+24	11726	vermutlich	Julie	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.99	5	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+24	11726	vermutlich	Julie	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence1	5	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+24	24246	muss	Jenny	regen	Es muss geregnet haben.	F	speakerbelief	0.96	6	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+24	24246	muss	Jenny	regen	Es muss geregnet haben.	F	evidence	evidence2	6	1920	1080	Windows	Firefox	deutsch	2	Male	34		Yes	1	4.04423333333
+25	51689	vermutlich	Nico	hund	Der Nachbarshund hat vermutlich gebellt.	M	speakerbelief	0	3	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+25	51689	vermutlich	Nico	hund	Der Nachbarshund hat vermutlich gebellt.	M	evidence	evidence4	3	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+25	24359	muss	Jens	kaffee	Der Kaffee muss kalt geworden sein.	M	speakerbelief	0.86	4	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+25	24361	muss	Jens	kaffee	Der Kaffee muss kalt geworden sein.	M	evidence	evidence1	4	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+25	30819	wohl	Rebecca	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.84	5	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+25	30820	wohl	Rebecca	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence3	5	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+25	23600	bare	Kathrin	regen	Es hat geregnet.	F	speakerbelief	0.67	6	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+25	23600	bare	Kathrin	regen	Es hat geregnet.	F	evidence	evidence2	6	360	640	Linux	Chrome	Deutsch	2	Female	27		Confused	1	3.05335
+26	43292	wohl	Emilia	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.73	3	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+26	43292	wohl	Emilia	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence4	3	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+26	28663	vermutlich	Susanne	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.69	4	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+26	28663	vermutlich	Susanne	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence3	4	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+26	29280	muss	Joseph	regen	Es muss geregnet haben.	M	speakerbelief	0.74	5	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+26	29280	muss	Joseph	regen	Es muss geregnet haben.	M	evidence	evidence3	5	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+26	23785	bare	Lisa	hund	Der Nachbarshund hat gebellt.	F	speakerbelief	0.99	6	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+26	23785	bare	Lisa	hund	Der Nachbarshund hat gebellt.	F	evidence	evidence2	6	1680	1050	Windows	Chrome	deutsch	2	Female	37		Yes	1	2.81171666667
+27	62093	wohl	Michael	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.5	3	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+27	62093	wohl	Michael	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence2	3	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+27	66230	vermutlich	Christina	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.49	4	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+27	66230	vermutlich	Christina	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence2	4	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+27	43094	bare	Lisa	abendessen	Das Abendessen ist fertig geworden.	F	speakerbelief	0.71	5	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+27	43094	bare	Lisa	abendessen	Das Abendessen ist fertig geworden.	F	evidence	evidence1	5	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+27	58125	muss	Katharina	regen	Es muss geregnet haben.	F	speakerbelief	0.49	6	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+27	58125	muss	Katharina	regen	Es muss geregnet haben.	F	evidence	evidence2	6	1536	864	Windows	Mozilla	deutsch	2	Male	59		Yes	2	6.03028333333
+28	44174	muss	Julie	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	0.85	3	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+28	44174	muss	Julie	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence1	3	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+28	27957	vermutlich	Patrick	hund	Der Nachbarshund hat vermutlich gebellt.	M	speakerbelief	0.55	4	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+28	27957	vermutlich	Patrick	hund	Der Nachbarshund hat vermutlich gebellt.	M	evidence	evidence2	4	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+28	29623	wohl	Robert	regen	Es hat wohl geregnet.	M	speakerbelief	0.41	5	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+28	29623	wohl	Robert	regen	Es hat wohl geregnet.	M	evidence	evidence5	5	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+28	24852	bare	Steffi	abendessen	Das Abendessen ist fertig geworden.	F	speakerbelief	0.61	6	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+28	24852	bare	Steffi	abendessen	Das Abendessen ist fertig geworden.	F	evidence	evidence1	6	1366	768	Mac	Safari	Deutsch	1	Male	28		Yes	1	2.85213333333
+29	78446	wohl	Robert	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.7	3	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+29	78446	wohl	Robert	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence3	3	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+29	78206	muss	Caroline	regen	Es muss geregnet haben.	F	speakerbelief	0.87	4	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+29	78206	muss	Caroline	regen	Es muss geregnet haben.	F	evidence	evidence2	4	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+29	59479	vermutlich	Laura	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.57	5	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+29	59479	vermutlich	Laura	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence3	5	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+29	40297	bare	Melissa	abendessen	Das Abendessen ist fertig geworden.	F	speakerbelief	0.99	6	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+29	40297	bare	Melissa	abendessen	Das Abendessen ist fertig geworden.	F	evidence	evidence1	6	1280	1024	Windows	Firefox	deutsch	1	Female	36		Confused	2	5.31666666667
+30	30366	vermutlich	Robert	regen	Es hat vermutlich geregnet.	M	speakerbelief	0.78	3	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+30	30366	vermutlich	Robert	regen	Es hat vermutlich geregnet.	M	evidence	evidence2	3	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+30	24448	bare	Maria	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.99	4	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+30	24448	bare	Maria	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence3	4	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+30	31215	wohl	Mario	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.19	5	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+30	31215	wohl	Mario	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence5	5	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+30	25935	muss	Thomas	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.16	6	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+30	25935	muss	Thomas	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence4	6	1920	1080	Windows	Chrome	deutsch	2	Male	54		Yes	1	2.55998333333
+31	46105	wohl	Christoph	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.73	3	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+31	46105	wohl	Christoph	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence4	3	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+31	28198	bare	Linda	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.01	4	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+31	28198	bare	Linda	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence1	4	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+31	21961	muss	Daniel	regen	Es muss geregnet haben.	M	speakerbelief	0.92	5	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+31	21961	muss	Daniel	regen	Es muss geregnet haben.	M	evidence	evidence3	5	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+31	31263	vermutlich	Karina	hund	Der Nachbarshund hat vermutlich gebellt.	F	speakerbelief	0.34	6	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+31	31263	vermutlich	Karina	hund	Der Nachbarshund hat vermutlich gebellt.	F	evidence	evidence3	6	1366	768	Windows	Firefox	deutsch	2	Female	41		Yes	1	2.98448333333
+32	32862	bare	Nico	kaffee	Der Kaffee ist kalt geworden.	M	speakerbelief	0.99	3	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+32	32862	bare	Nico	kaffee	Der Kaffee ist kalt geworden.	M	evidence	evidence4	3	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+32	28007	vermutlich	David	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	speakerbelief	0.54	4	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+32	28007	vermutlich	David	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	evidence	evidence4	4	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+32	24281	muss	Angela	regen	Es muss geregnet haben.	F	speakerbelief	0.55	5	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+32	24281	muss	Angela	regen	Es muss geregnet haben.	F	evidence	evidence3	5	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+32	28071	wohl	Christoph	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.56	6	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+32	28071	wohl	Christoph	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence2	6	768	1024	an unknown OS	Safari	deutsch 	0	Female	35		Yes	1	2.83771666667
+33	68913	wohl	Jakob	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.95	3	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+33	68913	wohl	Jakob	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence2	3	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+33	58076	bare	Jessika	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.97	4	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+33	58076	bare	Jessika	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence3	4	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+33	41833	vermutlich	Sandra	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.98	5	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+33	41833	vermutlich	Sandra	regen	Es hat vermutlich geregnet.	F	evidence	evidence1	5	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+33	43867	muss	Paul	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.96	6	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+33	43867	muss	Paul	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence4	6	1440	900	Windows	Chrome	deutsch	2	Female	47		No	2	4.61913333333
+34	22729	vermutlich	Karina	hund	Der Nachbarshund hat vermutlich gebellt.	F	speakerbelief	0.62	3	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+34	22729	vermutlich	Karina	hund	Der Nachbarshund hat vermutlich gebellt.	F	evidence	evidence4	3	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+34	14431	bare	Nico	regen	Es hat geregnet.	M	speakerbelief	0.83	4	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+34	14431	bare	Nico	regen	Es hat geregnet.	M	evidence	evidence2	4	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+34	14927	muss	Judith	abendessen	Das Abendessen muss fertig geworden sein.	F	speakerbelief	0.67	5	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+34	14927	muss	Judith	abendessen	Das Abendessen muss fertig geworden sein.	F	evidence	evidence4	5	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+34	10440	wohl	Michael	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.53	6	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+34	10440	wohl	Michael	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence3	6	1360	768	Windows	Firefox	Deutsch	1	Female	21		Yes	1	1.52436666667
+35	59589	muss	Michelle	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	0.49	3	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+35	59589	muss	Michelle	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence3	3	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+35	37214	wohl	Nicole	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.67	4	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+35	37214	wohl	Nicole	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence4	4	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+35	37974	bare	Alex	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.98	5	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+35	37974	bare	Alex	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	5	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+35	45256	vermutlich	Jonathan	regen	Es hat vermutlich geregnet.	M	speakerbelief	0.49	6	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+35	45256	vermutlich	Jonathan	regen	Es hat vermutlich geregnet.	M	evidence	evidence3	6	1920	1200	Windows	Firefox	deutsch	2	Female	28	Mich würde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	Confused	2	4.48533333333
+36	77241	vermutlich	Kathrin	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.99	3	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+36	77241	vermutlich	Kathrin	regen	Es hat vermutlich geregnet.	F	evidence	evidence5	3	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+36	39473	muss	Karina	abendessen	Das Abendessen muss fertig geworden sein.	F	speakerbelief	0.99	4	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+36	39473	muss	Karina	abendessen	Das Abendessen muss fertig geworden sein.	F	evidence	evidence4	4	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+36	39642	bare	Michael	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.98	5	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+36	39642	bare	Michael	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	5	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+36	460114	wohl	Mario	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.72	6	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+36	460114	wohl	Mario	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence3	6	1280	1024	Windows	Chrome	deutsch	2	Male	34		Yes	1	11.1235333333
+37	49491	vermutlich	Sarah	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.83	3	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+37	49491	vermutlich	Sarah	regen	Es hat vermutlich geregnet.	F	evidence	evidence3	3	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+37	34854	bare	Jenny	hund	Der Nachbarshund hat gebellt.	F	speakerbelief	0.99	4	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+37	34854	bare	Jenny	hund	Der Nachbarshund hat gebellt.	F	evidence	evidence1	4	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+37	33226	muss	Eva	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	0.92	5	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+37	33226	muss	Eva	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence2	5	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+37	29011	wohl	Maria	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.82	6	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+37	29011	wohl	Maria	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence4	6	1920	1080	Windows	Firefox	deutsch	2	Male	54		Yes	1	3.20636666667
+38	13878	vermutlich	Laura	hund	Der Nachbarshund hat vermutlich gebellt.	F	speakerbelief	0.88	3	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+38	13878	vermutlich	Laura	hund	Der Nachbarshund hat vermutlich gebellt.	F	evidence	evidence2	3	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+38	16105	muss	Michael	regen	Es muss geregnet haben.	M	speakerbelief	0.9	4	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+38	16105	muss	Michael	regen	Es muss geregnet haben.	M	evidence	evidence2	4	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+38	19648	bare	Georg	abendessen	Das Abendessen ist fertig geworden.	M	speakerbelief	1	5	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+38	19648	bare	Georg	abendessen	Das Abendessen ist fertig geworden.	M	evidence	evidence1	5	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+38	15895	wohl	Mario	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.72	6	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+38	15895	wohl	Mario	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence4	6	1920	1080	Windows	Mozilla	Deutsch	2	Male	32		Yes	2	1.41521666667
+39	65425	wohl	Erik	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.29	3	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+39	65425	wohl	Erik	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence5	3	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+39	23345	vermutlich	Susanne	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.91	4	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+39	23345	vermutlich	Susanne	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence3	4	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+39	22671	bare	Andreas	abendessen	Das Abendessen ist fertig geworden.	M	speakerbelief	0.98	5	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+39	22671	bare	Andreas	abendessen	Das Abendessen ist fertig geworden.	M	evidence	evidence1	5	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+39	19535	muss	Diana	regen	Es muss geregnet haben.	F	speakerbelief	0.68	6	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+39	19535	muss	Diana	regen	Es muss geregnet haben.	F	evidence	evidence3	6	1920	1080	Windows	Firefox	deutsch	1	Female	40	Bei vielen Fragen waren mehrere Antworten (Vermutungen) möglich	Confused	2	3.35936666667
+40	49015	wohl	Christian	hund	Der Nachbarshund hat wohl gebellt.	M	speakerbelief	0.56	3	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+40	49015	wohl	Christian	hund	Der Nachbarshund hat wohl gebellt.	M	evidence	evidence1	3	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+40	24657	vermutlich	Daniel	regen	Es hat vermutlich geregnet.	M	speakerbelief	0.47	4	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+40	24657	vermutlich	Daniel	regen	Es hat vermutlich geregnet.	M	evidence	evidence2	4	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+40	15023	muss	Dennis	kaffee	Der Kaffee muss kalt geworden sein.	M	speakerbelief	0.75	5	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+40	15024	muss	Dennis	kaffee	Der Kaffee muss kalt geworden sein.	M	evidence	evidence3	5	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+40	18481	bare	Steffi	abendessen	Das Abendessen ist fertig geworden.	F	speakerbelief	1	6	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+40	18481	bare	Steffi	abendessen	Das Abendessen ist fertig geworden.	F	evidence	evidence4	6	1920	1080	Windows	Firefox	Deustch	2	Male	36		Yes	2	2.5772
+41	52643	wohl	Andreas	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.48	3	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+41	52643	wohl	Andreas	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence4	3	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+41	34395	bare	Christina	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.97	4	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+41	34395	bare	Christina	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence1	4	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+41	46853	muss	Michelle	regen	Es muss geregnet haben.	F	speakerbelief	0.78	5	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+41	46853	muss	Michelle	regen	Es muss geregnet haben.	F	evidence	evidence3	5	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+41	45415	vermutlich	Helena	hund	Der Nachbarshund hat vermutlich gebellt.	F	speakerbelief	0.64	6	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+41	45415	vermutlich	Helena	hund	Der Nachbarshund hat vermutlich gebellt.	F	evidence	evidence3	6	1366	768	Windows	Chrome	deutsch	2	Male	51		Yes	1	3.86796666667
+42	39005	bare	David	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	1	3	1600	1200	Windows	Mozilla		-1				-1	3.04765
+42	39005	bare	David	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	3	1600	1200	Windows	Mozilla		-1				-1	3.04765
+42	34383	muss	Melanie	regen	Es muss geregnet haben.	F	speakerbelief	0.73	4	1600	1200	Windows	Mozilla		-1				-1	3.04765
+42	34383	muss	Melanie	regen	Es muss geregnet haben.	F	evidence	evidence2	4	1600	1200	Windows	Mozilla		-1				-1	3.04765
+42	42876	wohl	Benjamin	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	1	5	1600	1200	Windows	Mozilla		-1				-1	3.04765
+42	42876	wohl	Benjamin	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence3	5	1600	1200	Windows	Mozilla		-1				-1	3.04765
+42	38512	vermutlich	Daniel	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	speakerbelief	0.6	6	1600	1200	Windows	Mozilla		-1				-1	3.04765
+42	38512	vermutlich	Daniel	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	evidence	evidence4	6	1600	1200	Windows	Mozilla		-1				-1	3.04765
+43	40359	wohl	Sarah	regen	Es hat wohl geregnet.	F	speakerbelief	0.96	3	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+43	40359	wohl	Sarah	regen	Es hat wohl geregnet.	F	evidence	evidence2	3	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+43	20854	muss	Kim	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.57	4	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+43	20854	muss	Kim	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence2	4	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+43	20055	vermutlich	Nico	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	speakerbelief	0.69	5	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+43	20055	vermutlich	Nico	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	evidence	evidence4	5	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+43	15936	bare	Frank	kaffee	Der Kaffee ist kalt geworden.	M	speakerbelief	0.87	6	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+43	15936	bare	Frank	kaffee	Der Kaffee ist kalt geworden.	M	evidence	evidence1	6	1600	900	Windows	Chrome	Deutsch	2	Female	29		Yes	1	2.07538333333
+44	36731	wohl	Steffi	kaffee	Der Kaffee ist wohl kalt geworden.	F	speakerbelief	0.98	3	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+44	36731	wohl	Steffi	kaffee	Der Kaffee ist wohl kalt geworden.	F	evidence	evidence3	3	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+44	29259	vermutlich	Judith	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.73	4	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+44	29259	vermutlich	Judith	regen	Es hat vermutlich geregnet.	F	evidence	evidence5	4	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+44	15479	muss	Benjamin	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.7	5	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+44	15479	muss	Benjamin	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence4	5	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+44	19833	bare	Samuel	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	1	6	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+44	19833	bare	Samuel	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	6	1920	1080	Mac	Safari	Deutsch	2	Male	28		Yes	2	2.38015
+45	32078	wohl	Anna	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.47	3	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+45	32078	wohl	Anna	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence4	3	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+45	31600	muss	Sarah	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	1	4	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+45	31600	muss	Sarah	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence3	4	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+45	28019	bare	Cynthia	regen	Es hat geregnet.	F	speakerbelief	0.99	5	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+45	28019	bare	Cynthia	regen	Es hat geregnet.	F	evidence	evidence1	5	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+45	20913	vermutlich	Robert	hund	Der Nachbarshund hat vermutlich gebellt.	M	speakerbelief	0.35	6	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+45	20913	vermutlich	Robert	hund	Der Nachbarshund hat vermutlich gebellt.	M	evidence	evidence2	6	1360	768	Windows	Chrome	deutsch	2	Male	23		Yes	0	2.19255
+46	9527	bare	Bettina	regen	Es hat geregnet.	F	speakerbelief	1	3	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+46	9527	bare	Bettina	regen	Es hat geregnet.	F	evidence	evidence2	3	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+46	9967	wohl	Caroline	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	0.5	4	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+46	9967	wohl	Caroline	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence2	4	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+46	9560	vermutlich	Linda	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.49	5	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+46	9560	vermutlich	Linda	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence4	5	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+46	9144	muss	Robert	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.48	6	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+46	9144	muss	Robert	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence4	6	1280	1024	Windows	Chrome	deutsch	2	Female	28		Yes	1	0.929016666667
+47	28123	vermutlich	Nico	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	speakerbelief	0.93	3	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+47	28123	vermutlich	Nico	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	evidence	evidence2	3	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+47	21020	muss	Jessika	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.96	4	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+47	21020	muss	Jessika	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence2	4	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+47	19391	wohl	Jens	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.93	5	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+47	19392	wohl	Jens	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence3	5	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+47	31918	bare	Georg	regen	Es hat geregnet.	M	speakerbelief	1	6	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+47	31918	bare	Georg	regen	Es hat geregnet.	M	evidence	evidence2	6	1366	768	Windows	Firefox	deutsch	1	Male	26		Yes	2	2.11966666667
+48	57343	bare	Michael	abendessen	Das Abendessen ist fertig geworden.	M	speakerbelief	0.99	3	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+48	57343	bare	Michael	abendessen	Das Abendessen ist fertig geworden.	M	evidence	evidence2	3	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+48	65651	muss	Judith	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.75	4	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+48	65651	muss	Judith	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence3	4	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+48	47450	wohl	Sandra	regen	Es hat wohl geregnet.	F	speakerbelief	0.8	5	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+48	47450	wohl	Sandra	regen	Es hat wohl geregnet.	F	evidence	evidence3	5	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+48	42734	vermutlich	Rebecca	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.55	6	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+48	42734	vermutlich	Rebecca	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence3	6	1477	831	Windows	Mozilla	deutsch	2	Female	36	etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: "Sie sind in einem fensterlosen Raum."	Yes	2	5.43626666667
+49	56067	muss	Bettina	kaffee	Der Kaffee muss kalt geworden sein.	F	speakerbelief	1	3	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+49	56067	muss	Bettina	kaffee	Der Kaffee muss kalt geworden sein.	F	evidence	evidence3	3	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+49	35660	wohl	Nicole	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	0.99	4	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+49	35660	wohl	Nicole	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence2	4	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+49	26794	vermutlich	Rebecca	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.47	5	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+49	26794	vermutlich	Rebecca	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence3	5	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+49	26867	bare	Erik	regen	Es hat geregnet.	M	speakerbelief	0.99	6	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+49	26867	bare	Erik	regen	Es hat geregnet.	M	evidence	evidence2	6	1280	1024	Windows	Chrome	deutsch	2	Male	52		Yes	1	3.06286666667
+50	49963	wohl	Emilia	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	0.79	3	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+50	49963	wohl	Emilia	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence3	3	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+50	33101	vermutlich	Georg	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	speakerbelief	0.62	4	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+50	33101	vermutlich	Georg	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	evidence	evidence3	4	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+50	24959	muss	Thomas	regen	Es muss geregnet haben.	M	speakerbelief	0.88	5	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+50	24959	muss	Thomas	regen	Es muss geregnet haben.	M	evidence	evidence3	5	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+50	17871	bare	Christian	abendessen	Das Abendessen ist fertig geworden.	M	speakerbelief	0.99	6	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+50	17871	bare	Christian	abendessen	Das Abendessen ist fertig geworden.	M	evidence	evidence1	6	1920	1080	Windows	Firefox	deutsch	2	Male	47		Yes	2	2.60933333333
+51	91517	wohl	Eva	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	1	3	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+51	91518	wohl	Eva	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence5	3	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+51	76350	vermutlich	Robert	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	speakerbelief	1	4	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+51	76350	vermutlich	Robert	kaffee	Der Kaffee ist vermutlich kalt geworden.	M	evidence	evidence3	4	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+51	63418	bare	Andreas	regen	Es hat geregnet.	M	speakerbelief	1	5	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+51	63418	bare	Andreas	regen	Es hat geregnet.	M	evidence	evidence2	5	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+51	84106	muss	Christian	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.48	6	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+51	84106	muss	Christian	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence3	6	1366	768	Windows	Firefox	deutsch	2	Male	72		Yes	-1	6.19113333333
+52	39647	wohl	Christian	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.66	3	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+52	39647	wohl	Christian	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence2	3	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+52	10675	vermutlich	Diana	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.47	4	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+52	10675	vermutlich	Diana	regen	Es hat vermutlich geregnet.	F	evidence	evidence3	4	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+52	16036	bare	Jakob	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.96	5	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+52	16036	bare	Jakob	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	5	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+52	20076	muss	Daniel	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.51	6	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+52	20076	muss	Daniel	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence3	6	1366	768	Windows	Firefox	deutsch	2	Female	29		Yes	2	2.36535
+53	39912	bare	Karina	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.93	3	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+53	39912	bare	Karina	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence3	3	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+53	14747	wohl	Thomas	regen	Es hat wohl geregnet.	M	speakerbelief	0.97	4	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+53	14747	wohl	Thomas	regen	Es hat wohl geregnet.	M	evidence	evidence2	4	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+53	17766	muss	Michael	hund	Der Nachbarshund muss gebellt haben.	M	speakerbelief	0.92	5	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+53	17766	muss	Michael	hund	Der Nachbarshund muss gebellt haben.	M	evidence	evidence2	5	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+53	25585	vermutlich	Daniel	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	speakerbelief	0.29	6	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+53	25585	vermutlich	Daniel	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	evidence	evidence3	6	320	568	iPhone/iPod	Safari	Deutsch 	2	Male	26		Confused	3	2.32476666667
+54	24046	bare	Anna	hund	Der Nachbarshund hat gebellt.	F	speakerbelief	0.87	3	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+54	24046	bare	Anna	hund	Der Nachbarshund hat gebellt.	F	evidence	evidence5	3	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+54	18983	vermutlich	Patrick	regen	Es hat vermutlich geregnet.	M	speakerbelief	0.14	4	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+54	18983	vermutlich	Patrick	regen	Es hat vermutlich geregnet.	M	evidence	evidence2	4	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+54	14128	muss	Karina	abendessen	Das Abendessen muss fertig geworden sein.	F	speakerbelief	0.18	5	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+54	14128	muss	Karina	abendessen	Das Abendessen muss fertig geworden sein.	F	evidence	evidence3	5	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+54	8921	wohl	David	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.36	6	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+54	8921	wohl	David	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence3	6	1280	1024	Windows	Firefox		-1				-1	1.26508333333
+55	68292	muss	David	regen	Es muss geregnet haben.	M	speakerbelief	0.87	3	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+55	68292	muss	David	regen	Es muss geregnet haben.	M	evidence	evidence2	3	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+55	27829	bare	Anna	hund	Der Nachbarshund hat gebellt.	F	speakerbelief	0.91	4	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+55	27829	bare	Anna	hund	Der Nachbarshund hat gebellt.	F	evidence	evidence2	4	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+55	44667	vermutlich	Nico	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	speakerbelief	0.69	5	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+55	44667	vermutlich	Nico	abendessen	Das Abendessen ist vermutlich fertig geworden.	M	evidence	evidence4	5	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+55	29039	wohl	Benjamin	kaffee	Der Kaffee ist wohl kalt geworden.	M	speakerbelief	0.77	6	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+55	29039	wohl	Benjamin	kaffee	Der Kaffee ist wohl kalt geworden.	M	evidence	evidence2	6	320	568	iPhone/iPod	Safari	Deutsch	2	Female	51		Yes	1	3.97481666667
+56	13749	vermutlich	Christina	regen	Es hat vermutlich geregnet.	F	speakerbelief	0.46	3	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+56	13749	vermutlich	Christina	regen	Es hat vermutlich geregnet.	F	evidence	evidence2	3	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+56	10988	muss	Thomas	kaffee	Der Kaffee muss kalt geworden sein.	M	speakerbelief	0.51	4	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+56	10989	muss	Thomas	kaffee	Der Kaffee muss kalt geworden sein.	M	evidence	evidence2	4	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+56	16830	wohl	Melissa	hund	Der Nachbarshund hat wohl gebellt.	F	speakerbelief	0.44	5	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+56	16830	wohl	Melissa	hund	Der Nachbarshund hat wohl gebellt.	F	evidence	evidence3	5	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+56	21659	bare	Nicole	abendessen	Das Abendessen ist fertig geworden.	F	speakerbelief	0.93	6	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+56	21659	bare	Nicole	abendessen	Das Abendessen ist fertig geworden.	F	evidence	evidence2	6	1366	768	Windows	Chrome	deutsch	2	Male	35		Yes	2	3.52601666667
+57	46788	bare	Andreas	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.96	3	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+57	46788	bare	Andreas	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence3	3	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+57	20252	muss	Lisa	regen	Es muss geregnet haben.	F	speakerbelief	0.98	4	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+57	20252	muss	Lisa	regen	Es muss geregnet haben.	F	evidence	evidence1	4	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+57	34321	vermutlich	Katharina	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	speakerbelief	0.96	5	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+57	34321	vermutlich	Katharina	abendessen	Das Abendessen ist vermutlich fertig geworden.	F	evidence	evidence3	5	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+57	23652	wohl	Sarah	kaffee	Der Kaffee ist wohl kalt geworden.	F	speakerbelief	0.99	6	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+57	23652	wohl	Sarah	kaffee	Der Kaffee ist wohl kalt geworden.	F	evidence	evidence1	6	1366	768	Windows	Firefox	deutsch	2	Female	50		Confused	1	2.87043333333
+58	49607	vermutlich	Eva	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.91	3	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+58	49607	vermutlich	Eva	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence3	3	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+58	37762	muss	Maria	regen	Es muss geregnet haben.	F	speakerbelief	0.65	4	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+58	37762	muss	Maria	regen	Es muss geregnet haben.	F	evidence	evidence3	4	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+58	28746	wohl	Tim	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.47	5	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+58	28746	wohl	Tim	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence4	5	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+58	26123	bare	Robert	hund	Der Nachbarshund hat gebellt.	M	speakerbelief	0.95	6	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+58	26123	bare	Robert	hund	Der Nachbarshund hat gebellt.	M	evidence	evidence2	6	1600	900	Linux	Firefox	Deutsch	1	Male	51		Confused	1	3.0723
+59	70336	wohl	Mario	regen	Es hat wohl geregnet.	M	speakerbelief	0.48	3	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+59	70336	wohl	Mario	regen	Es hat wohl geregnet.	M	evidence	evidence3	3	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+59	34486	muss	Benjamin	abendessen	Das Abendessen muss fertig geworden sein.	M	speakerbelief	0.49	4	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+59	34486	muss	Benjamin	abendessen	Das Abendessen muss fertig geworden sein.	M	evidence	evidence2	4	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+59	26707	bare	Caroline	kaffee	Der Kaffee ist kalt geworden.	F	speakerbelief	0.5	5	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+59	26707	bare	Caroline	kaffee	Der Kaffee ist kalt geworden.	F	evidence	evidence2	5	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+59	119150	vermutlich	Kathrin	hund	Der Nachbarshund hat vermutlich gebellt.	F	speakerbelief	0.51	6	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+59	119150	vermutlich	Kathrin	hund	Der Nachbarshund hat vermutlich gebellt.	F	evidence	evidence4	6	1280	1024	Windows	Firefox	deutsch	2	Male	40		Yes	1	5.97821666667
+60	18833	vermutlich	Nicole	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	speakerbelief	0.98	3	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+60	18833	vermutlich	Nicole	kaffee	Der Kaffee ist vermutlich kalt geworden.	F	evidence	evidence1	3	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+60	29442	muss	Melissa	hund	Der Nachbarshund muss gebellt haben.	F	speakerbelief	0.99	4	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+60	29442	muss	Melissa	hund	Der Nachbarshund muss gebellt haben.	F	evidence	evidence4	4	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+60	27675	wohl	Georg	abendessen	Das Abendessen ist wohl fertig geworden.	M	speakerbelief	0.97	5	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+60	27675	wohl	Georg	abendessen	Das Abendessen ist wohl fertig geworden.	M	evidence	evidence3	5	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+60	31012	bare	Michelle	regen	Es hat geregnet.	F	speakerbelief	0.98	6	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+60	31012	bare	Michelle	regen	Es hat geregnet.	F	evidence	evidence2	6	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	2.4387
+61	16263	vermutlich	Daniel	hund	Der Nachbarshund hat vermutlich gebellt.	M	speakerbelief	0.98	3	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667
+61	16264	vermutlich	Daniel	hund	Der Nachbarshund hat vermutlich gebellt.	M	evidence	evidence2	3	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667
+61	13953	muss	Melissa	regen	Es muss geregnet haben.	F	speakerbelief	1	4	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667
+61	13953	muss	Melissa	regen	Es muss geregnet haben.	F	evidence	evidence2	4	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667
+61	12633	bare	Mark	kaffee	Der Kaffee ist kalt geworden.	M	speakerbelief	0.98	5	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667
+61	12633	bare	Mark	kaffee	Der Kaffee ist kalt geworden.	M	evidence	evidence1	5	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667
+61	11163	wohl	Emilia	abendessen	Das Abendessen ist wohl fertig geworden.	F	speakerbelief	0.98	6	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667
+61	11163	wohl	Emilia	abendessen	Das Abendessen ist wohl fertig geworden.	F	evidence	evidence3	6	1366	768	Windows	Firefox	deutsch	2	Female	50		Yes	1	1.26416666667

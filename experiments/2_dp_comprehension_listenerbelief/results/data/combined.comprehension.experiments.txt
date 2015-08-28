@@ -1,0 +1,473 @@
+subject	rt	language	age	gender	trial	enjoyment	asses	comments	time_in_minutes	response	response_type	item	sentence	item_type	Directness	EvidenceTypeCategorical	item_english	response_evidence	Experiment
+0	12796	Deutsch	33	M	1	2	Yes		1.528783333	1	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+0	14622	Deutsch	33	F	4	2	Yes		1.528783333	0.73	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	listener
+0	14759	Deutsch	33	F	2	2	Yes		1.528783333	0.83	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+0	15894	Deutsch	33	M	2	2	Yes		5.4283	0.81	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9525	reportative	dinner	evidence2	speaker
+0	16929	Deutsch	33	M	3	2	Yes		1.528783333	0.78	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9525	reportative	dinner	evidence2	listener
+0	19617	Deutsch	33	F	3	2	Yes		5.4283	0.76	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+0	23070	Deutsch	33	F	1	2	Yes		5.4283	0.99	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	speaker
+0	24142	Deutsch	33	M	4	2	Yes		5.4283	0.64	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	speaker
+1	9534	deutsch	34	F	4	2	Yes		1.452266667	0.48	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	listener
+1	13111		NA	F	4	-1	Yes		1.635883333	0.47	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.946666666666667	inferential	coffee	evidence4	speaker
+1	14487		NA	F	3	-1	Yes		1.635883333	0.49	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	speaker
+1	15983		NA	F	2	-1	Yes		1.635883333	1	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+1	16247	deutsch	34	M	2	2	Yes		1.452266667	0.35	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+1	18547	deutsch	34	F	1	2	Yes		1.452266667	0.47	evidence	regen	Es hat wohl geregnet.	wohl	0.98125	perceptual	rain	evidence1	listener
+1	24451	deutsch	34	M	3	2	Yes		1.452266667	0.6	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9525	reportative	dinner	evidence2	listener
+1	34785		NA	F	1	-1	Yes		1.635883333	0.38	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+2	5896	Deutsch	36	F	2	2	Yes		0.74875	0.62	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+2	6454	Deutsch	36	F	1	2	Yes		0.74875	0.99	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+2	8756	Deutsch	36	M	4	2	Yes		0.74875	0.68	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	listener
+2	9360	Deutsch	36	M	3	2	Yes		0.74875	0.64	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+2	13414	deutsch	34	F	2	2	Yes		2.044683333	0.57	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+2	19148	deutsch	34	M	4	2	Yes		2.044683333	0.49	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+2	27247	deutsch	34	M	1	2	Yes		2.044683333	0.2	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+2	31484	deutsch	34	M	3	2	Yes		2.044683333	0.47	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+3	10322	Deutsch	54	M	2	2	Yes		2.448983333	0.8	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	speaker
+3	16509	Deutsch	54	M	4	2	Yes		2.448983333	0.99	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+3	20723	deutsch	53	F	4	2	Yes		2.72025	0.78	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+3	21813	deutsch	53	F	3	2	Yes		2.72025	0.97	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+3	22663	Deutsch	54	F	3	2	Yes		2.448983333	0.8	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.946666666666667	inferential	coffee	evidence4	speaker
+3	28253	deutsch	53	F	2	2	Yes		2.72025	0.71	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	listener
+3	30513	Deutsch	54	M	1	2	Yes		2.448983333	0.79	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	speaker
+3	70820	deutsch	53	M	1	2	Yes		2.72025	0.82	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+4	11178	Deutsch	54	M	2	2	Yes		2.831866667	0.74	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	listener
+4	11701	Deutsch	54	F	1	2	Yes		2.831866667	0.99	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+4	12025	Deutsch	54	F	3	2	Yes		2.831866667	0.74	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+4	13408	Deutsch	54	F	4	2	Yes		2.831866667	0.8	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	listener
+4	32795	deutsch	53	M	3	2	Yes		3.489766667	0.84	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+4	35888	deutsch	53	M	4	2	Yes		3.489766667	0.29	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	speaker
+4	40543	deutsch	53	F	2	2	Yes		3.489766667	0.51	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	speaker
+4	52319	deutsch	53	F	1	2	Yes		3.489766667	0.99	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+5	11676	deutsch	54	M	3	2	Yes		1.8478	1	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+5	21545	deutsch	54	F	2	2	Yes		1.8478	0.71	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+5	23440	deutsch	54	F	1	2	Yes		1.8478	0.8	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	listener
+5	24762	deutsch	54	F	4	2	Yes		1.8478	0.62	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+5	26334	deutsch	54	F	2	2	Yes		3.381016667	0.67	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+5	30293	deutsch	54	F	4	2	Yes		3.381016667	0.79	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+5	33481	deutsch	54	M	3	2	Yes		3.381016667	0.96	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+5	66458	deutsch	54	F	1	2	Yes		3.381016667	0.95	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+6	20646	Deutsch	28	M	4	2	Yes		2.4234	0.96	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+6	29407	Deutsch	28	M	3	2	Yes		2.4234	0.63	evidence	regen	Es hat wohl geregnet.	wohl	0.65875	reportative	rain	evidence4	listener
+6	30108	deutsch	51	F	4	2	Yes		3.609883333	0.99	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+6	30998	Deutsch	28	F	2	2	Yes		2.4234	0.6	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+6	32280	deutsch	51	M	2	2	Yes		3.609883333	0.86	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+6	37158	deutsch	51	F	3	2	Yes		3.609883333	0.41	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+6	48885	Deutsch	28	M	1	2	Yes		2.4234	0.6	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.946666666666667	inferential	coffee	evidence4	listener
+6	55451	deutsch	51	M	1	2	Yes		3.609883333	0.92	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	speaker
+7	10539	Deutsch	36	M	4	2	Yes		1.625983333	0.98	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+7	12468	Deutsch	46	M	2	2	Yes		1.679716667	0.68	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.946666666666667	inferential	coffee	evidence4	listener
+7	13563	Deutsch	36	F	3	2	Yes		1.625983333	0.58	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	speaker
+7	18814	Deutsch	46	M	4	2	Yes		1.679716667	0.48	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	listener
+7	20077	Deutsch	46	M	3	2	Yes		1.679716667	0.79	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+7	20210	Deutsch	46	F	1	2	Yes		1.679716667	0.99	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+7	21500	Deutsch	36	F	2	2	Yes		1.625983333	0.47	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	speaker
+7	25124	Deutsch	36	F	1	2	Yes		1.625983333	0.84	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+8	7775	deutsch	31	F	4	2	Yes		1.860433333	0.61	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.700714285714286	inferential	dog	evidence3	listener
+8	14742	deutsch	31	M	3	2	Yes		1.860433333	0.64	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.946666666666667	inferential	coffee	evidence4	listener
+8	24699	deutsch	31	F	1	2	Yes		1.860433333	0.75	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+8	29822	Deutsch	28	F	3	2	Yes		3.6512	0.77	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+8	35037	deutsch	31	M	2	2	Yes		1.860433333	0.68	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.5	inferential	rain	evidence5	listener
+8	46815	Deutsch	28	F	1	2	Yes		3.6512	1	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	speaker
+8	50852	Deutsch	28	M	2	2	Yes		3.6512	0.79	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+8	53824	Deutsch	28	F	4	2	Yes		3.6512	0.65	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	speaker
+9	11630	deutsch	41	F	2	2	Yes		2.380616667	0.99	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	listener
+9	18135	deutsch	41	M	4	2	Yes		2.380616667	0.73	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+9	28766	deutsch	41	F	1	2	Yes		2.380616667	0.67	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	listener
+9	43279	deutsch	41	M	3	2	Yes		2.380616667	0.71	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+9	59963	Deutsch	47	M	2	2	Yes		6.308033333	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	speaker
+9	73223	Deutsch	47	F	3	2	Yes		6.308033333	0.77	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.493333333333333	inferential	dog	evidence5	speaker
+9	77820	Deutsch	47	F	4	2	Yes		6.308033333	0.73	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.65875	reportative	rain	evidence4	speaker
+9	102378	Deutsch	47	F	1	2	Yes		6.308033333	0.89	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+10	19570	Deutsch	46	M	4	2	Yes		3.275616667	0.49	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.946666666666667	inferential	coffee	evidence4	speaker
+10	22616	Deutsch	46	F	3	2	Yes		3.275616667	0.5	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+10	33916	Deutsch	46	F	2	2	Yes		3.275616667	0.48	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	speaker
+10	44185	Deutsch	47	F	2	2	Yes		5.288116667	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	listener
+10	48047	Deutsch	47	F	3	2	Yes		5.288116667	0.85	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+10	70735	Deutsch	46	M	1	2	Yes		3.275616667	0.99	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+10	79826	Deutsch	47	M	4	2	Yes		5.288116667	0.75	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	listener
+10	102932	Deutsch	47	M	1	2	Yes		5.288116667	0.79	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+11	15015	Deutsch	39	F	3	1	Yes		2.213616667	0.95	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+11	23431	Deutsch	39	F	4	1	Yes		2.213616667	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+11	25444	Deutsch	39	F	1	1	Yes		2.213616667	0.64	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.5	inferential	rain	evidence5	listener
+11	32255	deutsch	41	F	2	2	Yes		4.020766667	0.98	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+11	37502	Deutsch	39	M	2	1	Yes		2.213616667	0.56	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	listener
+11	40711	deutsch	41	F	4	2	Yes		4.020766667	0.65	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+11	42831	deutsch	41	M	3	2	Yes		4.020766667	0.46	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	speaker
+11	66050	deutsch	41	F	1	2	Yes		4.020766667	0.99	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+12	5695	deutsch	29	F	2	1	Yes		0.851333333	1	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+12	5836	deutsch	29	F	4	1	Yes		0.851333333	0.73	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+12	9687	deutsch	29	M	3	1	Yes		0.851333333	0.72	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+12	15905	deutsch	29	M	1	1	Yes		0.851333333	0.65	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+12	24470	deutsch	31	F	3	2	Confused		2.974716667	0.69	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+12	32686	deutsch	31	M	4	2	Confused		2.974716667	0.77	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	speaker
+12	34453	deutsch	31	F	2	2	Confused		2.974716667	0.57	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.806363636363636	perceptual	coffee	evidence2	speaker
+12	59346	deutsch	31	F	1	2	Confused		2.974716667	0.65	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+13	15040	deutsch	52	F	4	2	Yes		2.165	0.52	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+13	19084	deutsch	52	M	3	2	Yes		2.165	0.58	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.493333333333333	inferential	dog	evidence5	listener
+13	25066	deutsch	52	F	2	2	Yes		2.165	0.54	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	listener
+13	27359	deutsch	49	F	3	2	Yes		5.026	0.9	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	speaker
+13	31405	deutsch	52	M	1	2	Yes		2.165	0.55	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	listener
+13	43724	deutsch	49	M	2	2	Yes		5.026	0.49	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	speaker
+13	52807	deutsch	49	F	4	2	Yes		5.026	0.81	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.664	inferential	dog	evidence4	speaker
+13	54627	deutsch	49	M	1	2	Yes		5.026	0.57	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+14	15959	Deutsch	19	M	4	2	Yes		1.900416667	0.87	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+14	17445	Deutsch	39	M	3	1	Yes		4.403333333	1	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	speaker
+14	18439	Deutsch	19	F	3	2	Yes		1.900416667	0.74	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	listener
+14	22370	Deutsch	19	F	2	2	Yes		1.900416667	0.51	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+14	23711	Deutsch	39	F	4	1	Yes		4.403333333	1	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.975	perceptual	dog	evidence1	speaker
+14	25646	Deutsch	39	M	2	1	Yes		4.403333333	1	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	speaker
+14	26318	Deutsch	19	F	1	2	Yes		1.900416667	0.72	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+14	152183	Deutsch	39	M	1	1	Yes		4.403333333	0.98	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+15	10628	Deutsch	29	F	2	2	Yes		1.700083333	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+15	12081	Deutsch	41	M	4	2	Yes		1.558416667	0.99	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+15	13759	Deutsch	29	M	3	2	Yes		1.700083333	0.63	evidence	regen	Es hat wohl geregnet.	wohl	0.98125	perceptual	rain	evidence1	listener
+15	15031	Deutsch	41	M	3	2	Yes		1.558416667	0.91	evidence	regen	Es muss geregnet haben.	muss	0.98125	perceptual	rain	evidence1	speaker
+15	19229	Deutsch	41	M	1	2	Yes		1.558416667	0.47	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+15	21290	Deutsch	29	F	1	2	Yes		1.700083333	0.91	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.806363636363636	perceptual	coffee	evidence2	listener
+15	24444	Deutsch	41	F	2	2	Yes		1.558416667	0.26	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+15	29016	Deutsch	29	M	4	2	Yes		1.700083333	0.99	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	listener
+16	27171	deutsch	52	F	3	2	Yes		3.0709	0.48	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.493333333333333	inferential	dog	evidence5	speaker
+16	28046	deutsch	52	F	2	2	Yes		3.0709	0.48	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+16	28170	deutsch	52	F	4	2	Yes		3.0709	0.56	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+16	43234	deutsch	52	F	1	2	Yes		3.0709	0.54	evidence	regen	Es hat geregnet.	bare	0.844444444444444	inferential	rain	evidence3	speaker
+16	44455	deutsch	64	M	3	2	Yes		4.305433333	0.51	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+16	44867	deutsch	64	M	2	2	Yes		4.305433333	0.52	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+16	68729	deutsch	64	F	4	2	Yes		4.305433333	0.54	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.806363636363636	perceptual	coffee	evidence2	listener
+16	73626	deutsch	64	F	1	2	Yes		4.305433333	0.5	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+17	28687	deutsch	61	M	4	2	Yes		3.913683333	0.89	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	listener
+17	43302	deutsch	64	F	4	2	Yes		5.426483333	0.02	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	speaker
+17	45150	deutsch	61	M	2	2	Yes		3.913683333	0.23	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	listener
+17	57814	deutsch	61	M	3	2	Yes		3.913683333	0.6	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	listener
+17	59743	deutsch	64	M	2	2	Yes		5.426483333	0.99	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+17	60833	deutsch	64	F	3	2	Yes		5.426483333	1	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+17	67220	deutsch	61	F	1	2	Yes		3.913683333	0.77	evidence	regen	Es hat wohl geregnet.	wohl	0.874	inferential	rain	evidence2	listener
+17	80793	deutsch	64	F	1	2	Yes		5.426483333	0	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+18	14832	deutsch	29	F	4	1	Yes		2.25395	0.65	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+18	16906	Franz̦sisch	40	F	4	2	Yes		2.12725	0.99	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+18	19873	Franz̦sisch	40	F	2	2	Yes		2.12725	0.97	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+18	23239	deutsch	29	F	3	1	Yes		2.25395	0.65	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	speaker
+18	27444	deutsch	29	F	2	1	Yes		2.25395	0.82	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	speaker
+18	29222	Franz̦sisch	40	F	3	2	Yes		2.12725	0.76	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	listener
+18	32983	Franz̦sisch	40	M	1	2	Yes		2.12725	0.62	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.5	inferential	rain	evidence5	listener
+18	38032	deutsch	29	M	1	1	Yes		2.25395	1	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	speaker
+19	9397	Deutsch	27	F	4	2	Confused		1.194483333	0.68	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+19	10729	Deutsch	27	F	3	2	Confused		1.194483333	0.9	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.65875	reportative	rain	evidence4	listener
+19	14484	Deutsch	29	F	3	2	Yes		2.30445	0.46	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+19	14675	Deutsch	27	F	2	2	Confused		1.194483333	0.71	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.664	inferential	dog	evidence4	listener
+19	15079	Deutsch	27	F	1	2	Confused		1.194483333	0.77	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+19	15558	Deutsch	29	M	4	2	Yes		2.30445	0.99	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	speaker
+19	25586	Deutsch	29	F	2	2	Yes		2.30445	0.47	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.99	perceptual	coffee	evidence1	speaker
+19	46458	Deutsch	29	F	1	2	Yes		2.30445	0.41	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.98125	perceptual	rain	evidence1	speaker
+20	15321	Deutsch	21	F	4	1	Yes		2.3638	0.31	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+20	15399	Deutsch	21	F	3	1	Yes		2.3638	0.75	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+20	22287	Deutsch	21	F	2	1	Yes		2.3638	0.33	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.493333333333333	inferential	dog	evidence5	listener
+20	27485	Deutsch	21	F	1	1	Yes		2.3638	0.54	evidence	regen	Es hat wohl geregnet.	wohl	0.65875	reportative	rain	evidence4	listener
+20	32751	deutsch	61	F	4	2	Yes		4.512533333	0.96	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.975	perceptual	dog	evidence1	speaker
+20	40904	deutsch	61	M	2	2	Yes		4.512533333	0.68	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+20	51710	deutsch	61	F	3	2	Yes		4.512533333	0.67	evidence	regen	Es hat wohl geregnet.	wohl	0.98125	perceptual	rain	evidence1	speaker
+20	66826	deutsch	61	M	1	2	Yes		4.512533333	0.48	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.946666666666667	inferential	coffee	evidence4	speaker
+21	4984	deutsch	20	F	4	2	Yes		1.072966667	0.71	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.5	inferential	dinner	evidence3	speaker
+21	6823	deutsch	20	F	3	2	Yes		1.072966667	0.81	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	speaker
+21	12454	deutsch	20	F	2	2	Yes		1.072966667	0.73	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	speaker
+21	15144	deutsch	36	M	4	1	Yes		2.24875	0.98	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+21	15741	deutsch	20	M	1	2	Yes		1.072966667	0.71	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.5	inferential	rain	evidence5	speaker
+21	21774	deutsch	36	F	2	1	Yes		2.24875	0.6	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	listener
+21	26023	deutsch	36	F	1	1	Yes		2.24875	0.83	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+21	33664	deutsch	36	M	3	1	Yes		2.24875	0.76	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.874	inferential	rain	evidence2	listener
+22	13389	deutsch	54	M	1	2	Yes		1.635016667	0.3	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.493333333333333	inferential	dog	evidence5	listener
+22	13640	deutsch	54	F	3	2	Yes		1.635016667	0.77	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	listener
+22	20503	deutsch	54	M	2	2	Yes		1.635016667	0.99	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+22	22184	deutsch	54	F	4	2	Yes		1.635016667	0.5	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+22	24752	deutsch	55	F	2	2	Yes		2.704683333	0.95	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+22	25699	deutsch	55	M	3	2	Yes		2.704683333	0.99	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+22	27430	deutsch	55	M	4	2	Yes		2.704683333	0.83	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+22	44453	deutsch	55	F	1	2	Yes		2.704683333	0.98	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	speaker
+23	20095	deutsch	59	F	3	2	Yes		2.5449	0.51	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.806363636363636	perceptual	coffee	evidence2	listener
+23	23231	deutsch	59	F	2	2	Yes		2.5449	0.48	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+23	36791	deutsch	59	F	4	2	Yes		2.5449	0.49	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+23	40446	deutsch	59	F	1	2	Yes		2.5449	0.82	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	listener
+23	45694	Franz̦sisch	40	F	3	2	Confused		5.656133333	0.83	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.554444444444444	inferential	coffee	evidence5	speaker
+23	52822	Franz̦sisch	40	M	4	2	Confused		5.656133333	0.99	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+23	61791	Franz̦sisch	40	M	2	2	Confused		5.656133333	0.99	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.903636363636364	perceptual	dinner	evidence1	speaker
+23	85119	Franz̦sisch	40	M	1	2	Confused		5.656133333	0.79	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	speaker
+24	11726	deutsch	34	F	3	2	Yes		4.044233333	0.99	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.903636363636364	perceptual	dinner	evidence1	speaker
+24	12425	deutsch	41	F	3	2	Yes		1.680666667	0.72	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+24	16269	deutsch	34	F	2	2	Yes		4.044233333	0.99	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	speaker
+24	17635	deutsch	41	F	2	2	Yes		1.680666667	0.98	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+24	21233	deutsch	41	M	4	2	Yes		1.680666667	0.77	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.946666666666667	inferential	coffee	evidence4	listener
+24	22850	deutsch	41	F	1	2	Yes		1.680666667	0.51	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	listener
+24	24246	deutsch	34	F	4	2	Yes		4.044233333	0.96	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+24	41787	deutsch	34	F	1	2	Yes		4.044233333	0.51	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.664	inferential	dog	evidence4	speaker
+25	23600	Deutsch	27	F	4	2	Confused		3.05335	0.67	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+25	24361	Deutsch	27	M	2	2	Confused		3.05335	0.86	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.99	perceptual	coffee	evidence1	speaker
+25	30820	Deutsch	27	F	3	2	Confused		3.05335	0.84	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.5	inferential	dinner	evidence3	speaker
+25	30833	Schwedisch	55	F	4	1	Yes		4.655933333	0.78	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	listener
+25	33741	Schwedisch	55	F	3	1	Yes		4.655933333	1	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	listener
+25	51689	Deutsch	27	M	1	2	Confused		3.05335	0	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.664	inferential	dog	evidence4	speaker
+25	64088	Schwedisch	55	M	1	1	Yes		4.655933333	0.72	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+25	78423	Schwedisch	55	M	2	1	Yes		4.655933333	0.89	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	listener
+26	23785	deutsch	37	F	4	2	Yes		2.811716667	0.99	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+26	24208	deutsch	37	M	3	2	Yes		3.056216667	0.97	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+26	24949	deutsch	37	F	4	2	Yes		3.056216667	0.49	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+26	28663	deutsch	37	F	2	2	Yes		2.811716667	0.69	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+26	29280	deutsch	37	M	3	2	Yes		2.811716667	0.74	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+26	30991	deutsch	37	F	1	2	Yes		3.056216667	0.51	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	listener
+26	43292	deutsch	37	F	1	2	Yes		2.811716667	0.73	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+26	69599	deutsch	37	F	2	2	Yes		3.056216667	0.51	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	listener
+27	18557	deutsch 	35	F	4	0	Yes		2.043783333	0	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.946666666666667	inferential	coffee	evidence4	listener
+27	20584	deutsch 	35	M	1	0	Yes		2.043783333	0.98	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	listener
+27	23256	deutsch 	35	M	3	0	Yes		2.043783333	0.5	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.5	inferential	dinner	evidence3	listener
+27	27590	deutsch 	35	F	2	0	Yes		2.043783333	0.98	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+27	43094	deutsch	59	F	3	2	Yes		6.030283333	0.71	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	speaker
+27	58125	deutsch	59	F	4	2	Yes		6.030283333	0.49	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+27	62093	deutsch	59	M	1	2	Yes		6.030283333	0.5	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+27	66230	deutsch	59	F	2	2	Yes		6.030283333	0.49	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.806363636363636	perceptual	coffee	evidence2	speaker
+28	21768	Deutsch	36	F	2	2	Confused		2.71605	0.72	evidence	regen	Es muss geregnet haben.	muss	0.98125	perceptual	rain	evidence1	listener
+28	24852	Deutsch	28	F	4	1	Yes		2.852133333	0.61	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	speaker
+28	25834	Deutsch	36	M	4	2	Confused		2.71605	0.78	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	listener
+28	25905	Deutsch	36	M	3	2	Confused		2.71605	0.73	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.99	perceptual	coffee	evidence1	listener
+28	27957	Deutsch	28	M	2	1	Yes		2.852133333	0.55	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	speaker
+28	29623	Deutsch	28	M	3	1	Yes		2.852133333	0.41	evidence	regen	Es hat wohl geregnet.	wohl	0.5	inferential	rain	evidence5	speaker
+28	44174	Deutsch	28	F	1	1	Yes		2.852133333	0.85	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.99	perceptual	coffee	evidence1	speaker
+28	55299	Deutsch	36	F	1	2	Confused		2.71605	0.86	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.5	inferential	dinner	evidence3	listener
+29	18964	Deutsch	32	F	2	2	Yes		2.238416667	0.63	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.5	inferential	dinner	evidence3	listener
+29	28895	Deutsch	32	M	3	2	Yes		2.238416667	0.6	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.65875	reportative	rain	evidence4	listener
+29	29739	Deutsch	32	M	1	2	Yes		2.238416667	0.49	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	listener
+29	34407	Deutsch	32	F	4	2	Yes		2.238416667	0.91	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.975	perceptual	dog	evidence1	listener
+29	40297	deutsch	36	F	4	1	Confused		5.316666667	0.99	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	speaker
+29	59479	deutsch	36	F	3	1	Confused		5.316666667	0.57	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+29	78206	deutsch	36	F	2	1	Confused		5.316666667	0.87	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+29	78446	deutsch	36	M	1	1	Confused		5.316666667	0.7	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	speaker
+30	13327	deutsch	28	F	3	2	Yes		1.7962	0.68	evidence	regen	Es hat wohl geregnet.	wohl	0.874	inferential	rain	evidence2	listener
+30	14176	deutsch	28	M	4	2	Yes		1.7962	0.74	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+30	22886	deutsch	28	F	2	2	Yes		1.7962	0.46	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+30	24448	deutsch	54	F	2	2	Yes		2.559983333	0.99	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	speaker
+30	25935	deutsch	54	M	4	2	Yes		2.559983333	0.16	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+30	29949	deutsch	28	M	1	2	Yes		1.7962	0.76	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	listener
+30	30366	deutsch	54	M	1	2	Yes		2.559983333	0.78	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.874	inferential	rain	evidence2	speaker
+30	31215	deutsch	54	M	3	2	Yes		2.559983333	0.19	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.493333333333333	inferential	dog	evidence5	speaker
+31	20962	deutsch	47	F	3	2	No		3.4556	0.46	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+31	21961	deutsch	41	M	3	2	Yes		2.984483333	0.92	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+31	23751	deutsch	47	M	4	2	No		3.4556	0.23	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	listener
+31	28198	deutsch	41	F	2	2	Yes		2.984483333	0.01	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	speaker
+31	31263	deutsch	41	F	4	2	Yes		2.984483333	0.34	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	speaker
+31	33747	deutsch	47	M	2	2	No		3.4556	0.68	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+31	46105	deutsch	41	M	1	2	Yes		2.984483333	0.73	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+31	66184	deutsch	47	M	1	2	No		3.4556	0.84	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	listener
+32	18320	deutsch	34	F	3	2	Yes		1.864433333	0.46	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+32	20481	deutsch	34	F	1	2	Yes		1.864433333	0.46	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	listener
+32	23993	deutsch	34	M	4	2	Yes		1.864433333	0.6	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+32	24118	deutsch	34	F	2	2	Yes		1.864433333	0.6	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+32	24281	deutsch 	35	F	3	0	Yes		2.837716667	0.55	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+32	28007	deutsch 	35	M	2	0	Yes		2.837716667	0.54	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+32	28071	deutsch 	35	M	4	0	Yes		2.837716667	0.56	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+32	32862	deutsch 	35	M	1	0	Yes		2.837716667	0.99	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.946666666666667	inferential	coffee	evidence4	speaker
+33	6616	deutsch	40	M	4	1	Confused		0.993666667	0.73	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	listener
+33	9203	deutsch	40	M	2	1	Confused		0.993666667	0.44	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.493333333333333	inferential	dog	evidence5	listener
+33	11017	deutsch	40	M	3	1	Confused		0.993666667	0.75	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+33	11304	deutsch	40	M	1	1	Confused		0.993666667	0.98	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+33	41833	deutsch	47	F	3	2	No		4.619133333	0.98	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.98125	perceptual	rain	evidence1	speaker
+33	43867	deutsch	47	M	4	2	No		4.619133333	0.96	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+33	58076	deutsch	47	F	2	2	No		4.619133333	0.97	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	speaker
+33	68913	deutsch	47	M	1	2	No		4.619133333	0.95	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+34	10440	Deutsch	21	M	4	1	Yes		1.524366667	0.53	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+34	14431	Deutsch	21	M	2	1	Yes		1.524366667	0.83	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+34	14927	Deutsch	21	F	3	1	Yes		1.524366667	0.67	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+34	22417	deutsch	23	M	2	2	Yes		2.988383333	0.46	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+34	22729	Deutsch	21	F	1	1	Yes		1.524366667	0.62	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.664	inferential	dog	evidence4	speaker
+34	25695	deutsch	23	M	4	2	Yes		2.988383333	0.28	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+34	36051	deutsch	23	M	3	2	Yes		2.988383333	0.35	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	listener
+34	66365	deutsch	23	F	1	2	Yes		2.988383333	0.47	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.946666666666667	inferential	coffee	evidence4	listener
+35	16638	deutsch	54	M	4	2	Yes		2.292033333	0.9	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.806363636363636	perceptual	coffee	evidence2	listener
+35	23673	deutsch	54	M	3	2	Yes		2.292033333	0.83	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+35	29076	deutsch	54	M	1	2	Yes		2.292033333	0.76	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	listener
+35	31525	deutsch	54	F	2	2	Yes		2.292033333	0.98	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	listener
+35	37214	deutsch	28	F	2	2	Confused	Mich w�_rde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	4.485333333	0.67	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+35	37974	deutsch	28	M	3	2	Confused	Mich w�_rde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	4.485333333	0.98	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+35	45256	deutsch	28	M	4	2	Confused	Mich w�_rde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	4.485333333	0.49	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	speaker
+35	59589	deutsch	28	F	1	2	Confused	Mich w�_rde das Ergebnis sehr interessieren bzw. was mit der Fragestellung gezielt gefragt wurde	4.485333333	0.49	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	speaker
+36	6957		NA	M	2	-1	Yes		0.898816667	0.46	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+36	11760		NA	F	4	-1	Yes		0.898816667	0.46	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+36	11832		NA	M	3	-1	Yes		0.898816667	0.47	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+36	17616		NA	F	1	-1	Yes		0.898816667	1	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.806363636363636	perceptual	coffee	evidence2	listener
+36	39473	deutsch	34	F	2	2	Yes		11.12353333	0.99	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+36	39642	deutsch	34	M	3	2	Yes		11.12353333	0.98	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+36	77241	deutsch	34	F	1	2	Yes		11.12353333	0.99	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.5	inferential	rain	evidence5	speaker
+36	460114	deutsch	34	M	4	2	Yes		11.12353333	0.72	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+37	9376	Deutsch	29	F	4	2	Yes		1.29605	0.86	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	listener
+37	15376	Deutsch	29	F	3	2	Yes		1.29605	0.72	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.99	perceptual	coffee	evidence1	listener
+37	15687	Deutsch	29	F	2	2	Yes		1.29605	0.69	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.2475	wishful	dinner	evidence5	listener
+37	17608	Deutsch	29	F	1	2	Yes		1.29605	0.97	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	listener
+37	29011	deutsch	54	F	4	2	Yes		3.206366667	0.82	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+37	33226	deutsch	54	F	3	2	Yes		3.206366667	0.92	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.806363636363636	perceptual	coffee	evidence2	speaker
+37	34854	deutsch	54	F	2	2	Yes		3.206366667	0.99	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.975	perceptual	dog	evidence1	speaker
+37	49491	deutsch	54	F	1	2	Yes		3.206366667	0.83	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	speaker
+38	13878	Deutsch	32	F	1	2	Yes		1.415216667	0.88	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	speaker
+38	15660	deutsch	51	M	2	2	Yes		1.8822	0.98	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	listener
+38	15895	Deutsch	32	M	4	2	Yes		1.415216667	0.72	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.946666666666667	inferential	coffee	evidence4	speaker
+38	16105	Deutsch	32	M	2	2	Yes		1.415216667	0.9	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+38	19648	Deutsch	32	M	3	2	Yes		1.415216667	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	speaker
+38	21118	deutsch	51	F	4	2	Yes		1.8822	0.74	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+38	22425	deutsch	51	F	3	2	Yes		1.8822	0.89	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+38	30318	deutsch	51	M	1	2	Yes		1.8822	0.62	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	listener
+39	11080		NA	F	4	-1			1.049983333	0.78	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+39	11933		NA	M	2	-1			1.049983333	0.55	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+39	14253		NA	M	3	-1			1.049983333	0.58	evidence	regen	Es hat wohl geregnet.	wohl	0.874	inferential	rain	evidence2	listener
+39	18464		NA	F	1	-1			1.049983333	1	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+39	19535	deutsch	40	F	4	1	Confused	Bei vielen Fragen waren mehrere Antworten (Vermutungen) m̦glich	3.359366667	0.68	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+39	22671	deutsch	40	M	3	1	Confused	Bei vielen Fragen waren mehrere Antworten (Vermutungen) m̦glich	3.359366667	0.98	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	speaker
+39	23345	deutsch	40	F	2	1	Confused	Bei vielen Fragen waren mehrere Antworten (Vermutungen) m̦glich	3.359366667	0.91	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+39	65425	deutsch	40	M	1	1	Confused	Bei vielen Fragen waren mehrere Antworten (Vermutungen) m̦glich	3.359366667	0.29	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.493333333333333	inferential	dog	evidence5	speaker
+40	10046	Deutsch	28	F	4	2	Yes		1.56015	0.82	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.554444444444444	inferential	coffee	evidence5	listener
+40	11655	Deutsch	28	M	2	2	Yes		1.56015	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+40	15024	Deustch	36	M	3	2	Yes		2.5772	0.75	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	speaker
+40	16481	Deutsch	28	M	3	2	Yes		1.56015	0.79	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+40	18481	Deustch	36	F	4	2	Yes		2.5772	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9	inferential	dinner	evidence4	speaker
+40	24657	Deustch	36	M	2	2	Yes		2.5772	0.47	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.874	inferential	rain	evidence2	speaker
+40	34537	Deutsch	28	F	1	2	Yes		1.56015	0.81	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+40	49015	Deustch	36	M	1	2	Yes		2.5772	0.56	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.975	perceptual	dog	evidence1	speaker
+41	5080	deutsch	28	M	3	2	Yes		0.885383333	0.45	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	listener
+41	8625	deutsch	28	F	4	2	Yes		0.885383333	1	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	listener
+41	9296	deutsch	28	F	2	2	Yes		0.885383333	0.48	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+41	10094	deutsch	28	F	1	2	Yes		0.885383333	0.47	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	listener
+41	34395	deutsch	51	F	2	2	Yes		3.867966667	0.97	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	speaker
+41	45415	deutsch	51	F	4	2	Yes		3.867966667	0.64	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	speaker
+41	46853	deutsch	51	F	3	2	Yes		3.867966667	0.78	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+41	52643	deutsch	51	M	1	2	Yes		3.867966667	0.48	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+42	9003	deutsch	26	M	4	1	Yes		1.522333333	0.31	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.2475	wishful	dinner	evidence5	listener
+42	10536	deutsch	26	M	3	1	Yes		1.522333333	0.9	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.806363636363636	perceptual	coffee	evidence2	listener
+42	11996	deutsch	26	M	2	1	Yes		1.522333333	0.5	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	listener
+42	29241	deutsch	26	F	1	1	Yes		1.522333333	0.52	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+42	34383		NA	F	2	-1			3.04765	0.73	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+42	38512		NA	M	4	-1			3.04765	0.6	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+42	39005		NA	M	1	-1			3.04765	1	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+42	42876		NA	M	3	-1			3.04765	1	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+43	14475	deutsch	35	F	3	2	Yes		1.925233333	0.94	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.975	perceptual	dog	evidence1	listener
+43	15936	Deutsch	29	M	4	2	Yes		2.075383333	0.87	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	speaker
+43	17487	deutsch	35	M	4	2	Yes		1.925233333	0.53	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+43	20055	Deutsch	29	M	3	2	Yes		2.075383333	0.69	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+43	20854	Deutsch	29	F	2	2	Yes		2.075383333	0.57	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	speaker
+43	28164	deutsch	35	F	1	2	Yes		1.925233333	0.59	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.99	perceptual	coffee	evidence1	listener
+43	28639	deutsch	35	F	2	2	Yes		1.925233333	0.62	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.874	inferential	rain	evidence2	listener
+43	40359	Deutsch	29	F	1	2	Yes		2.075383333	0.96	evidence	regen	Es hat wohl geregnet.	wohl	0.874	inferential	rain	evidence2	speaker
+44	15479	Deutsch	28	M	3	2	Yes		2.38015	0.7	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+44	19833	Deutsch	28	M	4	2	Yes		2.38015	1	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+44	29259	Deutsch	28	F	2	2	Yes		2.38015	0.73	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.5	inferential	rain	evidence5	speaker
+44	32196	deutsch	36	F	4	2	Yes	"die Forumlierung ""Sie sind in einem fensterlosen Raum"" ist irritierend."	4.1372	0.69	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.700714285714286	inferential	dog	evidence3	listener
+44	36731	Deutsch	28	F	1	2	Yes		2.38015	0.98	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+44	48727	deutsch	36	F	3	2	Yes	"die Forumlierung ""Sie sind in einem fensterlosen Raum"" ist irritierend."	4.1372	0.72	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.946666666666667	inferential	coffee	evidence4	listener
+44	54952	deutsch	36	M	2	2	Yes	"die Forumlierung ""Sie sind in einem fensterlosen Raum"" ist irritierend."	4.1372	0.89	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	listener
+44	64651	deutsch	36	M	1	2	Yes	"die Forumlierung ""Sie sind in einem fensterlosen Raum"" ist irritierend."	4.1372	0.8	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	listener
+45	8201	deutsch	29	F	4	2	Yes		2.984183333	0.28	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	listener
+45	9634	deutsch	29	M	1	2	Yes		2.984183333	0.48	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+45	12059	deutsch	29	M	3	2	Yes		2.984183333	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+45	12193	deutsch	29	F	2	2	Yes		2.984183333	0.47	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+45	20913	deutsch	23	M	4	2	Yes		2.19255	0.35	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	speaker
+45	28019	deutsch	23	F	3	2	Yes		2.19255	0.99	evidence	regen	Es hat geregnet.	bare	0.98125	perceptual	rain	evidence1	speaker
+45	31600	deutsch	23	F	2	2	Yes		2.19255	1	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	speaker
+45	32078	deutsch	23	F	1	2	Yes		2.19255	0.47	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+46	9144	deutsch	28	M	4	2	Yes		0.929016667	0.48	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	speaker
+46	9527	deutsch	28	F	1	2	Yes		0.929016667	1	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+46	9560	deutsch	28	F	3	2	Yes		0.929016667	0.49	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.946666666666667	inferential	coffee	evidence4	speaker
+46	9967	deutsch	28	F	2	2	Yes		0.929016667	0.5	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+46	20578	deutsch	52	M	3	2	Yes		2.181	0.98	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	listener
+46	20998	deutsch	52	F	4	2	Yes		2.181	0.47	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+46	22698	deutsch	52	M	2	2	Yes		2.181	0.46	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+46	27635	deutsch	52	M	1	2	Yes		2.181	0.44	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.493333333333333	inferential	dog	evidence5	listener
+47	10455		NA	M	1	-1			0.921783333	0.66	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	listener
+47	10666		NA	F	4	-1			0.921783333	0.77	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+47	13701		NA	M	2	-1			0.921783333	0.78	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+47	16011		NA	F	3	-1			0.921783333	0.17	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	listener
+47	19392	deutsch	26	M	3	1	Yes		2.119666667	0.93	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.5	inferential	dinner	evidence3	speaker
+47	21020	deutsch	26	F	2	1	Yes		2.119666667	0.96	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	speaker
+47	28123	deutsch	26	M	1	1	Yes		2.119666667	0.93	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.806363636363636	perceptual	coffee	evidence2	speaker
+47	31918	deutsch	26	M	4	1	Yes		2.119666667	1	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+48	15039	deutsch	47	F	4	2	Yes		2.095016667	0.98	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	listener
+48	18812	deutsch	47	M	2	2	Yes		2.095016667	0.8	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+48	28663	deutsch	47	M	3	2	Yes		2.095016667	0.74	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+48	42319	deutsch	47	F	1	2	Yes		2.095016667	0.81	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	listener
+48	42734	deutsch	36	F	4	2	Yes	"etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: ""Sie sind in einem fensterlosen Raum."""	5.436266667	0.55	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+48	47450	deutsch	36	F	3	2	Yes	"etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: ""Sie sind in einem fensterlosen Raum."""	5.436266667	0.8	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	speaker
+48	57343	deutsch	36	M	1	2	Yes	"etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: ""Sie sind in einem fensterlosen Raum."""	5.436266667	0.99	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	speaker
+48	65651	deutsch	36	F	2	2	Yes	"etwas verwirrend, aber ganz interessant. Mich wundert vor allem die Formulierung: ""Sie sind in einem fensterlosen Raum."""	5.436266667	0.75	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.700714285714286	inferential	dog	evidence3	speaker
+49	6484	Deutsch 	26	F	4	2	Yes		1.530266667	0.77	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	listener
+49	9233	Deutsch 	26	F	3	2	Yes		1.530266667	0.97	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+49	20282	Deutsch 	26	M	2	2	Yes		1.530266667	0.52	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	listener
+49	24840	Deutsch 	26	F	1	2	Yes		1.530266667	0.97	evidence	regen	Es hat wohl geregnet.	wohl	0.874	inferential	rain	evidence2	listener
+49	26794	deutsch	52	F	3	2	Yes		3.062866667	0.47	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	speaker
+49	26867	deutsch	52	M	4	2	Yes		3.062866667	0.99	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+49	35660	deutsch	52	F	2	2	Yes		3.062866667	0.99	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	speaker
+49	56067	deutsch	52	F	1	2	Yes		3.062866667	1	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.881	inferential	coffee	evidence3	speaker
+50	16248	deutsch	57	M	3	2	Yes		2.287466667	0.46	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+50	17871	deutsch	47	M	4	2	Yes		2.609333333	0.99	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	speaker
+50	23126	deutsch	57	M	2	2	Yes		2.287466667	0.6	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9	inferential	dinner	evidence4	listener
+50	24959	deutsch	47	M	3	2	Yes		2.609333333	0.88	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+50	27934	deutsch	57	M	1	2	Yes		2.287466667	0.57	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	listener
+50	30418	deutsch	57	F	4	2	Yes		2.287466667	0.54	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	listener
+50	33101	deutsch	47	M	2	2	Yes		2.609333333	0.62	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+50	49963	deutsch	47	F	1	2	Yes		2.609333333	0.79	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	speaker
+51	27679	deutsch	51	M	4	2	Yes		3.237666667	0.87	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	listener
+51	30286	deutsch	51	F	2	2	Yes		3.237666667	0.9	evidence	regen	Es hat geregnet.	bare	0.844444444444444	inferential	rain	evidence3	listener
+51	31406	deutsch	51	M	3	2	Yes		3.237666667	0.44	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.5	inferential	dinner	evidence3	listener
+51	54299	deutsch	51	M	1	2	Yes		3.237666667	0.23	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	listener
+51	63418	deutsch	72	M	3	2	Yes		6.191133333	1	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+51	76350	deutsch	72	M	2	2	Yes		6.191133333	1	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+51	84106	deutsch	72	M	4	2	Yes		6.191133333	0.48	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	speaker
+51	91518	deutsch	72	F	1	2	Yes		6.191133333	1	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.493333333333333	inferential	dog	evidence5	speaker
+52	10675	deutsch	29	F	2	2	Yes		2.36535	0.47	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	speaker
+52	16036	deutsch	29	M	3	2	Yes		2.36535	0.96	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+52	19431	deutsch	28	F	3	1	Confused		3.750533333	0.98	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.99	perceptual	coffee	evidence1	listener
+52	20076	deutsch	29	M	4	2	Yes		2.36535	0.51	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	speaker
+52	39647	deutsch	29	M	1	2	Yes		2.36535	0.66	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.806363636363636	perceptual	coffee	evidence2	speaker
+52	42955	deutsch	28	F	4	1	Confused		3.750533333	0.64	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	listener
+52	43775	deutsch	28	F	2	1	Confused		3.750533333	0.85	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	listener
+52	61766	deutsch	28	M	1	1	Confused		3.750533333	0.86	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.7575	inferential	dog	evidence2	listener
+53	14747	Deutsch 	26	M	2	2	Confused		2.324766667	0.97	evidence	regen	Es hat wohl geregnet.	wohl	0.874	inferential	rain	evidence2	speaker
+53	17766	Deutsch 	26	M	3	2	Confused		2.324766667	0.92	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	speaker
+53	25585	Deutsch 	26	M	4	2	Confused		2.324766667	0.29	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	speaker
+53	39912	Deutsch 	26	F	1	2	Confused		2.324766667	0.93	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	speaker
+53	50521	Deutsch	19	F	3	2	Yes		6.16255	0.89	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.881	inferential	coffee	evidence3	listener
+53	54931	Deutsch	19	F	2	2	Yes		6.16255	0.47	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	listener
+53	55401	Deutsch	19	F	4	2	Yes		6.16255	0.46	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+53	78944	Deutsch	19	F	1	2	Yes		6.16255	0.27	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.664	inferential	dog	evidence4	listener
+54	8921		NA	M	4	-1			1.265083333	0.36	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.881	inferential	coffee	evidence3	speaker
+54	14128		NA	F	3	-1			1.265083333	0.18	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.5	inferential	dinner	evidence3	speaker
+54	18983		NA	M	2	-1			1.265083333	0.14	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.874	inferential	rain	evidence2	speaker
+54	21720	deutsch	40	F	3	2	Yes		2.903766667	0.48	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	listener
+54	24046		NA	F	1	-1			1.265083333	0.87	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.493333333333333	inferential	dog	evidence5	speaker
+54	24070	deutsch	40	M	1	2	Yes		2.903766667	1	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.903636363636364	perceptual	dinner	evidence1	listener
+54	24071	deutsch	40	F	2	2	Yes		2.903766667	0.49	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	listener
+54	32683	deutsch	40	F	4	2	Yes		2.903766667	0.99	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.806363636363636	perceptual	coffee	evidence2	listener
+55	17737	deutsch	40	M	4	2	Yes		4.022966667	0.48	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.7575	inferential	dog	evidence2	listener
+55	20574	deutsch	40	F	2	2	Yes		4.022966667	0.47	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.806363636363636	perceptual	coffee	evidence2	listener
+55	27829	Deutsch	51	F	2	2	Yes		3.974816667	0.91	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+55	29039	Deutsch	51	M	4	2	Yes		3.974816667	0.77	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.806363636363636	perceptual	coffee	evidence2	speaker
+55	36873	deutsch	40	F	1	2	Yes		4.022966667	0.49	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9525	reportative	dinner	evidence2	listener
+55	44667	Deutsch	51	M	3	2	Yes		3.974816667	0.69	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.9	inferential	dinner	evidence4	speaker
+55	68292	Deutsch	51	M	1	2	Yes		3.974816667	0.87	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+55	123265	deutsch	40	M	3	2	Yes		4.022966667	0.5	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.844444444444444	inferential	rain	evidence3	listener
+56	10989	deutsch	35	M	2	2	Yes		3.526016667	0.51	evidence	kaffee	Der Kaffee muss kalt geworden sein.	muss	0.806363636363636	perceptual	coffee	evidence2	speaker
+56	13749	deutsch	35	F	1	2	Yes		3.526016667	0.46	evidence	regen	Es hat vermutlich geregnet.	vermutlich	0.874	inferential	rain	evidence2	speaker
+56	16830	deutsch	35	F	3	2	Yes		3.526016667	0.44	evidence	hund	Der Nachbarshund hat wohl gebellt.	wohl	0.700714285714286	inferential	dog	evidence3	speaker
+56	21659	deutsch	35	F	4	2	Yes		3.526016667	0.93	evidence	abendessen	Das Abendessen ist fertig geworden.	bare	0.9525	reportative	dinner	evidence2	speaker
+57	20252	deutsch	50	F	2	2	Confused		2.870433333	0.98	evidence	regen	Es muss geregnet haben.	muss	0.98125	perceptual	rain	evidence1	speaker
+57	23652	deutsch	50	F	4	2	Confused		2.870433333	0.99	evidence	kaffee	Der Kaffee ist wohl kalt geworden.	wohl	0.99	perceptual	coffee	evidence1	speaker
+57	34321	deutsch	50	F	3	2	Confused		2.870433333	0.96	evidence	abendessen	Das Abendessen ist vermutlich fertig geworden.	vermutlich	0.5	inferential	dinner	evidence3	speaker
+57	46788	deutsch	50	M	1	2	Confused		2.870433333	0.96	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.700714285714286	inferential	dog	evidence3	speaker
+58	26123	Deutsch	51	M	4	1	Confused		3.0723	0.95	evidence	hund	Der Nachbarshund hat gebellt.	bare	0.7575	inferential	dog	evidence2	speaker
+58	28746	Deutsch	51	M	3	1	Confused		3.0723	0.47	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.9	inferential	dinner	evidence4	speaker
+58	37762	Deutsch	51	F	2	1	Confused		3.0723	0.65	evidence	regen	Es muss geregnet haben.	muss	0.844444444444444	inferential	rain	evidence3	speaker
+58	49607	Deutsch	51	F	1	1	Confused		3.0723	0.91	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.881	inferential	coffee	evidence3	speaker
+59	26707	deutsch	40	F	3	2	Yes		5.978216667	0.5	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.806363636363636	perceptual	coffee	evidence2	speaker
+59	34486	deutsch	40	M	2	2	Yes		5.978216667	0.49	evidence	abendessen	Das Abendessen muss fertig geworden sein.	muss	0.9525	reportative	dinner	evidence2	speaker
+59	70336	deutsch	40	M	1	2	Yes		5.978216667	0.48	evidence	regen	Es hat wohl geregnet.	wohl	0.844444444444444	inferential	rain	evidence3	speaker
+59	119150	deutsch	40	F	4	2	Yes		5.978216667	0.51	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.664	inferential	dog	evidence4	speaker
+60	18833	deutsch	50	F	1	2	Yes		2.4387	0.98	evidence	kaffee	Der Kaffee ist vermutlich kalt geworden.	vermutlich	0.99	perceptual	coffee	evidence1	speaker
+60	27675	deutsch	50	M	3	2	Yes		2.4387	0.97	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.5	inferential	dinner	evidence3	speaker
+60	29442	deutsch	50	F	2	2	Yes		2.4387	0.99	evidence	hund	Der Nachbarshund muss gebellt haben.	muss	0.664	inferential	dog	evidence4	speaker
+60	31012	deutsch	50	F	4	2	Yes		2.4387	0.98	evidence	regen	Es hat geregnet.	bare	0.874	inferential	rain	evidence2	speaker
+61	11163	deutsch	50	F	4	2	Yes		1.264166667	0.98	evidence	abendessen	Das Abendessen ist wohl fertig geworden.	wohl	0.5	inferential	dinner	evidence3	speaker
+61	12633	deutsch	50	M	3	2	Yes		1.264166667	0.98	evidence	kaffee	Der Kaffee ist kalt geworden.	bare	0.99	perceptual	coffee	evidence1	speaker
+61	13953	deutsch	50	F	2	2	Yes		1.264166667	1	evidence	regen	Es muss geregnet haben.	muss	0.874	inferential	rain	evidence2	speaker
+61	16264	deutsch	50	M	1	2	Yes		1.264166667	0.98	evidence	hund	Der Nachbarshund hat vermutlich gebellt.	vermutlich	0.7575	inferential	dog	evidence2	speaker
