@@ -50,7 +50,9 @@ ggsave("graphs/strength_histogram.pdf",width=5.5,height=3.2)
 
 
 ### plot beliefs about q
+library(wesanderson)
 agr = aggregate(response ~ item_type + Experiment, FUN=mean, data=r.combined)
+agr$SD = aggregate(response ~ item_type + Experiment, FUN=sd, data=r.combined)$response
 agr$CILow = aggregate(response ~ item_type + Experiment, FUN=ci.low, data=r.combined)$response
 agr$CIHigh = aggregate(response ~ item_type + Experiment, FUN=ci.high, data=r.combined)$response
 agr$YMin = agr$response - agr$CILow
@@ -59,16 +61,14 @@ head(agr)
 agr$Utterance = factor(x=as.character(agr$item_type),levels=c("wohl","vermutlich","muss","bare"))
 dodge = position_dodge(.9)
 
+agr$Experiment = as.factor(as.character(agr$Experiment))
+
 ggplot(agr, aes(x=Utterance, y=response, fill=Experiment)) +
   geom_bar(stat="identity",color="black",position=dodge) +
-  #  scale_fill_manual(values=designer.colors(n=3, col=c("#046C9A","#ABDDDE")),name="Belief",breaks=levels(agrr$Experiment),label=c("listener (Exp. 3a)", "speaker (Exp. 3b)")) +
-  scale_fill_manual(values=wes_palette("Moonrise2"),name="Belief",breaks=levels(agr$Experiment),label=c("listener\n(Exp. 3a)", "speaker\n(Exp. 3b)")) +
+  scale_fill_manual(values=wes_palette("Moonrise2"),name="Belief",breaks=levels(agr$Experiment),label=c("listener\n(Exp. 6a)", "speaker\n(Exp. 6b)")) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25,position=dodge) +
-  #facet_wrap(~ResponseType) +
-  scale_y_continuous("Probability of belief in q",breaks=seq(0,1,by=.1)) #+
-  #theme(legend.key.size = unit(1.2, "cm"))
-#  theme(legend.position="top",plot.margin=unit(c(-0.5,0,0,0),units="cm"))
-ggsave("graphs/mean_beliefs.pdf",width=5.5,height=3.5)
+  scale_y_continuous("Probability of belief in q",limits=c(0,1),breaks=seq(0,1.10,by=.25))
+ggsave("graphs/mean_beliefs.pdf",width=6.5,height=4)
 #ggsave("pics/mean_beliefs_greg.pdf",width=7.8,height=3)
 
 
@@ -203,4 +203,13 @@ ggplot(agr, aes(x=Utterance,y=Directness)) +
   ylab("Strength") +
   facet_wrap(~item)
 ggsave("graphs/average_strength_by_item.pdf",width=7.5)
+
+
+### ANALYSIS
+# in pairwise bonferroni-corrected comparisons, there ARE differences between: bare and each other one; must and might
+# there are NO differences between might and probably, and between must and probably
+pairwise.t.test(d[d$Experiment == "listener",]$response, d[d$Experiment == "listener",]$item_type, p.adj = "bonf")
+
+# in pairwise bonferroni-corrected comparisons, there ARE differences between each utterance and each other one
+pairwise.t.test(d[d$Experiment == "speaker",]$response, d[d$Experiment == "speaker",]$item_type, p.adj = "bonf")
 
