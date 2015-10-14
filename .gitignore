@@ -9,6 +9,7 @@
 *.log
 *.synctex.gz
 *.bbl
+*sp_must.pdf
 .RData
 .Rhistory
 *.dvi
