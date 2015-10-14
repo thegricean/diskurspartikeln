@@ -3,6 +3,7 @@
 *.input
 *.properties
 *.tsv
+*.out
 *.aux
 *.bbl
 *.blg
