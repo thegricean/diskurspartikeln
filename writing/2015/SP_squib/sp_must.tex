@@ -1,5 +1,7 @@
 \documentclass[11pt]{article}
 
+%\usepackage[english]{babel}
+\usepackage[utf8]{inputenc} %German Umlaute :-)
 \usepackage{apacite}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
@@ -29,9 +31,23 @@
 \newcommand{\appref}[1]{Appendix \ref{#1}}
 \newcommand{\sectionref}[1]{Section \ref{#1}}
 
+
+%for margin notes
+\usepackage{marginnote, setspace}
+\newcommand{\evanote}[1]{%
+   \marginnote{%
+      \begin{spacing}{1}
+         \vspace{-\baselineskip}%
+         \color{OliveGreen}\footnotesize\singlespacing\itshape#1
+      \end{spacing}
+   }
+}
+
+
+
 \title{The weakness of epistemic \emph{must}: A pragmatic reasoning approach}
  
-\author{{\large \bf Judith Degen (jdegen@stanford.edu), Gregory Scontras (scontras@stanford.edu),}\\ {\large \bf Andreas Trotzke (andreas.trotzke@uni-konstanz.de), Eva Wittenberg (ewittenberg@ucsd.edu)}}
+\author{{\large \bf Judith Degen (jdegen@stanford.edu)}, \\ {\large \bf Gregory Scontras (scontras@stanford.edu),}\\ {\large \bf Andreas Trotzke (andreas.trotzke@uni-konstanz.de),}\\ {\large \bf Eva Wittenberg (ewittenberg@ucsd.edu)}}
 
 
 
@@ -50,38 +66,74 @@
 pragmatics; semantics; psycholinguistics; modals; discourse particles; German; English
 \end{abstract}
 
-
+\red{TO DO:\\
+- Abstract\\
+- expand intro to cover more of the German literature\\
+- merge english \& german experiments\\
+- general discussion\\
+We only have very limited space, though, which is why I kept the intro very short!\\
+}
 \section{Introduction}
 
+In most circumstances, speakers have an interest to convey whether they are sure about a fact, or whether they might want to hedge their bets a bit. When they are sure about a proposition \emph{p}, they are likely to use a simple declarative, such as in \emph{The coffee is cold} (\ref{bare}). When they want to convey some epistemic uncertainty, they have different possibilities: adding a modal adverbial, such as \emph{probably} (\ref{prob}), or using a modal verb, such as \emph{might}: \emph{The coffee might be cold} (\ref{might}), leaves open the possibility that \emph{p} is not true.
+
+Epistemic \emph{must} has a similar effect: \emph{It must be raining} (\ref{must}) seems to communicate a degree of epistemic uncertainty. This is interesting because \emph{must} is a strong modal of necessity, just like or \emph{have to}. 
+
+\begin{exe}
+	\ex\label{english} \begin{xlist}
+		\ex\label{bare} The coffee is cold.
+		\ex\label{prob} The coffee is probably cold.
+		\ex\label{must} The coffee must be cold.
+		\ex\label{might} The coffee might be cold.
+	\end{xlist}
+\end{exe}
+
+
+Under a quantificational treatment of modality, these necessity modals correspond to universal quantifiers over possible words (XXX citation). When used, they assert that in every (relevant) possible world, some proposition \emph{p} holds. In (\ref{must}), epistemic \emph{must} is used to assert that in every world compatible with the speaker's knowledge, the coffee is cold. Given that knowledge corresponds to justified true belief (that which is known cannot be otherwise), from (\ref{must}) it necessarily follows that the coffee is cold (i.e., it is not possible that the coffee is not cold). There are other analyses of modals on the market (e.g., a scalar semantics for modals; \cite{lassiter2011}), but all of them share the intuitive understanding of necessity modals as maximally strong semantic objects.
+
+At issue is the failed inference from (\ref{must}) to (\ref{bare}) first observed by \cite{karttunen1972}: How could \emph{must p} not entail \emph{p}? If it is necessarily raining, then surely it is raining. It appears that talking about what is necessarily the case commits speakers to less than talking about what is actually the case does \cite{karttunen1972} and decades of semanticists that followed posit that the inference from (\ref{must}) to (\ref{bare}) fails because \emph{must p} is a weaker statement than bare \emph{p}. In other words, \emph{must} is weak. 
+
+Thus, the weakness of \emph{must} is usually accounted for by engineering it into its lexical semantics. \citeA{vonfintelgillies2010} lead the opposing charge, arguing that \emph{must p} is strong and quantifying universally over epistemically possible worlds. To account for the weak epistemic reading, they also claim that \emph{must} is an evidential marker, presupposing that the speaker has no direct evidence of \emph{p}. However, the strength of \emph{must p} requires the speaker to have direct evidence of something that entails \emph{p}. Using a corpus of naturally-occurring examples from Ancestry.com, \citeauthor{lassiter2014salt} (\emph{to appear}) shows how \citeauthor{vonfintelgillies2010}'s implementation of a strong semantics for \emph{must} makes unreasonable claims about the knowledge states of speakers. \citeauthor{lassiter2014salt} proposes instead a weak probabilistic semantics: \emph{must p} entails that the probability of \emph{p} given the speaker's direct knowledge is greater than chance, and requires that the question of whether \emph{p} not be resolved by this direct knowledge. Thus, he returns to the original mantra of weakness while building evidential information into the semantics of \emph{must}.
+
+Other languages have many more ways to convey epistemic uncertainty (REFs). Some of these languages, like German, also offer non-propositional means for expressing weakened commitment, like discourse particles (e.g. \textbf{Potts, 2005; Zimmermann, 2008}). German is an interesting comparison case to English, since its other devices of expressing speaker commitment do not differ from English: Examples \ref{bareG}-\ref{mustG} are the German equivalents to \ref{bareG}-\ref{mustG}, while the discourse particle \emph{wohl} is often analyzed as modifier on the level of sentence type (\textbf{Zimmermann 2004}).
+
+\begin{exe}
+	\ex\label{german} \begin{xlist}
+		\ex\label{bareG} Der Kaffee ist kalt geworden.
+		\ex\label{probG} Der Kaffee ist vermutlich kalt geworden.
+		\ex\label{mustG} Der Kaffee muss kalt geworden sein. 
+		\ex\label{wohlG} Der Kaffee ist wohl kalt geworden.
+	\end{xlist}
+\end{exe}
+
+Thus, there are different ways to express speaker uncertainty: Through modal verbs or adverbials, epistemic \emph{must}, and discourse particles. In this paper, we propose a unified pragmatic approach to the interpretation of all these means, and derive its interpretation as an M-implicature (Grice, 1989; Levinson, 2000): must \emph{p} (\ref{must}, \ref{mustG}) is marked relative to the bare form (\ref{bare}, \ref{bareG}); the bare form conveys already that the coffee is cold (\emph{p}), so listeners take the marked form to convey the marked meaning that the speaker arrived at the conclusion \emph{p} via an evidentially less certain route than if they had chosen the unmarked bare form. 
+
+
+
+%Our first task is to evaluate the relative strength of \emph{must}, an empirical investigation conspicuously absent from the discussion of this modal thus far. Having justified the strength of \emph{must} empirically, we may then set our sights on the proposals meant to account for \emph{must}'s meaning.
+ 
+
+%Abstract October
+%Since Karttunen (1972), semanticists have debated how to account for the relatively weak mean-ing of epistemic must (1b) compared to bare utterances without a modal (1a). Rather than engi-neering the weakness of must into the lexical semantics (Lassiter, 2014), and rather than , 
+%We further argue that epistemic must patterns cross-linguistically with non-propositional means of expressing weakened commitment towards the truth of the proposition: In English, speaker uncertainty is usually expressed by modal verbs (‚Äòmight‚Äô) or adverbs (‚Äòprobably‚Äô), both of which enter directly into the semantic calculation of a proposition. 
+%To assess evidence strength, speaker commitments, and listener understanding in propositions employing must, propositional, and non-propositional epistemic means, we conducted two groups of studies in English and German.
 % OLD INTRO:
 
-%Modals come in varying degrees of strength; the strongest are modals of necessity like \emph{must} or \emph{have to}. Under a quantificational treatment of modality, these necessity modals correspond to universal quantifiers over possible words (XXX citation). When used, they assert that in every (relevant) possible world, some proposition \emph{p} holds. In (\ref{must}), epistemic \emph{must} is used to assert that in every world compatible with the speaker's knowledge, it is raining. Given that knowledge corresponds to justified true belief (that which is known cannot be otherwise), from (\ref{must}) it necessarily follows that it is raining (i.e., it is not possible that it is not raining). There are other analyses of modals on the market (e.g., a scalar semantics for modals; \citeNP{lassiter2011}), but all of them share the intuitive understanding of necessity modals as maximally strong semantic objects. 
+%Modals come in varying degrees of strength; the 
 %
-%\begin{exe}
-%	\ex\label{inference} \begin{xlist}
-%		\ex\label{might} It might be raining.
-%		\ex\label{must} It must be raining. 
-%		\ex\label{bare} It is raining.
-%	\end{xlist}
-%\end{exe}
+
 %
-%When compared with other modals, necessity modals do behave as strong: (\ref{must}) expresses a stronger statement about rain than (\ref{might}). However, when compared to the bare statement without a modal, \emph{must} and other epistemic necessity modals suddenly behave as weak, or so the liturgy goes.  At issue is the failed inference from (\ref{must}) to (\ref{bare}) first observed by \citeA{karttunen1972}: How could \emph{must p} not entail \emph{p}? If it is necessarily raining, then surely it is raining. It appears that talking about what is necessarily the case commits speakers to less than does talking about what is actually the case. \citeauthor{karttunen1972} and decades of semanticists that followed posit that the inference from (\ref{must}) to (\ref{bare}) fails because \emph{must p} is a weaker statement than bare \emph{p}. In other words, \emph{must} is weak. Our first task is to evaluate the relative strength of \emph{must}, an empirical investigation conspicuously absent from the discussion of this modal thus far. Having justified the strength of \emph{must} empirically, we may then set our sights on the proposals meant to account for \emph{must}'s meaning.
-%
+%%
 %Linguists split on the semantics of \emph{must}. The original ``\emph{must} is weak'' mantra, stemming from \citeA{karttunen1972}, has \emph{must p} not entail \emph{p}. There are two tacks to breaking this entailment. For \citeA{kratzer1991}, the entailment fails because  \emph{must p} is weaker than we might have thought. She weakens \emph{must} by having it quantify not just over knowledge states, but also over expectations given knowledge states -- expectations which are not always borne out. For \citeA{veltman1985}, the entailment fails because bare \emph{p} is stronger than we might have thought. He strengthens bare \emph{p} by allowing partial knowledge states, such that \emph{must p} may be true while we lack the knowledge to say whether \emph{p} is true or false. Either way, from \emph{must p} (e.g., ``It must be raining'') it does not follow that \emph{p} (e.g., ``It is raining'').
 %
-%\citeA{vonfintelgillies2010} lead the opposing charge, holding firm to the logic that \emph{must p} is strong, quantifying universally over epistemically possible worlds. In addition to this strong semantics, they also claim that \emph{must} is an evidential marker, presupposing that the speaker has no direct evidence of \emph{p}. However, the strength of \emph{must p} requires the speaker to have direct evidence of something that entails \emph{p}. Using a corpus of naturally-occurring examples from Ancestry.com, \citeauthor{lassiter2014salt} (\emph{to appear}) shows how \citeauthor{vonfintelgillies2010}'s implementation of a strong semantics for \emph{must} makes unreasonable claims about the knowledge states of speakers. \citeauthor{lassiter2014salt} proposes instead a weak probabilistic semantics: \emph{must p} entails that the probability of \emph{p} given the speaker's direct knowledge is greater than chance, and requires that the question of whether \emph{p} not be resolved by this direct knowledge. Thus, he returns to the original mantra of weakness while building evidential information into the semantics of \emph{must}.
-%
+%%
 %In an effort to inform this debate on the strength of \emph{must}, we first investigate what gets communicated via its use. Over the course of three experiments, we asses the speaker commitments, evidence strength, and listener understanding that accompany \emph{must} statements. Our findings qualitatively confirm \citeauthor{karttunen1972}'s original observation, and quantitatively demonstrate the relative weakness of \emph{must}. Moreover, they highlight the role of evidence strength in the computation of \emph{must}'s meaning -- an ingredient that has thus far been lacking from the proposed semantics for \emph{must}.
 %
 %We then use our findings to motivate a computational model of the meaning of \emph{must}, following \citeA{lassitergoodman2013} in their extension of the Bayesian Rational Speech Act framework \cite{frankgoodman2012}. Rather than engineering weakness relative to bare \emph{p} directly into the meaning of the word \emph{must}, our account derives its weakness as an M-implicature \cite{levinson2000}: \emph{must p} is marked (i.e., costly) relative to the bare form (\ref{bare}); the bare form is sufficiently strong already to convey \emph{p} (e.g., that it is raining), so listeners take the marked form to convey the marked meaning that the speaker arrived at the conclusion \emph{p} via an evidentially less certain route than if they had chosen the shorter, bare form. Our account accomplishes two things. First, it obviates the conceptual pitfalls of \citeauthor{vonfintelgillies2010}'s strong semantics, without treating \emph{must} as inherently weak: evidence strength is inferred from, rather than communicated by, the use of \emph{must}. Second, it implements a formal model of M-implicatures within the Rational Speech Act framework \cite{bergenetal2014}.
 %
-%%Our approach incorporates elements from both \citeA{vonfintelgillies2010} and \citeauthor{lassiter2014salt} \emph{to appear}: \emph{Must} is strong, but reasoning about its strong meaning yields a weaker interpretation.
+Our approach incorporates elements from both \citeA{vonfintelgillies2010} and \citeauthor{lassiter2014salt} \emph{to appear}: \emph{Must} is strong, but reasoning about its strong meaning yields a weaker interpretation.
 
-\red{XXX}
-
-In the following, we label English and German experiments as \emph{E.N} and \emph{G.N}, respectively.
-
-\section{Experiment E.1: evidence strength}
+\section{Experiment 1: evidence strength}
 
 In Exp.~E.1, we collected estimates of evidence strength.\footnote{This experiment can be viewed \href{https://web.stanford.edu/~justinek/modals_exp/evidence.html}{here}.} These estimates were used in the analysis of Experiments 2 and 3.
 
@@ -347,9 +399,9 @@ This section lists, for each proposition $q$, the five pieces of evidence that w
 
 \begin{enumerate}
 	\item You look out the window and see raindrops falling from the sky. \\ Sie sehen aus dem Fenster und beobachten, wie Regentropfen vom Himmel fallen. 
-	\item You hear the sound of water dripping on the roof. \\ Sie können hören, wie Wasser auf das Dach prasselt.
-	\item You check the weather report on the Internet, which says it is raining. \\ Sie haben im Internet den Wetterbericht gelesen, in dem stand, dass es regnen würde. 
-	\item You see a person come in from outside with wet hair and wet clothes. \\ Sie sehen, wie jemand mit nassen Haaren und durchnässten Kleidern von draußen hereinkommt.
+	\item You hear the sound of water dripping on the roof. \\ Sie k√∂nnen h√∂ren, wie Wasser auf das Dach prasselt.
+	\item You check the weather report on the Internet, which says it is raining. \\ Sie haben im Internet den Wetterbericht gelesen, in dem stand, dass es regnen w√ºrde. 
+	\item You see a person come in from outside with wet hair and wet clothes. \\ Sie sehen, wie jemand mit nassen Haaren und durchn√§ssten Kleidern von drau√üen hereinkommt.
 	\item Earlier today, you had seen dark clouds in the sky. \\ Sie haben heute Vormittag dunkle Wolken am Himmel gesehen.
 \end{enumerate}
 
@@ -359,7 +411,7 @@ This section lists, for each proposition $q$, the five pieces of evidence that w
 	\item You take a sip of the coffee and feel that it is cold. \\
 	Sie trinken einen Schluck Kaffee und stellen fest, dass er kalt ist
 	\item You touch the coffee cup and feel that it is cold.\\
-	Sie berühren die Kaffeetasse und stellen fest, dass sie kalt ist.
+	Sie ber√ºhren die Kaffeetasse und stellen fest, dass sie kalt ist.
 	\item You see that there is no steam coming from the coffee.\\
 	Sie sehen, dass aus dem Kaffee kein Dampf aufsteigt.
 	\item You know that the coffee has been on the table for an hour.\\
@@ -389,11 +441,11 @@ This section lists, for each proposition $q$, the five pieces of evidence that w
 	\item You look outside and see Fluffy, the neighbor's dog, standing on the porch and barking.\\
 	Sie schauen aus dem Fenster und sehen Struppi, den Hund der Nachbarn, wie er am Zaun steht und bellt.
 	\item You hear the sound of a dog barking.\\
-	Sie hören einen Hund bellen.
+	Sie h√∂ren einen Hund bellen.
 	\item You are listening to music with your earphones. You know that your neighbor's dog often barks in the evening.\\
-	Sie haben Kopfhörer auf und hören Musik, wissen aber, dass der Hund der Nachbarn abends oft bellt.
+	Sie haben Kopfh√∂rer auf und h√∂ren Musik, wissen aber, dass der Hund der Nachbarn abends oft bellt.
 	\item You are listening to music with your earphones. You look out the window and see that the mailman has just arrived at your neighbor's doorstep, when all of a sudden he jumps back.\\
-	Sie haben Kopfhörer auf und hören Musik, sehen aber aus dem Fenster und beobachten, wie der Postbote vor der Nachbarstür einen Satz nach hinten macht.
+	Sie haben Kopfh√∂rer auf und h√∂ren Musik, sehen aber aus dem Fenster und beobachten, wie der Postbote vor der Nachbarst√ºr einen Satz nach hinten macht.
 	\item Your neighbor just got a new dog.\\
 	Sie wissen, dass sich die Nachbarn gerade einen Hund angeschafft haben.
 \end{enumerate}
