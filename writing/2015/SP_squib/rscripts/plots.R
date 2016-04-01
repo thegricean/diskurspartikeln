@@ -114,7 +114,7 @@ length(levels(as.factor(as.character(german_p$subject)))) #38 -- why 2 less?
 # plot overall distribution of utterances
 d$Utterance = factor(x=d$response,levels=c("bare","must","muss","probably","might","wohl","vermutlich"))
 ggplot(d, aes(x=Utterance)) +
-  geom_histogram() +
+  stat_count() +
   facet_wrap(~Language, scales="free") +
   scale_y_continuous("Number of cases")
 ggsave("production-distribution.pdf",width=7,height=4)
@@ -136,9 +136,20 @@ ggplot(agr, aes(x=Utterance,y=mean)) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
   facet_wrap(~Language,scales="free") +
   scale_x_discrete(name="Utterance") +
-  scale_y_continuous(name="Mean evidence strength") #+
+  scale_y_continuous(name="Mean evidence strength")
   #scale_fill_manual(values=c("white","gray70"))
 ggsave("mean-production-evidence.pdf",height=4,width=7)
+
+#sub plot
+ggplot(agr, aes(x=Utterance,y=mean)) +
+  geom_bar(stat="identity",position=dodge,fill="gray70",color="black") +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
+  facet_wrap(~Language,scales="free") +
+  scale_x_discrete(name="Production (Exp. 2)") +
+  scale_y_continuous(name="Mean evidence strength") +
+  theme(axis.text.x=element_text(angle=45,vjust=1,hjust=1))#+
+#scale_fill_manual(values=c("white","gray70"))
+ggsave("mean-production-evidence-sub.pdf",height=4,width=5)
 
 english = droplevels(subset(d, Language == "English"))
 contrasts(english$response) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
@@ -244,6 +255,29 @@ ggplot(agr, aes(x=Utterance,y=mean,fill=Belief)) +
   scale_y_continuous(name="Mean degree of belief") +
   scale_fill_manual(values=c("white","gray70"))
 ggsave("mean-beliefs.pdf",height=3.5,width=7.5)
+
+# plot mean belief by utterance for speakers only
+agr = d[d$Belief == "speaker",] %>%
+  group_by(Language,item_type) %>%
+  summarise(mean=mean(response),ci.low=ci.low(response),ci.high=ci.high(response))
+agr = as.data.frame(agr)
+head(agr)
+
+dodge = position_dodge(.9)
+agr$YMin = agr$mean - agr$ci.low
+agr$YMax = agr$mean + agr$ci.high
+agr$Utterance = factor(x=agr$item_type,levels=c("bare","must","muss","probably","might","wohl","vermutlich"))
+
+ggplot(agr, aes(x=Utterance,y=mean)) +
+  geom_bar(stat="identity",position=dodge) +
+  geom_bar(stat="identity",position=dodge,color="black",fill="gray70",show_guide=F) +  
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),position=dodge,width=.25) +
+  facet_wrap(~Language,scales="free") +
+  scale_x_discrete(name="Comprehension (Exp. 3)") +
+  scale_y_continuous(name="Mean degree of belief in p") +
+  theme(axis.text.x=element_text(angle=45,vjust=1,hjust=1))
+ggsave("mean-comprehension-evidence-sub.pdf",height=4,width=5)
+
 
 english = droplevels(subset(d, Language == "English" & Belief == "listener"))
 contrasts(english$item_type) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
