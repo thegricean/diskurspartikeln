@@ -113,11 +113,34 @@ length(levels(as.factor(as.character(german_p$subject)))) #38 -- why 2 less?
 
 # plot overall distribution of utterances
 d$Utterance = factor(x=d$response,levels=c("bare","must","muss","probably","might","wohl","vermutlich"))
-ggplot(d, aes(x=Utterance)) +
-  stat_count() +
+agr = d %>%
+  mutate(bare=ifelse(Utterance == "bare",1,0),
+         must=ifelse(Utterance == "must",1,0),
+         might=ifelse(Utterance == "might",1,0),
+         probably=ifelse(Utterance == "probably",1,0),
+         vermutlich=ifelse(Utterance == "vermutlich",1,0),
+         muss=ifelse(Utterance == "muss",1,0),
+         wohl=ifelse(Utterance == "wohl",1,0)) %>%
+  select(Language,bare,must,might,probably,vermutlich,muss,wohl) %>%
+  gather(Utterance,Produced,-Language) %>%
+  group_by(Language,Utterance) %>%
+  summarize(Probability=mean(Produced),
+            cilow=ci.low(Produced),
+            cihigh=ci.high(Produced)) %>%
+  ungroup() %>%
+  mutate(YMax = Probability + cihigh,
+         YMin = Probability - cilow)
+agr = as.data.frame(agr)
+agr = droplevels(agr[agr$Probability > 0,])
+agr$Utt = factor(x=agr$Utterance,levels=c("bare","must","muss","probably","might","wohl","vermutlich"))
+
+ggplot(agr, aes(x=Utt,y=Probability)) +
+  geom_bar(stat="identity",fill="gray80",color="black") +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
   facet_wrap(~Language, scales="free") +
-  scale_y_continuous("Number of cases")
-ggsave("production-distribution.pdf",width=7,height=4)
+  scale_x_discrete("Utterance") +
+  scale_y_continuous("Probability of utterance")
+ggsave("production-distribution.pdf",width=8,height=5)
 
 # plot mean evidence strength by utterance
 agr = d %>%
