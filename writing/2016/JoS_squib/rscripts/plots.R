@@ -197,13 +197,13 @@ d$StrengthBin = as.numeric(as.character(cut_number(d$Directness,n=5,labels=seq(1
 table(d$StrengthBin,d$Language)
 agr = d %>%
   mutate(bare=ifelse(Utterance == "bare",1,0),
-         must=ifelse(Utterance %in% c("must","muss"),1,0),
+         must=ifelse(Utterance == "must",1,0),
          might=ifelse(Utterance == "might",1,0),
          probably=ifelse(Utterance == "probably",1,0),
          vermutlich=ifelse(Utterance == "vermutlich",1,0),
-#          muss=ifelse(Utterance == "muss",1,0),
+         muss=ifelse(Utterance == "muss",1,0),
          wohl=ifelse(Utterance == "wohl",1,0)) %>%
-  select(Language,StrengthBin,bare,must,might,probably,vermutlich,wohl) %>%
+  select(Language,StrengthBin,bare,must,muss,might,probably,vermutlich,wohl) %>%
   gather(Utterance,Produced,-Language,-StrengthBin) %>%
   group_by(Language,Utterance,StrengthBin) %>%
   summarize(Probability=mean(Produced),
@@ -214,7 +214,7 @@ agr = d %>%
          YMin = Probability - cilow)
 agr = as.data.frame(agr)
 agr = droplevels(agr[agr$Probability > 0,])
-agr$Utt = factor(x=agr$Utterance,levels=c("bare","must","probably","might","vermutlich","wohl"))
+agr$Utt = factor(x=agr$Utterance,levels=c("bare","must","muss","probably","might","vermutlich","wohl"))
   
 ggplot(agr, aes(x=StrengthBin, y=Probability, fill=Utt)) + 
   geom_area() +
@@ -222,7 +222,25 @@ ggplot(agr, aes(x=StrengthBin, y=Probability, fill=Utt)) +
   scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
   ylab("Probability of utterance") +
   facet_wrap(~Language)
-ggsave("production-by-strength.pdf",height=4,width=9)
+# ggsave("production-by-strength.pdf",height=4,width=9)
+
+agr = agr[order(agr[,c("Utt")]),]
+
+english = ggplot(droplevels(agr[agr$Language == "English",]), aes(x=StrengthBin, y=Probability, fill=Utt)) + 
+  geom_area() +
+  guides(fill=guide_legend("Utterance")) +
+  scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
+  ylab("Probability of utterance")
+
+german = ggplot(droplevels(agr[agr$Language == "German",]), aes(x=StrengthBin, y=Probability, fill=Utt)) + 
+  geom_area() +
+  guides(fill=guide_legend("Utterance")) +
+  scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
+  ylab("Probability of utterance")
+
+pdf(file="production-by-strength.pdf",width=10,height=4)
+grid.arrange(english,german,nrow=1)
+dev.off()
 
 english = droplevels(subset(d, Language == "English"))
 contrasts(english$response) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
