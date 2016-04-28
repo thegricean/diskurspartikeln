@@ -1,5 +1,5 @@
 theme_set(theme_bw(18))
-setwd("/Users/titlis/cogsci/projects/stanford/projects/diskurspartikeln/writing/2015/SP_squib/pics/")
+setwd("/Users/titlis/cogsci/projects/stanford/projects/diskurspartikeln/writing/2016/JoS_squib/pics/")
 
 source("../rscripts/helpers.r")
 
@@ -49,7 +49,7 @@ ggplot(d, aes(x=response)) +
 # plot histograms of mean evidence strengths side by side, first aggregating by item
 agr = d %>%
   group_by(Language,domain,evidence_id) %>%
-  summarise(mean=mean(response),ci.low=ci.low(response),ci.high=ci.high(response))
+  summarise(mean=mean(response),ci.low=ci.low(response),ci.high=ci.high(response),median=median(response))
 agr = as.data.frame(agr)
 agr
 
@@ -59,6 +59,22 @@ ggplot(agr, aes(x=mean)) +
   scale_x_continuous(name="Mean evidence strength") +
   scale_y_continuous(name="Number of cases")  
 ggsave("evidencestrength-histograms.pdf",height=3.5,width=7)
+
+english = droplevels(agr[agr$Language == "English",])
+english = english[order(english[,c("mean")],decreasing=T),]
+combos = paste(english$domain,english$evidence_id)
+
+d$combo = factor(x=paste(d$domain,d$evidence_id),levels=combos)
+ggplot(d, aes(x=combo,y=response,fill=domain)) +
+#   geom_bar(stat="identity") +
+#   geom_errorbar(aes(ymin=mean-ci.low,ymax=mean+ci.high)) +
+  geom_boxplot(outlier.colour="gray60") +
+  stat_summary(fun.y=mean, geom="point", shape=16, size=4) +
+  facet_wrap(~Language) +
+  scale_x_discrete(name="Piece of evidence") +
+  scale_y_continuous(name="Evidence strength")  +
+  theme(axis.text.x = element_blank())
+ggsave("evidencestrength-boxplots.pdf",height=4,width=10)
 
 # alternative: plot mean evidence strength for each item; english and german side by side
 dodge = position_dodge(.9)
@@ -140,7 +156,7 @@ ggplot(agr, aes(x=Utt,y=Probability)) +
   facet_wrap(~Language, scales="free") +
   scale_x_discrete("Utterance") +
   scale_y_continuous("Probability of utterance")
-ggsave("production-distribution.pdf",width=8,height=5)
+ggsave("production-distribution.pdf",width=8,height=4)
 
 # plot mean evidence strength by utterance
 agr = d %>%
@@ -161,7 +177,7 @@ ggplot(agr, aes(x=Utterance,y=mean)) +
   scale_x_discrete(name="Utterance") +
   scale_y_continuous(name="Mean evidence strength")
   #scale_fill_manual(values=c("white","gray70"))
-ggsave("mean-production-evidence.pdf",height=4,width=7)
+ggsave("mean-production-evidence.pdf",height=4,width=8)
 
 #sub plot
 ggplot(agr, aes(x=Utterance,y=mean)) +
@@ -173,6 +189,40 @@ ggplot(agr, aes(x=Utterance,y=mean)) +
   theme(axis.text.x=element_text(angle=45,vjust=1,hjust=1))#+
 #scale_fill_manual(values=c("white","gray70"))
 ggsave("mean-production-evidence-sub.pdf",height=4,width=5)
+
+
+bins = substr(levels(cut_number(d$Directness,n=5)),8,11)
+bins[5] = 1
+d$StrengthBin = as.numeric(as.character(cut_number(d$Directness,n=5,labels=seq(1,5))))
+table(d$StrengthBin,d$Language)
+agr = d %>%
+  mutate(bare=ifelse(Utterance == "bare",1,0),
+         must=ifelse(Utterance %in% c("must","muss"),1,0),
+         might=ifelse(Utterance == "might",1,0),
+         probably=ifelse(Utterance == "probably",1,0),
+         vermutlich=ifelse(Utterance == "vermutlich",1,0),
+#          muss=ifelse(Utterance == "muss",1,0),
+         wohl=ifelse(Utterance == "wohl",1,0)) %>%
+  select(Language,StrengthBin,bare,must,might,probably,vermutlich,wohl) %>%
+  gather(Utterance,Produced,-Language,-StrengthBin) %>%
+  group_by(Language,Utterance,StrengthBin) %>%
+  summarize(Probability=mean(Produced),
+            cilow=ci.low(Produced),
+            cihigh=ci.high(Produced)) %>%
+  ungroup() %>%
+  mutate(YMax = Probability + cihigh,
+         YMin = Probability - cilow)
+agr = as.data.frame(agr)
+agr = droplevels(agr[agr$Probability > 0,])
+agr$Utt = factor(x=agr$Utterance,levels=c("bare","must","probably","might","vermutlich","wohl"))
+  
+ggplot(agr, aes(x=StrengthBin, y=Probability, fill=Utt)) + 
+  geom_area() +
+  guides(fill=guide_legend("Utterance")) +
+  scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
+  ylab("Probability of utterance") +
+  facet_wrap(~Language)
+ggsave("production-by-strength.pdf",height=4,width=9)
 
 english = droplevels(subset(d, Language == "English"))
 contrasts(english$response) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
