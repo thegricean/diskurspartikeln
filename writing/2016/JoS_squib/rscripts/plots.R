@@ -226,19 +226,24 @@ ggplot(agr, aes(x=StrengthBin, y=Probability, fill=Utt)) +
 
 agr = agr[order(agr[,c("Utt")]),]
 
+epalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73")
+gpalette <- c("#999999", "#E69F00", "#0072B2", "#D55E00")
+
 english = ggplot(droplevels(agr[agr$Language == "English",]), aes(x=StrengthBin, y=Probability, fill=Utt)) + 
-  geom_area() +
-  guides(fill=guide_legend("Utterance")) +
+  geom_area(colour="black",size=.05) +
+  guides(fill=guide_legend("Utterance",reverse=TRUE)) +
+  scale_fill_manual(values=epalette) +
   scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
   ylab("Probability of utterance")
 
 german = ggplot(droplevels(agr[agr$Language == "German",]), aes(x=StrengthBin, y=Probability, fill=Utt)) + 
-  geom_area() +
-  guides(fill=guide_legend("Utterance")) +
+  geom_area(colour="black",size=.05) +
+  guides(fill=guide_legend("Utterance",reverse=TRUE)) +
+  scale_fill_manual(values=gpalette) +
   scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
   ylab("Probability of utterance")
 
-pdf(file="production-by-strength.pdf",width=10,height=4)
+pdf(file="production-by-strength.pdf",width=13,height=4.5)
 grid.arrange(english,german,nrow=1)
 dev.off()
 
