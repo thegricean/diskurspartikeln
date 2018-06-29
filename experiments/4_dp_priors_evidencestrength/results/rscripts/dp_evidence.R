@@ -1,10 +1,9 @@
+library(grid)
 theme_set(theme_bw(18))
-setwd("/Users/titlis/cogsci/projects/stanford/projects/diskurspartikeln/experiments/4_dp_priors_evidencestrength/results/")
 
-source("rscripts/helpers.r")
+source("helpers.r")
 
-load("data/r.RData")
-r = read.table("data/results.txt",quote="", sep="\t", header=T)
+r = read.table("../data/results.txt",quote="", sep="\t", header=T)
 head(r)
 nrow(r)
 names(r)
@@ -13,7 +12,6 @@ r = r[,c("subject", "rt", "evidence_id", "language","age","gender","trial","enjo
 head(r)
 
 table(r$item,r$evidence_id)
-save(r,file="data/r.RData")
 
 ##################
 
@@ -62,7 +60,7 @@ agr = r %>%
 agr$YMin = agr$mean - agr$ci.low
 agr$YMax = agr$mean + agr$ci.high
 
-library(grid)
+
 ggplot(agr, aes(x=evidence,y=mean)) +
   geom_bar(stat="identity") +
   geom_errorbar(aes(ymin=YMin, ymax=YMax),width=.25) +
@@ -70,10 +68,5 @@ ggplot(agr, aes(x=evidence,y=mean)) +
   theme(axis.text.x=element_text(angle=55,vjust=1,hjust=1,size=10),plot.margin=unit(c(0.1,0.1,0.1,1.5),"in"))
 ggsave("graphs/evidence_strength.pdf",width=10,height=11)
 
-# get english evidence directness
-engdir = read.csv("data/evidence_directness_english.csv")
-row.names(engdir) = paste(engdir$domain,engdir$evidencetype)
-agr$item_english = as.factor(ifelse(agr$item == "abendessen","dinner",ifelse(agr$item == "kaffee","coffee",ifelse(agr$item == "hund","dog","rain"))))
-agr$evidence_type = engdir[paste(agr$item_english,agr$evidence_id),]$type
-# write to file for integration into other datasets
-write.table(agr[,c("item","item_english","evidence_id","mean","YMin","YMax","evidence_type")],file="data/evidence_priors.txt",quote=F,row.names=F,sep=",")
+# get english and german evidence directness
+engdir = read.table("../data/evidence_priors.txt",sep=",",quote="",header=T)
