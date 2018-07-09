@@ -1,6 +1,10 @@
 theme_set(theme_bw(18))
+set.seed(42)
 library(tidyverse)
+library(brms)
+library(gridExtra)
 source("helpers.r")
+source("createLaTeXTable.R")
 
 ########################
 # 1. EVIDENCE STRENGTH #
@@ -70,19 +74,11 @@ d = d %>%
 priors = read.csv("../data/evidence_priors.txt")
 priors = priors %>%
   mutate(combo=paste(item_english,gsub("evidence","",as.character(evidence_id)),sep="-")) %>%
-  select(combo,evidence_type,red_evidence_type) 
+  select(combo,evidence_type) 
   
 d = d %>%
   left_join(priors,by=c("combo"))
-
-ggplot(d, aes(x=newcombo,y=response,fill=red_evidence_type)) +
-  geom_boxplot(outlier.colour="gray60") +
-  stat_summary(fun.y=mean, geom="point", shape=16, size=4) +
-  facet_wrap(~Language) +
-  scale_x_discrete(name="Piece of evidence") +
-  scale_y_continuous(name="Evidence strength")  +
-  theme(axis.text.x=element_text(angle=45,hjust=1,vjust=1))
-ggsave("../graphs/evidencestrength-boxplots-byreducedevidencetype.pdf",height=4,width=10)
+d$red_evidence_type = as.factor(ifelse(d$evidence_type == "inferential","inferential","other"))
 
 ggplot(d, aes(x=newcombo,y=response,fill=evidence_type)) +
   geom_boxplot(outlier.colour="gray60") +
@@ -91,18 +87,19 @@ ggplot(d, aes(x=newcombo,y=response,fill=evidence_type)) +
   scale_x_discrete(name="Piece of evidence") +
   scale_y_continuous(name="Evidence strength")  +
   theme(axis.text.x=element_text(angle=45,hjust=1,vjust=1))
-ggsave("../graphs/evidencestrength-boxplots-byevidencetype.pdf",height=4,width=10)
+# ggsave("../graphs/evidencestrength-boxplots-byreducedevidencetype.pdf",height=4,width=10)
 
-ggplot(d, aes(x=newcombo,y=response,fill=red_evidence_type,color=evidence_type)) +
+ggplot(d, aes(x=newcombo,y=response,fill=evidence_type)) +
   geom_boxplot(outlier.colour="gray60",color="black") +
   stat_summary(fun.y=mean, geom="point", shape=16, size=3) +
   facet_wrap(~Language) +
   scale_x_discrete(name="Piece of evidence") +
   scale_y_continuous(name="Evidence strength")  +
-  scale_fill_manual(values=c("gray50","gray90"),name="Evidence type\n(reduced)") +
-  scale_color_discrete(name="Evidence type\n(full)") +
-  theme(axis.text.x=element_text(angle=45,hjust=1,vjust=1))
-ggsave("../graphs/evidencestrength-boxplots.pdf",height=3.2,width=8.5)
+  # scale_fill_manual(values=c("gray50","gray90"),name="Evidence type\n(reduced)") +
+  scale_fill_discrete(name="Evidence type") +
+  # scale_color_discrete(name="Evidence type\n(full)") +
+  theme(axis.text.x=element_text(angle=45,hjust=1,vjust=1,size=10))
+ggsave("../graphs/evidencestrength-boxplots.pdf",height=4.2,width=10)
 
 # analysis: do the two language distributions differ? nope
 m = lmer(response ~ Language + (1|workerID) + (1+Language|combo), data=d)
@@ -110,14 +107,21 @@ summary(m)
 
 library(lmerTest)
 d = d %>%
-  mutate(evidence_type=fct_relevel(evidence_type, "perceptual","reportative"))
+  mutate(evidence_type=fct_relevel(evidence_type, "direct","reported"))
 m.1 = lmer(response ~ Language + evidence_type + (1|workerID) + (1+Language|combo), data=d)
 summary(m.1)
 
+d = d %>%
+  mutate(red_evidence_type=fct_relevel(red_evidence_type, "other"))
 m.2 = lmer(response ~ Language + red_evidence_type + (1|workerID) + (1+Language|combo), data=d)
 summary(m.2)
 
+# CONTINUE BY RUNNING BRM?
+m.1.b = brm(response ~ Language + evidence_type + (1|workerID) + (1+Language|combo), data=d)
+summary(m.1.b)
 
+m.2.b = brm(response ~ Language + red_evidence_type + (1|workerID) + (1+Language|combo), data=d)
+summary(m.2.b)
 
 #################
 # 2. PRODUCTION #
@@ -140,7 +144,8 @@ german_p$item = german_p$item_english
 
 # merge datasets
 d = merge(english_p, german_p, all=T)  %>%
-  select(workerid, item, Language, evidence_type, trial, response, EvidenceTypeCategorical, Directness)
+  select(workerid, item, Language, evidence_type, trial, response, EvidenceTypeCategorical, Directness) %>%
+  rename(evidence_id=evidence_type)
 nrow(d)
 d$workerid = as.factor(as.character(d$workerid))
 d$Language = as.factor(as.character(d$Language))
@@ -149,7 +154,25 @@ nrow(d)
 
 # how many participants in each?
 length(levels(as.factor(as.character(english_p$workerid)))) #40
-length(levels(as.factor(as.character(german_p$subject)))) #38 -- why 2 less?
+length(levels(as.factor(as.character(german_p$subject)))) #38 
+
+# add evidence types
+d = d %>%
+  mutate(combo=paste(item,gsub("evidence","",as.character(evidence_id)),sep="-")) %>%
+  mutate(newcombo=fct_relevel(combo,combos))
+
+priors = read.csv("../data/evidence_priors.txt")
+priors = priors %>%
+  mutate(combo=paste(item_english,gsub("evidence","",as.character(evidence_id)),sep="-")) %>%
+  select(combo,evidence_type) 
+
+d = d %>%
+  left_join(priors,by=c("combo"))
+d$red_evidence_type = as.factor(ifelse(d$evidence_type == "inferential","inferential","other"))
+d$red_evidence_type_direct = as.factor(ifelse(d$evidence_type == "direct","direct","other"))
+d$evidence_type_nowishful = as.character(d$evidence_type)
+d[d$evidence_type == "wishful",]$evidence_type_nowishful = "inferential"
+d$evidence_type_nowishful = as.factor(as.character(d$evidence_type_nowishful))
 
 # plot overall distribution of utterances
 d$Utterance = factor(x=d$response,levels=c("bare","must","muss","probably","might","wohl","vermutlich"))
@@ -164,7 +187,7 @@ agr = d %>%
   select(Language,bare,must,might,probably,vermutlich,muss,wohl) %>%
   gather(Utterance,Produced,-Language) %>%
   group_by(Language,Utterance) %>%
-  summarize(Probability=mean(Produced),
+  summarise(Probability=mean(Produced),
             cilow=ci.low(Produced),
             cihigh=ci.high(Produced)) %>%
   ungroup() %>%
@@ -203,6 +226,7 @@ ggplot(agr, aes(x=Utterance,y=mean)) +
   #scale_fill_manual(values=c("white","gray70"))
 ggsave("mean-production-evidence.pdf",height=4,width=8)
 
+
 #sub plot
 ggplot(agr, aes(x=Utterance,y=mean)) +
   geom_bar(stat="identity",position=dodge,fill="gray70",color="black") +
@@ -215,8 +239,9 @@ ggplot(agr, aes(x=Utterance,y=mean)) +
 ggsave("mean-production-evidence-sub.pdf",height=4,width=5)
 
 
+# plot by evidence strength (figure 4a)
 bins = substr(levels(cut_number(d$Directness,n=5)),8,11)
-bins[5] = 1
+bins[5] = "1"
 d$StrengthBin = as.numeric(as.character(cut_number(d$Directness,n=5,labels=seq(1,5))))
 table(d$StrengthBin,d$Language)
 agr = d %>%
@@ -230,7 +255,7 @@ agr = d %>%
   select(Language,StrengthBin,bare,must,muss,might,probably,vermutlich,wohl) %>%
   gather(Utterance,Produced,-Language,-StrengthBin) %>%
   group_by(Language,Utterance,StrengthBin) %>%
-  summarize(Probability=mean(Produced),
+  summarise(Probability=mean(Produced),
             cilow=ci.low(Produced),
             cihigh=ci.high(Produced)) %>%
   ungroup() %>%
@@ -238,50 +263,187 @@ agr = d %>%
          YMin = Probability - cilow)
 agr = as.data.frame(agr)
 agr = droplevels(agr[agr$Probability > 0,])
-agr$Utt = factor(x=agr$Utterance,levels=c("bare","must","muss","probably","might","vermutlich","wohl"))
-  
-ggplot(agr, aes(x=StrengthBin, y=Probability, fill=Utt)) + 
-  geom_area() +
-  guides(fill=guide_legend("Utterance")) +
-  scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
-  ylab("Probability of utterance") +
-  facet_wrap(~Language)
-# ggsave("production-by-strength.pdf",height=4,width=9)
+agr$Utt = factor(x=agr$Utterance,levels=rev(c("bare","must","muss","probably","might","vermutlich","wohl")))
+
 
 agr = agr[order(agr[,c("Utt")]),]
 
-epalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73")
-gpalette <- c("#999999", "#E69F00", "#0072B2", "#D55E00")
+epalette <- rev(c("#999999", "#E69F00", "#56B4E9", "#009E73"))
+gpalette <- rev(c("#999999", "#E69F00", "#0072B2", "#D55E00"))
 
 english = ggplot(droplevels(agr[agr$Language == "English",]), aes(x=StrengthBin, y=Probability, fill=Utt)) + 
   geom_area(colour="black",size=.05) +
   guides(fill=guide_legend("Utterance",reverse=TRUE)) +
   scale_fill_manual(values=epalette) +
-  scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
-  ylab("Probability of utterance")
+  scale_x_continuous(name="Evidence strength",breaks=seq(1,5),labels=bins) +
+  ylab("Utterance proportion")
 
 german = ggplot(droplevels(agr[agr$Language == "German",]), aes(x=StrengthBin, y=Probability, fill=Utt)) + 
   geom_area(colour="black",size=.05) +
   guides(fill=guide_legend("Utterance",reverse=TRUE)) +
   scale_fill_manual(values=gpalette) +
-  scale_x_discrete(name="Evidence strength",breaks=seq(1,5),labels=bins) +
-  ylab("Probability of utterance")
+  scale_x_continuous(name="Evidence strength",breaks=seq(1,5),labels=bins) +
+  ylab("Utterance proportion")
 
-pdf(file="production-by-strength.pdf",width=13,height=4.5)
+pdf(file="../graphs/production-by-strength.pdf",width=13,height=4.5)
 grid.arrange(english,german,nrow=1)
 dev.off()
 
+# plot by evidence type (figure 4b)
+# english production data
+
+gpalette <- c("#999999", "#E69F00", "#0072B2", "#D55E00")
+epalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73")
+
+agr_e_sums = d %>%
+  filter(Language == "English") %>%
+  group_by(evidence_type) %>%
+  count() %>%
+  rename(sum="n")
+
+agr_e = d %>%
+  filter(Language == "English") %>%
+  group_by(evidence_type,Utterance) %>%
+  count() %>%
+  left_join(agr_e_sums,by="evidence_type") %>%
+  ungroup() %>%
+  mutate(Proportion = n/sum) %>%
+  mutate(evidence_type=fct_relevel(evidence_type,"wishful","inferential","reported"),Utterance=fct_relevel(Utterance,"bare","must","probably"))
+
+english_type = ggplot(agr_e, aes(x=evidence_type, y=Proportion, fill=Utterance)) + 
+  geom_bar(stat="identity",position = position_fill(reverse = TRUE),color="black") +
+  guides(fill=guide_legend("Utterance")) +
+  scale_fill_manual(values=epalette) +
+  scale_x_discrete(name="Evidence type") +
+  ylab("Utterance proportion") 
+english_type
+
+# german production data
+agr_d_sums = d %>%
+  filter(Language == "German") %>%
+  group_by(evidence_type) %>%
+  count() %>%
+  rename(sum="n")
+
+agr_d = d %>%
+  filter(Language == "German") %>%
+  group_by(evidence_type,Utterance) %>%
+  count() %>%
+  left_join(agr_d_sums,by="evidence_type") %>%
+  ungroup() %>%
+  mutate(Proportion = n/sum) %>%
+  mutate(evidence_type=fct_relevel(evidence_type,"wishful","inferential","reported"),Utterance=fct_relevel(Utterance,"bare","muss","vermutlich","wohl"))
+
+german_type = ggplot(agr_d, aes(x=evidence_type, y=Proportion, fill=Utterance)) + 
+  geom_bar(stat="identity",position = position_fill(reverse = TRUE),color="black") +
+  guides(fill=guide_legend("Utterance")) +
+  scale_fill_manual(values=gpalette) +
+  scale_x_discrete(name="Evidence type") +
+  ylab("Utterance proportion") 
+german_type
+
+pdf(file="../graphs/production-by-type.pdf",width=13,height=4.5)
+grid.arrange(english_type,german_type,nrow=1)
+dev.off()
+
+##############
+## analysis
+#############
+d$BareChosen = d$response == "bare"
+d$MustChosen = d$response == "must"
+d$MussChosen = d$response == "muss"
+d$ProbablyChosen = d$response == "probably"
+d$VermutlichChosen = d$response == "vermutlich"
+d$MightChosen = d$response == "might"
+d$WohlChosen = d$response == "wohl"
+d$Inferential = d$red_evidence_type == "inferential"
+
+# residualize evidence strength against evidence type
+# m.resid = lm(Directness ~ evidence_type,data=d)
+# summary(m.resid)
+# d$residDirectness = residuals(m.resid)
+# pairscor.fnc(d[,c("Directness","residDirectness","evidence_type")])
+
+# ENGLISH ANALYSIS
 english = droplevels(subset(d, Language == "English"))
 contrasts(english$response) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
-english$complete_item = as.factor(paste(english$item,english$evidence_type))
+english = english %>%
+  mutate(ev= case_when(
+    red_evidence_type_direct == "direct" ~ 1,
+    red_evidence_type_direct == "other" ~ 0,
+  )) %>%
+  mutate(cDirectness = Directness - mean(Directness), cEvidence = ev - mean(ev))
+
+# lmer analysis
+
+# bare
+m.bare = glmer(BareChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = english, family="binomial")
+summary(m.bare)
+createLatexTable(m.bare,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# must
+m.must = glmer(MustChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = english, family="binomial")
+summary(m.must)
+createLatexTable(m.must,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# probably
+m.probably = glmer(ProbablyChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = english, family="binomial")
+summary(m.probably)
+createLatexTable(m.probably,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# might
+m.might = glmer(MightChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = english, family="binomial")
+summary(m.might)
+createLatexTable(m.might,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# backwards analysis of evidence directness by utterance (dispreferred conceptually)
 m = lmer(Directness ~ response + (1|workerid) + (1|item), data = english)
 summary(m)
 
+# backwards analysis of evidence type by utterance (dispreferred conceptually)
+m = glmer(red_evidence_type_direct ~ response + (1|workerid) + (1|item), data = english,family="binomial")
+summary(m)
+
+# GERMAN ANALYSIS
 german = droplevels(subset(d, Language == "German"))
 contrasts(german$response) = cbind("bare.vs.muss"=c(1,0,0,0),"vermutlich.vs.muss"=c(0,0,1,0),"wohl.vs.muss"=c(0,0,0,1))
-german$complete_item = as.factor(paste(german$item,german$evidence_type))
-m = lmer(Directness ~ response + (1|workerid) + (1|item), data = german)
+german = german %>%
+  mutate(ev= case_when(
+    red_evidence_type_direct == "direct" ~ 1,
+    red_evidence_type_direct == "other" ~ 0,
+  )) %>%
+  mutate(cDirectness = Directness - mean(Directness), cEvidence = ev - mean(ev))
+
+# lmer analysis
+
+# bare
+m.bare = glmer(BareChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = german, family="binomial")
+summary(m.bare)
+createLatexTable(m.bare,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# muss
+m.muss = glmer(MussChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = german, family="binomial")
+summary(m.muss)
+createLatexTable(m.muss,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# vermutlich
+m.vermutlich = glmer(VermutlichChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = german, family="binomial")
+summary(m.vermutlich)
+createLatexTable(m.vermutlich,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# wohl
+m.wohl = glmer(WohlChosen ~ cDirectness + cEvidence + (1|workerid) + (1|combo), data = german, family="binomial")
+summary(m.wohl)
+createLatexTable(m.wohl,predictornames=c("Intercept","Evidence strength","Evidence direct"))
+
+# backwards analysis of evidence directness by utterance (dispreferred conceptually)
+m = lmer(Directness ~ response + (1|workerid) + (1|combo), data = german)
 summary(m)
+
+# backwards analysis of evidence type by utterance (dispreferred conceptually)
+m = glmer(red_evidence_type_direct ~ response + (1|workerid) + (1|combo), data = german,family="binomial")
+summary(m)
+
 
 
 ######################
@@ -353,6 +515,30 @@ summary(d)
 
 save(d, file="../data/d_comprehension.RData")
 
+# add evidence types
+d = d %>%
+  mutate(combo=paste(item,gsub("evidence","",as.character(evidence)),sep="-")) %>%
+  mutate(newcombo=fct_relevel(combo,combos))
+
+priors = read.csv("../data/evidence_priors.txt")
+priors = priors %>%
+  mutate(combo=paste(item_english,gsub("evidence","",as.character(evidence_id)),sep="-")) %>%
+  select(combo,evidence_type) 
+
+d = d %>%
+  left_join(priors,by=c("combo"))
+d$red_evidence_type = as.factor(ifelse(d$evidence_type == "inferential","inferential","other"))
+d$red_evidence_type_direct = as.factor(ifelse(d$evidence_type == "direct","direct","other"))
+d$evidence_type_nowishful = as.character(d$evidence_type)
+d[d$evidence_type == "wishful",]$evidence_type_nowishful = "inferential"
+d$evidence_type_nowishful = as.factor(as.character(d$evidence_type_nowishful))
+
+d = d %>%
+  mutate(ev= as.factor(case_when(
+    red_evidence_type_direct == "direct" ~ 1,
+    red_evidence_type_direct == "other" ~ 0,
+  )))
+
 # plot mean belief by utterance
 agr = d %>%
   group_by(Language,Belief,item_type) %>%
@@ -401,12 +587,12 @@ ggsave("mean-comprehension-evidence-sub.pdf",height=4,width=5)
 
 english = droplevels(subset(d, Language == "English" & Belief == "listener"))
 contrasts(english$item_type) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
-m = lmer(response ~ item_type + (1|workerid) + (1|item), data = english)
+m = lmer(response ~ item_type + (1|workerid) + (1|combo), data = english)
 summary(m)
 
 english = droplevels(subset(d, Language == "English" & Belief == "speaker"))
 contrasts(english$item_type) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
-m = lmer(response ~ item_type + (1|workerid) + (1|item), data = english)
+m = lmer(response ~ item_type + (1|workerid) + (1|combo), data = english)
 summary(m)
 
 english = droplevels(subset(d, Language == "English"))
@@ -431,7 +617,7 @@ summary(m)
 
 # plot mean inferred evidence strength by utterance
 agr = d %>%
-  group_by(Language,Belief,item_type) %>%
+  group_by(Language,item_type) %>%
   summarise(mean=mean(Directness),ci.low=ci.low(Directness),ci.high=ci.high(Directness))  
 agr = as.data.frame(agr)
 head(agr)
@@ -440,17 +626,17 @@ dodge = position_dodge(.9)
 agr$YMin = agr$mean - agr$ci.low
 agr$YMax = agr$mean + agr$ci.high
 agr$Utterance = factor(x=agr$item_type,levels=c("bare","must","muss","probably","might","wohl","vermutlich"))
-agr$Belief = as.factor(ifelse(agr$Belief == "listener","listener\n(Exps. 3a)","speaker\n(Exps. 3b)"))
+# agr$Belief = as.factor(ifelse(agr$Belief == "listener","listener\n(Exps. 3a)","speaker\n(Exps. 3b)"))
 
-ggplot(agr, aes(x=Utterance,y=mean,fill=Belief)) +
+ggplot(agr, aes(x=Utterance,y=mean)) +
   geom_bar(stat="identity",position=dodge) +
-  geom_bar(stat="identity",position=dodge,color="black",show_guide=F) +  
+  geom_bar(stat="identity",position=dodge,color="black",show_guide=F,fill="gray80") +  
   geom_errorbar(aes(ymin=YMin,ymax=YMax),position=dodge,width=.25) +
   facet_wrap(~Language,scales="free") +
   scale_x_discrete(name="Utterance") +
-  scale_y_continuous(name="Mean strength of inferred evidence") +
+  scale_y_continuous(name="Mean inferred evidence strength") +
   scale_fill_manual(values=c("white","gray70"))
-ggsave("mean-evidence.pdf",height=3.5,width=7.5)
+ggsave("mean-evidence.pdf",height=4,width=7.5)
 
 english = droplevels(subset(d, Language == "English" & Belief == "listener"))
 contrasts(english$item_type) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
@@ -482,8 +668,59 @@ contrasts(german$item_type) = cbind("bare.vs.muss"=c(1,0,0,0),"vermutlich.vs.mus
 m = lmer(Directness ~ item_type*Belief + (1|workerid) + (1|item), data = german)
 summary(m)
 
-# histogram of inferred evidence pieces
-ggplot(d, aes(x=evidence)) +
-  geom_histogram() +
-  facet_grid(Language~item_type)
+# plot inferred evidence types by utterance
+agr = d %>%
+  group_by(Language,item_type,evidence_type) %>%
+  tally() %>%
+  group_by(Language,item_type) %>%
+  mutate(sum=sum(n)) %>%
+  ungroup() %>%
+  mutate(Proportion=n/sum)
 
+dodge = position_dodge(.9)
+agr$Utterance = factor(x=agr$item_type,levels=c("bare","must","muss","probably","might","vermutlich", "wohl"))
+# agr$Belief = as.factor(ifelse(agr$Belief == "listener","listener\n(Exps. 3a)","speaker\n(Exps. 3b)"))
+
+ggplot(agr,aes(x=Utterance,y=Proportion,fill=evidence_type)) +
+  geom_bar(stat="identity") +
+  facet_wrap(~Language,scales="free") +
+  scale_x_discrete(name="Utterance") +
+  scale_fill_discrete(name="Evidence type") +
+  scale_y_continuous(name="Proportion of inferred evidence type") +
+  theme(legend.position="top")
+ggsave("inferred-evidencetype.pdf",height=5,width=8)
+
+# evidence type analysis
+english = droplevels(subset(d, Language == "English" & Belief == "listener"))
+contrasts(english$item_type) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
+m = glmer(ev ~ item_type + (1|workerid) + (1|item), data = english,family="binomial")
+summary(m)
+
+english = droplevels(subset(d, Language == "English" & Belief == "speaker"))
+contrasts(english$item_type) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
+m = glmer(ev ~ item_type + (1|workerid) + (1|item), data = english,family="binomial")
+summary(m)
+
+english = droplevels(subset(d, Language == "English"))
+contrasts(english$item_type) = cbind("bare.vs.must"=c(1,0,0,0),"might.vs.must"=c(0,1,0,0),"probably.vs.must"=c(0,0,0,1))
+m = glmer(ev ~ item_type*Belief + (1|workerid) + (1|item), data = english,family="binomial")
+summary(m)
+
+# need exclude vermutlich here because there are 0 direct data points
+german = droplevels(subset(d, Language == "German" & Belief == "listener" & item_type != "vermutlich"))
+contrasts(german$item_type) = cbind("bare.vs.muss"=c(1,0,0),"wohl.vs.muss"=c(0,0,1))
+m = glmer(ev ~ item_type + (1|workerid) + (1|item), data = german,family="binomial")
+summary(m)
+
+german = droplevels(subset(d, Language == "German" & Belief == "speaker"))
+contrasts(german$item_type) = cbind("bare.vs.muss"=c(1,0,0,0),"vermutlich.vs.muss"=c(0,0,1,0),"wohl.vs.muss"=c(0,0,0,1))
+m = glmer(ev ~ item_type + (1|workerid) + (1|item), data = german,family="binomial")
+summary(m)
+
+german = droplevels(subset(d, Language == "German"))
+contrasts(german$item_type) = cbind("bare.vs.muss"=c(1,0,0,0),"vermutlich.vs.muss"=c(0,0,1,0),"wohl.vs.muss"=c(0,0,0,1))
+m = glmer(ev ~ item_type*Belief + (1|workerid) + (1|item), data = german,family="binomial")
+summary(m)
+
+m = glmer(ev ~ item_type + (1|workerid) + (1|item), data = german,family="binomial")
+summary(m)

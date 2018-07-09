@@ -1,0 +1,62 @@
+% !TEX TS–program = pdflatexmk
+
+\documentclass{article} % use if you have the Lucida LaTeX fonts
+%\documentclass{sp}          % default: uses Times font
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% Optional short title inside square brackets, for the running headers.
+% If no short title is given, no title appears in the headers.
+\title{Production results table}
+
+% Optional short author inside square brackets, for the running headers.
+% If no short author is given, no authors print in the headers.
+\author{% As many authors as you like, each separated by \AND.
+Judith Degen}
+\date{\today}
+
+%=====================================================================
+
+\begin{document}
+
+%=====================================================================
+%============================ frontmatter ============================
+
+\maketitle
+
+
+\begin{table}[!tbp]
+\begin{center}
+\begin{tabular}{llrrlrrl}
+\toprule
+&   & \multicolumn{3}{c}{English} & \multicolumn{3}{c}{German}\\
+Expression  & \multicolumn{1}{l}{Predictor}&\multicolumn{1}{c}{Coef $\beta$}&\multicolumn{1}{c}{SE($\beta$)}&\multicolumn{1}{c}{$p$}&\multicolumn{1}{c}{Coef $\beta$}&\multicolumn{1}{c}{SE($\beta$)}&\multicolumn{1}{c}{$p$}\tabularnewline
+\midrule
+\multirow{3}{*}{bare} & Intercept&$-1.64$&$0.48$&\textbf{\textless .001}&$-0.53$&$0.30$&\textless .09\tabularnewline
+& Evidence strength&$10.75$&$3.61$&\textbf{\textless .01}&$ 3.93$&$1.60$&\textbf{\textless .05}\tabularnewline
+& Evidence direct&$ 3.05$&$1.18$&\textbf{\textless .01}&$ 1.83$&$0.81$&\textbf{\textless .05}\tabularnewline
+\midrule
+\multirow{3}{*}{must/muss} & Intercept&$-2.21$&$0.30$&\textbf{\textless .0001}&$-2.04$&$0.22$&\textbf{\textless .0001}\tabularnewline
+& Evidence strength&$ 4.36$&$1.98$&\textbf{\textless .05}&$ 0.39$&$0.85$&\textless .66\tabularnewline
+& Evidence direct&$-3.01$&$0.88$&\textbf{\textless .001}&$-1.39$&$0.56$&\textbf{\textless .05}\tabularnewline
+\midrule
+\multirow{3}{*}{probably} & Intercept&$-1.98$&$0.31$&\textbf{\textless .0001}\tabularnewline
+& Evidence strength&$ 2.27$&$2.15$&\textless .3\tabularnewline
+& Evidence direct&$-2.97$&$0.97$&\textbf{\textless .01}\tabularnewline
+\midrule
+\multirow{3}{*}{might} & Intercept&$ -1.41$&$0.30$&\textbf{\textless .0001}\tabularnewline
+& Evidence strength&$-12.29$&$2.24$&\textbf{\textless .0001}\tabularnewline
+& Evidence direct&$  0.25$&$0.83$&\textless .78\tabularnewline
+\midrule
+\multirow{3}{*}{vermutlich} &Intercept&&&&$-1.70$&$0.27$&\textbf{\textless .0001}\tabularnewline
+&Evidence strength&&&&$-3.61$&$1.29$&\textbf{\textless .01}\tabularnewline
+&Evidence direct&&&&$-1.19$&$0.80$&\textless .15\tabularnewline
+\midrule
+\multirow{3}{*}{wohl} &Intercept&&&&$-1.45$&$0.16$&\textbf{\textless .0001}\tabularnewline
+&Evidence strength&&&&$-0.82$&$0.70$&\textless .25\tabularnewline
+&Evidence direct&&&&$-1.06$&$0.45$&\textbf{\textless .05}\tabularnewline
+\bottomrule
+\end{tabular}\end{center}
+\end{table}
+
+\end{document}

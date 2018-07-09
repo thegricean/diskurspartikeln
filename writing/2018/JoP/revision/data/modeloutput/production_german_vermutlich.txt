@@ -1,0 +1,6 @@
+Predictor,Estimate,Est.Error,2.5%ile,97.5%ile,P
+Intercept,-2.78,0.88,-4.61,-1.29,0
+cDirectness,-5.58,3.12,-11.62,0.44,0.03
+evidence_typeinferential,1.33,0.94,-0.36,3.29,0.06
+evidence_typereported,-5.95,12.51,-34.21,17.28,0.3
+evidence_typewishful,-13.34,17.63,-56.95,17.14,0.85
