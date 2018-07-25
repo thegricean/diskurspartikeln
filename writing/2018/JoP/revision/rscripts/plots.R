@@ -79,6 +79,7 @@ priors = priors %>%
 d = d %>%
   left_join(priors,by=c("combo"))
 d$red_evidence_type = as.factor(ifelse(d$evidence_type == "inferential","inferential","other"))
+d$red_evidence_type_direct = as.factor(ifelse(d$evidence_type == "direct","direct","other"))
 
 ggplot(d, aes(x=newcombo,y=response,fill=evidence_type)) +
   geom_boxplot(outlier.colour="gray60") +
@@ -111,9 +112,9 @@ d = d %>%
 m.1 = lmer(response ~ Language + evidence_type + (1|workerID) + (1+Language|combo), data=d)
 summary(m.1)
 
-d = d %>%
-  mutate(red_evidence_type=fct_relevel(red_evidence_type, "other"))
-m.2 = lmer(response ~ Language + red_evidence_type + (1|workerID) + (1+Language|combo), data=d)
+# d = d %>%
+  # mutate(red_evidence_type=fct_relevel(red_evidence_type, "other"))
+m.2 = lmer(response ~ Language + red_evidence_type_direct + (1|workerID) + (1+Language|combo), data=d)
 summary(m.2)
 
 # CONTINUE BY RUNNING BRM?
